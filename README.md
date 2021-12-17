@@ -1,5 +1,4 @@
 # Oedldoedl Resources
-Minecraft Oedldoedl Resources Mod
-made for Oedldoedl Projects
-by TheP2WKing
+A mod made for TheP2WKings own Oedldoedl Projects!
+
 Curseforge: https://www.curseforge.com/minecraft/mc-mods/oedldoedl-resources
