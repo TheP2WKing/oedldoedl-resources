@@ -1,0 +1,56 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="All rights reserved"
+[[mods]]
+modId="oedldoedlresources"
+version="1.16.5-3.2.0"
+displayName="Oedldoedl Series: Resources"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/oedldoedl-resources"
+logoFile="oedldoedlresources.png"
+authors="TheP2WKing"
+description='''
+[Oedldoedl Resources Project]
+
+Provides:
+    - Tooltips
+    - Information
+    - Various Resources For Modpacks
+    - Various Crafting Ingredients For Modpacks
+    - World Generation
+    - Basic Build-In Recipes
+    - CTM Integration
+    - TOP Integration
+    - JEI Integration
+    - High Configurability
+    - Easy Usability For Modpack Authors
+'''
+[[dependencies.oedldoedlresources]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36.2,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.oedldoedlresources]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.oedldoedlresources]]
+    modId="oedldoedlcore"
+    mandatory=true
+    versionRange="[1.16.5-3.5.0,)"
+    ordering="AFTER"
+    side="BOTH"
+[[dependencies.oedldoedlresources]]
+    modId="theoneprobe"
+    mandatory=false
+    versionRange="[1.16-3.1.4,)"
+    ordering="AFTER"
+    side="BOTH"
+[[dependencies.oedldoedlresources]]
+    modId="ctm"
+    mandatory=false
+    versionRange="[MC1.16.1-1.1.2,)"
+    ordering="AFTER"
+    side="BOTH"
