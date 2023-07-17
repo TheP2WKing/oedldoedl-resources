@@ -76,7 +76,7 @@ public class ModItems {
 
 	// misc itemblocks
 	public static final Item BALANCED_CLAY = new ModItemBlockBase(ModBlocks.BALANCED_CLAY, ModRarities.LIGHT_PURPLE, true, 2, 1);
-	public static final Item CHAOS_PLANK = new ModItemBlockBase(ModBlocks.CHAOS_PLANK, ModRarities.BLACK, true, 4, 0);
+	public static final Item CHAOS_PLANK = new ModItemBlockBase(ModBlocks.CHAOS_PLANK, ModRarities.BLACK, false, 4, 0);
 
 	// ingots
 	public static final Item BASE_INGOT = new ModItemBase(OedldoedlResources.MODID, "base_ingot", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
