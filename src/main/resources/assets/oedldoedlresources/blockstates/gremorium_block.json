@@ -1,9 +1,9 @@
 {
     "variants": 
     {
-        "": 
+        "normal": 
         { 
-            "model": "oedldoedlresources:block/gremorium_block"
+            "model": "oedldoedlresources:gremorium_block"
         }
     }
 }

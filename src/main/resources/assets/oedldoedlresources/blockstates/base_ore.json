@@ -1,9 +1,9 @@
 {
     "variants": 
     {
-        "": 
+        "normal": 
         { 
-            "model": "oedldoedlresources:block/base_ore"
+            "model": "oedldoedlresources:base_ore"
         }
     }
 }

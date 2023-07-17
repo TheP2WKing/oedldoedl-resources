@@ -8,7 +8,7 @@
         "url": "https://github.com/TheP2WKing/oedldoedl-resources",
         "authorList": ["TheP2WKing"],
         "credits": "TheP2WKing",
-        "logoFile": "assets/oedldoedlcore/textures/gui/logo/resources_logo.png",
+        "logoFile": "assets/oedldoedlresources/textures/gui/logo/resources_logo.png",
         "dependencies": []
     }
 ]

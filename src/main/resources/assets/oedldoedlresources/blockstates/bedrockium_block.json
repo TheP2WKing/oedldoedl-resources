@@ -1,9 +1,9 @@
 {
     "variants": 
     {
-        "": 
+        "normal": 
         { 
-            "model": "oedldoedlresources:block/bedrockium_block"
+            "model": "oedldoedlresources:bedrockium_block"
         }
     }
 }

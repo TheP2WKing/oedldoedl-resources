@@ -1,9 +1,9 @@
 {
     "variants": 
     {
-        "": 
+        "normal": 
         { 
-            "model": "oedldoedlresources:block/inderium_gem_block"
+            "model": "oedldoedlresources:inderium_gem_block"
         }
     }
 }

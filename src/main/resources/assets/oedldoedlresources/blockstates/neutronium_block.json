@@ -1,9 +1,9 @@
 {
     "variants": 
     {
-        "": 
+        "normal": 
         { 
-            "model": "oedldoedlresources:block/neutronium_block"
+            "model": "oedldoedlresources:neutronium_block"
         }
     }
 }

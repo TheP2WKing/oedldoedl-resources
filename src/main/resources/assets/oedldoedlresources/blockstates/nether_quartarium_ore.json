@@ -1,9 +1,9 @@
 {
     "variants": 
     {
-        "": 
+        "normal": 
         { 
-            "model": "oedldoedlresources:block/nether_quartarium_ore"
+            "model": "oedldoedlresources:nether_quartarium_ore"
         }
     }
 }

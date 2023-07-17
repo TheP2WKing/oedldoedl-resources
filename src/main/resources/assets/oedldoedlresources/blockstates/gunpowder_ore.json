@@ -1,9 +1,9 @@
 {
     "variants": 
     {
-        "": 
+        "normal": 
         { 
-            "model": "oedldoedlresources:block/gunpowder_ore"
+            "model": "oedldoedlresources:gunpowder_ore"
         }
     }
 }

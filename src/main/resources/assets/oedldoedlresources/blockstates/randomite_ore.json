@@ -1,9 +1,9 @@
 {
     "variants": 
     {
-        "": 
+        "normal": 
         { 
-            "model": "oedldoedlresources:block/randomite_ore"
+            "model": "oedldoedlresources:randomite_ore"
         }
     }
 }

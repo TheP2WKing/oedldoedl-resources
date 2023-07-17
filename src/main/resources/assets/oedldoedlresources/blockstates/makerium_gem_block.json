@@ -1,9 +1,9 @@
 {
     "variants": 
     {
-        "": 
+        "normal": 
         { 
-            "model": "oedldoedlresources:block/makerium_gem_block"
+            "model": "oedldoedlresources:makerium_gem_block"
         }
     }
 }

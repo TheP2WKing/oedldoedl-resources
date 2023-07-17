@@ -1,9 +1,9 @@
 {
     "variants": 
     {
-        "": 
+        "normal": 
         { 
-            "model": "oedldoedlresources:block/nether_nagatorium_ore"
+            "model": "oedldoedlresources:nether_nagatorium_ore"
         }
     }
 }

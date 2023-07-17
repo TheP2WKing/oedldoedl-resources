@@ -10,14 +10,14 @@ public class Properties {
 		@Config.Name("Potion Effects Enabled")
 		public boolean EFFECTS_EBALED = true;
 
+		@Config.Name("blocks")
+		public final Blocks BLOCKS = new Blocks();
+
 		@Config.Name("ingots")
 		public final Ingots INGOTS = new Ingots();
 
 		@Config.Name("nuggets")
 		public final Nuggets NUGGETS = new Nuggets();
-
-		@Config.Name("blocks")
-		public final Blocks BLOCKS = new Blocks();
 	}
 
 	public static class Ingots {

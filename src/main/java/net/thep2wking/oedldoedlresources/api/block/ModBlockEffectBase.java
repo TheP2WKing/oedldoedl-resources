@@ -7,6 +7,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -25,10 +26,10 @@ public class ModBlockEffectBase extends ModBlockBase implements ITOPInfoProvider
 	public final Potion effect;
 	public final boolean isDebuff;
 
-	public ModBlockEffectBase(String modid, String name, Material material, SoundType sound, MapColor mapColor,
+	public ModBlockEffectBase(String modid, String name, CreativeTabs tab, Material material, SoundType sound, MapColor mapColor,
 			int harvestLevel, ModToolTypes toolType, float hardness, float resistance, float lightLevel, Potion effect,
 			boolean isDebuff) {
-		super(modid, name, material, sound, mapColor, harvestLevel, toolType, hardness, resistance, lightLevel);
+		super(modid, name, tab, material, sound, mapColor, harvestLevel, toolType, hardness, resistance, lightLevel);
 		this.effect = effect;
 		this.isDebuff = isDebuff;
 	}
@@ -49,13 +50,16 @@ public class ModBlockEffectBase extends ModBlockBase implements ITOPInfoProvider
 	@Override
 	public void addProbeInfo(ProbeMode mode, IProbeInfo probeInfo, EntityPlayer player, World world,
 			IBlockState blockState, IProbeHitData data) {
-		if (ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_WALKING_EFFECTS
+		if (player.isSneaking() && ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_WALKING_EFFECTS
 				&& ResourcesConfig.PROPERTIES.EFFECTS.EFFECTS_EBALED) {
 			ModTopTooltips.addEffectHeader(mode, probeInfo, player, world, blockState, data,
 					ModTooltips.EFFECT_WALKING_ON);
 			ModTopTooltips.addPotionEffect(mode, probeInfo, player, world, blockState, data, effect.getName(),
 					isDebuff, ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_WALKING_BASE_AMPLIFIER,
 					ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_WALKING_BASE_DURATION);
+		} else if (ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_WALKING_EFFECTS
+				&& ResourcesConfig.PROPERTIES.EFFECTS.EFFECTS_EBALED){
+				ModTopTooltips.addKey(mode, probeInfo, player, world, blockState, data, ModTopTooltips.TOP_EFFECTS);
 		}
 	}
 }

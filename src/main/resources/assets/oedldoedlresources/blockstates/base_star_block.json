@@ -1,9 +1,9 @@
 {
     "variants": 
     {
-        "": 
+        "normal": 
         { 
-            "model": "oedldoedlresources:block/base_star_block"
+            "model": "oedldoedlresources:base_star_block"
         }
     }
 }

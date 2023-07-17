@@ -1,9 +1,9 @@
 {
     "variants": 
     {
-        "": 
+        "normal": 
         { 
-            "model": "oedldoedlresources:block/mithril_ore"
+            "model": "oedldoedlresources:mithril_ore"
         }
     }
 }

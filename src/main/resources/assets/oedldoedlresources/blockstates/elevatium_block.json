@@ -1,9 +1,9 @@
 {
     "variants": 
     {
-        "": 
+        "normal": 
         { 
-            "model": "oedldoedlresources:block/elevatium_block"
+            "model": "oedldoedlresources:elevatium_block"
         }
     }
 }

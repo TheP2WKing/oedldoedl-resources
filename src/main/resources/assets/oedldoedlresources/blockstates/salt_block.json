@@ -1,9 +1,9 @@
 {
     "variants": 
     {
-        "": 
+        "normal": 
         { 
-            "model": "oedldoedlresources:block/salt_block"
+            "model": "oedldoedlresources:salt_block"
         }
     }
 }

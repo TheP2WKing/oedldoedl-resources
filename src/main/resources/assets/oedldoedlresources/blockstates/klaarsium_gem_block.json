@@ -1,9 +1,9 @@
 {
     "variants": 
     {
-        "": 
+        "normal": 
         { 
-            "model": "oedldoedlresources:block/klaarsium_gem_block"
+            "model": "oedldoedlresources:klaarsium_gem_block"
         }
     }
 }

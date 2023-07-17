@@ -1,9 +1,9 @@
 {
     "variants": 
     {
-        "": 
+        "normal": 
         { 
-            "model": "oedldoedlresources:block/crystal_matrix_block"
+            "model": "oedldoedlresources:crystal_matrix_block"
         }
     }
 }

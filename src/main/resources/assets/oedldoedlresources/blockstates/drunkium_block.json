@@ -1,9 +1,9 @@
 {
     "variants": 
     {
-        "": 
+        "normal": 
         { 
-            "model": "oedldoedlresources:block/drunkium_block"
+            "model": "oedldoedlresources:drunkium_block"
         }
     }
 }

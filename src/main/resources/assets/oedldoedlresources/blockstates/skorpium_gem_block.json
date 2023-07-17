@@ -1,9 +1,9 @@
 {
     "variants": 
     {
-        "": 
+        "normal": 
         { 
-            "model": "oedldoedlresources:block/skorpium_gem_block"
+            "model": "oedldoedlresources:skorpium_gem_block"
         }
     }
 }

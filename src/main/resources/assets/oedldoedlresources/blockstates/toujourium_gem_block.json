@@ -1,9 +1,9 @@
 {
     "variants": 
     {
-        "": 
+        "normal": 
         { 
-            "model": "oedldoedlresources:block/toujourium_gem_block"
+            "model": "oedldoedlresources:toujourium_gem_block"
         }
     }
 }

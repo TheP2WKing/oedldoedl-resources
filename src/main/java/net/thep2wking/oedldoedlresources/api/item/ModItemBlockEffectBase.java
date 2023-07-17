@@ -6,7 +6,6 @@ import javax.annotation.Nullable;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.EnumRarity;
@@ -25,9 +24,9 @@ public class ModItemBlockEffectBase extends ModItemBlockBase {
 	public final Potion effect;
 	public final boolean isDebuff;
 
-	public ModItemBlockEffectBase(Block block, CreativeTabs tab, Potion effect, boolean isDebuff, EnumRarity rarity,
+	public ModItemBlockEffectBase(Block block, Potion effect, boolean isDebuff, EnumRarity rarity,
 			boolean hasEffect, int tooltipLines, int annotationLines) {
-		super(block, tab, rarity, hasEffect, tooltipLines, annotationLines);
+		super(block, rarity, hasEffect, tooltipLines, annotationLines);
 		this.effect = effect;
 		this.isDebuff = isDebuff;
 	}

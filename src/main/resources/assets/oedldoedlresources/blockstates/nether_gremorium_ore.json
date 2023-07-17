@@ -1,9 +1,9 @@
 {
     "variants": 
     {
-        "": 
+        "normal": 
         { 
-            "model": "oedldoedlresources:block/nether_gremorium_ore"
+            "model": "oedldoedlresources:nether_gremorium_ore"
         }
     }
 }

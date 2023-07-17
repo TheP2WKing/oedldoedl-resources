@@ -1,9 +1,9 @@
 {
     "variants": 
     {
-        "": 
+        "normal": 
         { 
-            "model": "oedldoedlresources:block/quartarium_gem_block"
+            "model": "oedldoedlresources:quartarium_gem_block"
         }
     }
 }

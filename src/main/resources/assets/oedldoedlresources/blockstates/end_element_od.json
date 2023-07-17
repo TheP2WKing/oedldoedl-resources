@@ -1,9 +1,9 @@
 {
     "variants": 
     {
-        "": 
+        "normal": 
         { 
-            "model": "oedldoedlresources:block/end_element_od"
+            "model": "oedldoedlresources:end_element_od"
         }
     }
 }

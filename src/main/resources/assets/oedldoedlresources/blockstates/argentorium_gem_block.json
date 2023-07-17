@@ -1,9 +1,9 @@
 {
     "variants": 
     {
-        "": 
+        "normal": 
         { 
-            "model": "oedldoedlresources:block/argentorium_gem_block"
+            "model": "oedldoedlresources:argentorium_gem_block"
         }
     }
 }

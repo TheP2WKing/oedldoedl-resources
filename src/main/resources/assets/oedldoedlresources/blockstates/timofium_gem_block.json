@@ -1,9 +1,9 @@
 {
     "variants": 
     {
-        "": 
+        "normal": 
         { 
-            "model": "oedldoedlresources:block/timofium_gem_block"
+            "model": "oedldoedlresources:timofium_gem_block"
         }
     }
 }
