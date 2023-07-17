@@ -79,23 +79,23 @@ public class ModItems {
 	public static final Item CHAOS_PLANK = new ModItemBlockBase(ModBlocks.CHAOS_PLANK, ModRarities.BLACK, true, 4, 0);
 
 	// ingots
-	public static final Item BASE_INGOT = new ModItemBase(OedldoedlResources.MODID, "base_ingot", ModTabs.TAB, ModRarities.WHITE, false, 1, 0);
-	public static final Item OEDLDOEDL_INGOT = new ModItemBase(OedldoedlResources.MODID, "oedldoedl_ingot", ModTabs.TAB, ModRarities.LIGHT_PURPLE, true, 3, 0);
-	public static final Item BEDROCKIUM_INGOT = new ModItemBase(OedldoedlResources.MODID, "bedrockium_ingot", ModTabs.TAB, ModRarities.LIGHT_PURPLE, false, 1, 0);
-	public static final Item CLOUDIUM_INGOT = new ModItemBase(OedldoedlResources.MODID, "cloudium_ingot", ModTabs.TAB, ModRarities.LIGHT_PURPLE, false, 1, 0);
-	public static final Item ELEVATIUM_INGOT = new ModItemBase(OedldoedlResources.MODID, "elevatium_ingot", ModTabs.TAB, ModRarities.LIGHT_PURPLE, false, 1, 0);
-	public static final Item SADISTIUM_INGOT = new ModItemBase(OedldoedlResources.MODID, "sadistium_ingot", ModTabs.TAB, ModRarities.LIGHT_PURPLE, false, 1, 0);
-	public static final Item DRUNKIUM_INGOT = new ModItemBase(OedldoedlResources.MODID, "drunkium_ingot", ModTabs.TAB, ModRarities.LIGHT_PURPLE, false, 2, 0);
-	public static final Item MONEY_INGOT = new ModItemBase(OedldoedlResources.MODID, "money_ingot", ModTabs.TAB, ModRarities.DARK_GREEN, false, 4, 0);
+	public static final Item BASE_INGOT = new ModItemBase(OedldoedlResources.MODID, "base_ingot", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
+	public static final Item OEDLDOEDL_INGOT = new ModItemBase(OedldoedlResources.MODID, "oedldoedl_ingot", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, true, 3, 0);
+	public static final Item BEDROCKIUM_INGOT = new ModItemBase(OedldoedlResources.MODID, "bedrockium_ingot", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, false, 1, 0);
+	public static final Item CLOUDIUM_INGOT = new ModItemBase(OedldoedlResources.MODID, "cloudium_ingot", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, false, 1, 0);
+	public static final Item ELEVATIUM_INGOT = new ModItemBase(OedldoedlResources.MODID, "elevatium_ingot", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, false, 1, 0);
+	public static final Item SADISTIUM_INGOT = new ModItemBase(OedldoedlResources.MODID, "sadistium_ingot", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, false, 1, 0);
+	public static final Item DRUNKIUM_INGOT = new ModItemBase(OedldoedlResources.MODID, "drunkium_ingot", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, false, 2, 0);
+	public static final Item MONEY_INGOT = new ModItemBase(OedldoedlResources.MODID, "money_ingot", OedldoedlResources.TAB, ModRarities.DARK_GREEN, false, 4, 0);
 
-	public static final Item GREMORIUM_INGOT = new ModItemIngotEffectBase(OedldoedlResources.MODID, "gremorium_ingot", ModTabs.TAB, MobEffects.HASTE, false, ModRarities.DARK_RED, false, 3, 1).setBeaconPayment();
-	public static final Item HIMEJIMARIUM_INGOT = new ModItemIngotEffectBase(OedldoedlResources.MODID, "himejimarium_ingot", ModTabs.TAB, MobEffects.RESISTANCE, false, ModRarities.DARK_BLUE, false, 3, 1).setBeaconPayment();
-	public static final Item TOUJOURIUM_INGOT = new ModItemIngotEffectBase(OedldoedlResources.MODID, "toujourium_ingot", ModTabs.TAB, MobEffects.SPEED, false, ModRarities.GRAY, false, 3, 1).setBeaconPayment();
-	public static final Item ARGENTORIUM_INGOT = new ModItemIngotEffectBase(OedldoedlResources.MODID, "argentorium_ingot", ModTabs.TAB, MobEffects.SATURATION, false, ModRarities.YELLOW, false, 3, 1).setBeaconPayment();
-	public static final Item QUARTARIUM_INGOT = new ModItemIngotEffectBase(OedldoedlResources.MODID, "quartarium_ingot", ModTabs.TAB, MobEffects.STRENGTH, false, ModRarities.BLUE, false, 3, 1).setBeaconPayment();
-	public static final Item NAGATORIUM_INGOT = new ModItemIngotEffectBase(OedldoedlResources.MODID, "nagatorium_ingot", ModTabs.TAB, MobEffects.UNLUCK, true, ModRarities.DARK_PURPLE, false, 3, 1).setBeaconPayment();
-	public static final Item SAKURAJIMARIUM_INGOT = new ModItemIngotEffectBase(OedldoedlResources.MODID, "sakurajimarium_ingot", ModTabs.TAB, MobEffects.JUMP_BOOST, false, ModRarities.DARK_GRAY, false, 3, 1).setBeaconPayment();
+	public static final Item GREMORIUM_INGOT = new ModItemIngotEffectBase(OedldoedlResources.MODID, "gremorium_ingot", OedldoedlResources.TAB, MobEffects.HASTE, false, ModRarities.DARK_RED, false, 3, 1).setBeaconPayment();
+	public static final Item HIMEJIMARIUM_INGOT = new ModItemIngotEffectBase(OedldoedlResources.MODID, "himejimarium_ingot", OedldoedlResources.TAB, MobEffects.RESISTANCE, false, ModRarities.DARK_BLUE, false, 3, 1).setBeaconPayment();
+	public static final Item TOUJOURIUM_INGOT = new ModItemIngotEffectBase(OedldoedlResources.MODID, "toujourium_ingot", OedldoedlResources.TAB, MobEffects.SPEED, false, ModRarities.GRAY, false, 3, 1).setBeaconPayment();
+	public static final Item ARGENTORIUM_INGOT = new ModItemIngotEffectBase(OedldoedlResources.MODID, "argentorium_ingot", OedldoedlResources.TAB, MobEffects.SATURATION, false, ModRarities.YELLOW, false, 3, 1).setBeaconPayment();
+	public static final Item QUARTARIUM_INGOT = new ModItemIngotEffectBase(OedldoedlResources.MODID, "quartarium_ingot", OedldoedlResources.TAB, MobEffects.STRENGTH, false, ModRarities.BLUE, false, 3, 1).setBeaconPayment();
+	public static final Item NAGATORIUM_INGOT = new ModItemIngotEffectBase(OedldoedlResources.MODID, "nagatorium_ingot", OedldoedlResources.TAB, MobEffects.UNLUCK, true, ModRarities.DARK_PURPLE, false, 3, 1).setBeaconPayment();
+	public static final Item SAKURAJIMARIUM_INGOT = new ModItemIngotEffectBase(OedldoedlResources.MODID, "sakurajimarium_ingot", OedldoedlResources.TAB, MobEffects.JUMP_BOOST, false, ModRarities.DARK_GRAY, false, 3, 1).setBeaconPayment();
 
-	public static final Item UNSTABLE_INGOT = new ModItemBase(OedldoedlResources.MODID, "unstable_ingot", ModTabs.TAB, ModRarities.RED, false, 3, 1);
-	public static final Item CHAOS_INGOT = new ModItemBase(OedldoedlResources.MODID, "chaos_ingot", ModTabs.TAB, ModRarities.BLACK, false, 5, 0);
+	public static final Item UNSTABLE_INGOT = new ModItemBase(OedldoedlResources.MODID, "unstable_ingot", OedldoedlResources.TAB, ModRarities.RED, false, 3, 1);
+	public static final Item CHAOS_INGOT = new ModItemBase(OedldoedlResources.MODID, "chaos_ingot", OedldoedlResources.TAB, ModRarities.BLACK, false, 5, 0);
 }
