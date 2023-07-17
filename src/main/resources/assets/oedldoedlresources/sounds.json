@@ -1,0 +1,16 @@
+{
+    "money": {
+        "category": "blocks",
+        "subtitle": "sound.oedldoedlresources.money",
+        "sounds": [
+            "oedldoedlresources:money"
+        ]
+    },
+    "wow": {
+        "category": "blocks",
+        "subtitle": "sound.oedldoedlresources.wow",
+        "sounds": [
+            "oedldoedlresources:wow"
+        ]
+    }
+}

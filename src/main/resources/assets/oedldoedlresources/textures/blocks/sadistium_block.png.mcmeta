@@ -1,0 +1,11 @@
+{
+	"ctm": 
+	{
+		"ctm_version": 1,
+		"type": "ctm",
+		"textures": 
+		[ 
+			"oedldoedlresources:block/sadistium_block_ctm" 
+		]
+	}
+}

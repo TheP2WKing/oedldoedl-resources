@@ -1,0 +1,31 @@
+{
+	"animation": 
+  	{
+	  	"frametime": 8,
+	  	"interpolate": true,
+	  	"frames": 
+	  	[
+			0,
+		 	1,
+		  	2,
+		  	3,
+		  	4,
+		 	5,
+		 	6,
+		  	7,
+		  	8,
+		  	9,
+		  	10
+	  	]
+	},
+
+	"ctm": 
+	{
+		"ctm_version": 1,
+		"type": "ctm",
+		"textures": 
+		[ 
+			"oedldoedlresources:block/oedldoedl_block_ctm" 
+		]
+	}
+}
