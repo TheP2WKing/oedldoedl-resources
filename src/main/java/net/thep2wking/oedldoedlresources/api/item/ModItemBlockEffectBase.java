@@ -66,6 +66,7 @@ public class ModItemBlockEffectBase extends ModItemBlockBase {
 					ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_BASE_AMPLIFIER,
 					ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_BASE_DURATION);
 		} else if (ModTooltips.showEffectTipKey() && ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_EFFECTS
+				&& !ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_WALKING_EFFECTS
 				&& ResourcesConfig.PROPERTIES.EFFECTS.EFFECTS_EBALED) {
 			ModTooltips.addKey(tooltip, ModTooltips.KEY_EFFECTS);
 		}
@@ -78,7 +79,7 @@ public class ModItemBlockEffectBase extends ModItemBlockBase {
 					ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_WALKING_BASE_DURATION);
 		} else if (ModTooltips.showEffectTipKey() && ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_WALKING_EFFECTS
 				&& ResourcesConfig.PROPERTIES.EFFECTS.EFFECTS_EBALED
-				&& !ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_WALKING_EFFECTS) {
+				&& !ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_EFFECTS) {
 			ModTooltips.addKey(tooltip, ModTooltips.KEY_EFFECTS);
 		}
 

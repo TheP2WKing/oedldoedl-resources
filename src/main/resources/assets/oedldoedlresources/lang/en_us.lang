@@ -4,6 +4,10 @@ itemGroup.oedldoedlresources.name=§dOedldoedl Resources
 # icons
 item.oedldoedlcore.resources_icon.annotation3=Version: §e1.12.2-3.0.0
 
+# sounds
+sound.oedldoedlresources.money=Cash rings
+sound.oedldoedlresources.wow=Amazed wow
+
 # base
 tile.oedldoedlresources.base_block.name=Block of Base
 tile.oedldoedlresources.base_block.tip1=It is so useless as it seems
@@ -80,7 +84,7 @@ item.oedldoedlresources.oedldoedl_star.tip3=why you want this so quick?
 item.oedldoedlresources.oedldoedl_star_shard=Oedldoedl Star Shard
 item.oedldoedlresources.oedldoedl_star_shard.tip1=The infinity in the weak hands of Flofino,
 item.oedldoedlresources.oedldoedl_star_shard.tip2=but it is not quite true.
-tile.oedldoedlresources.end_element_od=End Element OD
+tile.oedldoedlresources.end_element_od.name=End Element OD
 tile.oedldoedlresources.end_element_od.tip1=This is not even the end.
 tile.oedldoedlresources.end_element_od.tip2=Can be found in the end at any y-level.
 tile.oedldoedlresources.end_element_od.jei=Can be found in the end at any y-level if enabled. When broken, some random colored fragments will be dropped. Affected by fortune.

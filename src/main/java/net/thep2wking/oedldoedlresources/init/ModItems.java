@@ -6,7 +6,9 @@ import net.thep2wking.oedldoedlcore.api.item.ModItemBase;
 import net.thep2wking.oedldoedlcore.api.item.ModItemBlockBase;
 import net.thep2wking.oedldoedlcore.util.ModRarities;
 import net.thep2wking.oedldoedlresources.OedldoedlResources;
+import net.thep2wking.oedldoedlresources.api.item.ModItemBlockEffectBase;
 import net.thep2wking.oedldoedlresources.api.item.ModItemIngotEffectBase;
+import net.thep2wking.oedldoedlresources.content.itemblock.ItemBlockChaosPlank;
 
 public class ModItems {
 	// ore itemblocks
@@ -37,13 +39,13 @@ public class ModItems {
 	public static final Item DRUNKIUM_BLOCK = new ModItemBlockBase(ModBlocks.DRUNKIUM, ModRarities.LIGHT_PURPLE, false, 1, 0);
 	public static final Item MONEY_BLOCK = new ModItemBlockBase(ModBlocks.MONEY, ModRarities.DARK_GREEN, false, 3, 0);
 
-	public static final Item GREMORIUM_BLOCK = new ModItemBlockBase(ModBlocks.GREMORIUM, ModRarities.DARK_RED, false, 1, 0);
-	public static final Item HIMEJIMARIUM_BLOCK = new ModItemBlockBase(ModBlocks.HIMEJIMARIUM, ModRarities.DARK_BLUE, false, 1, 0);
-	public static final Item TOUJOURIUM_BLOCK = new ModItemBlockBase(ModBlocks.TOUJOURIUM, ModRarities.GRAY, false, 1, 0);
-	public static final Item ARGENTORIUM_BLOCK = new ModItemBlockBase(ModBlocks.ARGENTORIUM, ModRarities.YELLOW, false, 1, 0);
-	public static final Item QUARTARIUM_BLOCK = new ModItemBlockBase(ModBlocks.QUARTARIUM, ModRarities.BLUE, false, 1, 0);
-	public static final Item NAGATORIUM_BLOCK = new ModItemBlockBase(ModBlocks.NAGATORIUM, ModRarities.DARK_PURPLE, false, 1, 0);
-	public static final Item SAKURAJIMARIUM_BLOCK = new ModItemBlockBase(ModBlocks.SAKURAJIMARIUM, ModRarities.DARK_GRAY, false, 1, 0);
+	public static final Item GREMORIUM_BLOCK = new ModItemBlockEffectBase(ModBlocks.GREMORIUM, MobEffects.HASTE, false, ModRarities.DARK_RED, false, 1, 0);
+	public static final Item HIMEJIMARIUM_BLOCK = new ModItemBlockEffectBase(ModBlocks.HIMEJIMARIUM, MobEffects.RESISTANCE, false, ModRarities.DARK_BLUE, false, 1, 0);
+	public static final Item TOUJOURIUM_BLOCK = new ModItemBlockEffectBase(ModBlocks.TOUJOURIUM, MobEffects.SPEED, false, ModRarities.GRAY, false, 1, 0);
+	public static final Item ARGENTORIUM_BLOCK = new ModItemBlockEffectBase(ModBlocks.ARGENTORIUM, MobEffects.SATURATION, false, ModRarities.YELLOW, false, 1, 0);
+	public static final Item QUARTARIUM_BLOCK = new ModItemBlockEffectBase(ModBlocks.QUARTARIUM, MobEffects.STRENGTH, false, ModRarities.BLUE, false, 1, 0);
+	public static final Item NAGATORIUM_BLOCK = new ModItemBlockEffectBase(ModBlocks.NAGATORIUM, MobEffects.UNLUCK, true, ModRarities.DARK_PURPLE, false, 1, 0);
+	public static final Item SAKURAJIMARIUM_BLOCK = new ModItemBlockEffectBase(ModBlocks.SAKURAJIMARIUM, MobEffects.JUMP_BOOST, false, ModRarities.DARK_GRAY, false, 1, 0);
 
 	// gem itemblocks
 	public static final Item BASE_GEM_BLOCK = new ModItemBlockBase(ModBlocks.BASE_GEM, ModRarities.WHITE, false, 1, 0);
@@ -76,7 +78,7 @@ public class ModItems {
 
 	// misc itemblocks
 	public static final Item BALANCED_CLAY = new ModItemBlockBase(ModBlocks.BALANCED_CLAY, ModRarities.LIGHT_PURPLE, true, 2, 1);
-	public static final Item CHAOS_PLANK = new ModItemBlockBase(ModBlocks.CHAOS_PLANK, ModRarities.BLACK, false, 4, 0);
+	public static final Item CHAOS_PLANK = new ItemBlockChaosPlank(ModBlocks.CHAOS_PLANK, ModRarities.BLACK, false, 4, 0);
 
 	// ingots
 	public static final Item BASE_INGOT = new ModItemBase(OedldoedlResources.MODID, "base_ingot", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);

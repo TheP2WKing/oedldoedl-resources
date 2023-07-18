@@ -11,6 +11,7 @@ import net.thep2wking.oedldoedlcore.util.ModRegistryHelper;
 import net.thep2wking.oedldoedlresources.OedldoedlResources;
 import net.thep2wking.oedldoedlresources.init.ModBlocks;
 import net.thep2wking.oedldoedlresources.init.ModItems;
+import net.thep2wking.oedldoedlresources.init.ModSounds;
 
 @Mod.EventBusSubscriber
 public class ModRegistry {
@@ -185,5 +186,8 @@ public class ModRegistry {
 	@SubscribeEvent
 	public static void onSoundEventRegister(RegistryEvent.Register<SoundEvent> event) {
 		ModLogger.registeredSoundEventsLogger(OedldoedlResources.MODID);
+
+		ModRegistryHelper.registerSoundEvent(event, ModSounds.MONEY);
+		ModRegistryHelper.registerSoundEvent(event, ModSounds.WOW);
 	}
 }
