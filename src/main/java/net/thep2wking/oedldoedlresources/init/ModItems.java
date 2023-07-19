@@ -8,7 +8,20 @@ import net.thep2wking.oedldoedlcore.util.ModRarities;
 import net.thep2wking.oedldoedlresources.OedldoedlResources;
 import net.thep2wking.oedldoedlresources.api.item.ModItemBlockEffectBase;
 import net.thep2wking.oedldoedlresources.api.item.ModItemIngotEffectBase;
-import net.thep2wking.oedldoedlresources.content.itemblock.ItemBlockChaosPlank;
+import net.thep2wking.oedldoedlresources.content.item.ingot.ItemBedrockiumIngot;
+import net.thep2wking.oedldoedlresources.content.item.ingot.ItemCloudiumIngot;
+import net.thep2wking.oedldoedlresources.content.item.ingot.ItemDrunkiumIngot;
+import net.thep2wking.oedldoedlresources.content.item.ingot.ItemElevatiumIngot;
+import net.thep2wking.oedldoedlresources.content.item.ingot.ItemMoneyIngotItem;
+import net.thep2wking.oedldoedlresources.content.item.ingot.ItemSadistiumIngot;
+import net.thep2wking.oedldoedlresources.content.item.ingot.ItemUnstableIngotItem;
+import net.thep2wking.oedldoedlresources.content.itemblock.ingot.ItemBlockBedrockium;
+import net.thep2wking.oedldoedlresources.content.itemblock.ingot.ItemBlockCloudium;
+import net.thep2wking.oedldoedlresources.content.itemblock.ingot.ItemBlockDrunkium;
+import net.thep2wking.oedldoedlresources.content.itemblock.ingot.ItemBlockElevatium;
+import net.thep2wking.oedldoedlresources.content.itemblock.ingot.ItemBlockMoney;
+import net.thep2wking.oedldoedlresources.content.itemblock.ingot.ItemBlockSadistium;
+import net.thep2wking.oedldoedlresources.content.itemblock.misc.ItemBlockChaosPlank;
 
 public class ModItems {
 	// ore itemblocks
@@ -32,12 +45,12 @@ public class ModItems {
 	// ingot itemblocks
 	public static final Item BASE_BLOCK = new ModItemBlockBase(ModBlocks.BASE, ModRarities.WHITE, false, 2, 0);
 	public static final Item OEDLDOEDL_BLOCK = new ModItemBlockBase(ModBlocks.OEDLDOEDL, ModRarities.LIGHT_PURPLE, true, 2, 0);
-	public static final Item BEDROCKIUM_BLOCK = new ModItemBlockBase(ModBlocks.BEDROCKIUM, ModRarities.LIGHT_PURPLE, false, 1, 0);
-	public static final Item CLOUDIUM_BLOCK = new ModItemBlockBase(ModBlocks.CLOUDIUM, ModRarities.LIGHT_PURPLE, false, 1, 0);
-	public static final Item ELEVATIUM_BLOCK = new ModItemBlockBase(ModBlocks.ELEVATIUM, ModRarities.LIGHT_PURPLE, false, 1, 0);
-	public static final Item SADISTIUM_BLOCK = new ModItemBlockBase(ModBlocks.SADISTIUM, ModRarities.LIGHT_PURPLE, false, 1, 0);
-	public static final Item DRUNKIUM_BLOCK = new ModItemBlockBase(ModBlocks.DRUNKIUM, ModRarities.LIGHT_PURPLE, false, 1, 0);
-	public static final Item MONEY_BLOCK = new ModItemBlockBase(ModBlocks.MONEY, ModRarities.DARK_GREEN, false, 3, 0);
+	public static final Item BEDROCKIUM_BLOCK = new ItemBlockBedrockium(ModBlocks.BEDROCKIUM, MobEffects.SLOWNESS, MobEffects.HUNGER, true, ModRarities.LIGHT_PURPLE, false, 1, 0);
+	public static final Item CLOUDIUM_BLOCK = new ItemBlockCloudium(ModBlocks.CLOUDIUM, MobEffects.GLOWING, true, ModRarities.LIGHT_PURPLE, false, 1, 0);
+	public static final Item ELEVATIUM_BLOCK = new ItemBlockElevatium(ModBlocks.ELEVATIUM, MobEffects.LEVITATION, true, ModRarities.LIGHT_PURPLE, false, 1, 0);
+	public static final Item SADISTIUM_BLOCK = new ItemBlockSadistium(ModBlocks.SADISTIUM, MobEffects.MINING_FATIGUE, MobEffects.WEAKNESS, MobEffects.GLOWING, true, ModRarities.LIGHT_PURPLE, false, 1, 0);
+	public static final Item DRUNKIUM_BLOCK = new ItemBlockDrunkium(ModBlocks.DRUNKIUM, MobEffects.BLINDNESS, MobEffects.SLOWNESS, MobEffects.NAUSEA, MobEffects.WITHER, true, ModRarities.LIGHT_PURPLE, false, 1, 0);
+	public static final Item MONEY_BLOCK = new ItemBlockMoney(ModBlocks.MONEY, ModRarities.DARK_GREEN, false, 3, 0);
 
 	public static final Item GREMORIUM_BLOCK = new ModItemBlockEffectBase(ModBlocks.GREMORIUM, MobEffects.HASTE, false, ModRarities.DARK_RED, false, 1, 0);
 	public static final Item HIMEJIMARIUM_BLOCK = new ModItemBlockEffectBase(ModBlocks.HIMEJIMARIUM, MobEffects.RESISTANCE, false, ModRarities.DARK_BLUE, false, 1, 0);
@@ -83,12 +96,12 @@ public class ModItems {
 	// ingots
 	public static final Item BASE_INGOT = new ModItemBase(OedldoedlResources.MODID, "base_ingot", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
 	public static final Item OEDLDOEDL_INGOT = new ModItemBase(OedldoedlResources.MODID, "oedldoedl_ingot", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, true, 3, 0);
-	public static final Item BEDROCKIUM_INGOT = new ModItemBase(OedldoedlResources.MODID, "bedrockium_ingot", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, false, 1, 0);
-	public static final Item CLOUDIUM_INGOT = new ModItemBase(OedldoedlResources.MODID, "cloudium_ingot", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, false, 1, 0);
-	public static final Item ELEVATIUM_INGOT = new ModItemBase(OedldoedlResources.MODID, "elevatium_ingot", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, false, 1, 0);
-	public static final Item SADISTIUM_INGOT = new ModItemBase(OedldoedlResources.MODID, "sadistium_ingot", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, false, 1, 0);
-	public static final Item DRUNKIUM_INGOT = new ModItemBase(OedldoedlResources.MODID, "drunkium_ingot", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, false, 2, 0);
-	public static final Item MONEY_INGOT = new ModItemBase(OedldoedlResources.MODID, "money_ingot", OedldoedlResources.TAB, ModRarities.DARK_GREEN, false, 4, 0);
+	public static final Item BEDROCKIUM_INGOT = new ItemBedrockiumIngot(OedldoedlResources.MODID, "bedrockium_ingot", OedldoedlResources.TAB, MobEffects.SLOWNESS, MobEffects.HUNGER, true, ModRarities.LIGHT_PURPLE, false, 1, 0);
+	public static final Item CLOUDIUM_INGOT = new ItemCloudiumIngot(OedldoedlResources.MODID, "cloudium_ingot", OedldoedlResources.TAB, MobEffects.GLOWING, true, ModRarities.LIGHT_PURPLE, false, 1, 0);
+	public static final Item ELEVATIUM_INGOT = new ItemElevatiumIngot(OedldoedlResources.MODID, "elevatium_ingot", OedldoedlResources.TAB, MobEffects.LEVITATION, true, ModRarities.LIGHT_PURPLE, false, 1, 0);
+	public static final Item SADISTIUM_INGOT = new ItemSadistiumIngot(OedldoedlResources.MODID, "sadistium_ingot", OedldoedlResources.TAB, MobEffects.MINING_FATIGUE, MobEffects.WEAKNESS, MobEffects.GLOWING, true, ModRarities.LIGHT_PURPLE, false, 1, 0);
+	public static final Item DRUNKIUM_INGOT = new ItemDrunkiumIngot(OedldoedlResources.MODID, "drunkium_ingot", OedldoedlResources.TAB, MobEffects.BLINDNESS, MobEffects.SLOWNESS,  MobEffects.NAUSEA, MobEffects.WITHER, true, ModRarities.LIGHT_PURPLE, false, 2, 0);
+	public static final Item MONEY_INGOT = new ItemMoneyIngotItem(OedldoedlResources.MODID, "money_ingot", OedldoedlResources.TAB, ModRarities.DARK_GREEN, false, 4, 0);
 
 	public static final Item GREMORIUM_INGOT = new ModItemIngotEffectBase(OedldoedlResources.MODID, "gremorium_ingot", OedldoedlResources.TAB, MobEffects.HASTE, false, ModRarities.DARK_RED, false, 3, 1).setBeaconPayment();
 	public static final Item HIMEJIMARIUM_INGOT = new ModItemIngotEffectBase(OedldoedlResources.MODID, "himejimarium_ingot", OedldoedlResources.TAB, MobEffects.RESISTANCE, false, ModRarities.DARK_BLUE, false, 3, 1).setBeaconPayment();
@@ -98,6 +111,6 @@ public class ModItems {
 	public static final Item NAGATORIUM_INGOT = new ModItemIngotEffectBase(OedldoedlResources.MODID, "nagatorium_ingot", OedldoedlResources.TAB, MobEffects.UNLUCK, true, ModRarities.DARK_PURPLE, false, 3, 1).setBeaconPayment();
 	public static final Item SAKURAJIMARIUM_INGOT = new ModItemIngotEffectBase(OedldoedlResources.MODID, "sakurajimarium_ingot", OedldoedlResources.TAB, MobEffects.JUMP_BOOST, false, ModRarities.DARK_GRAY, false, 3, 1).setBeaconPayment();
 
-	public static final Item UNSTABLE_INGOT = new ModItemBase(OedldoedlResources.MODID, "unstable_ingot", OedldoedlResources.TAB, ModRarities.RED, false, 3, 1);
+	public static final Item UNSTABLE_INGOT = new ItemUnstableIngotItem(OedldoedlResources.MODID, "unstable_ingot", OedldoedlResources.TAB, ModRarities.RED, false, 3, 1);
 	public static final Item CHAOS_INGOT = new ModItemBase(OedldoedlResources.MODID, "chaos_ingot", OedldoedlResources.TAB, ModRarities.BLACK, false, 5, 0);
 }

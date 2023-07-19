@@ -10,36 +10,47 @@ import net.thep2wking.oedldoedlcore.api.block.ModBlockOreBase;
 import net.thep2wking.oedldoedlcore.util.ModToolTypes;
 import net.thep2wking.oedldoedlresources.OedldoedlResources;
 import net.thep2wking.oedldoedlresources.api.block.ModBlockEffectBase;
-import net.thep2wking.oedldoedlresources.content.block.BlockChaosPlank;
+import net.thep2wking.oedldoedlresources.content.block.ingot.BlockBedrockium;
+import net.thep2wking.oedldoedlresources.content.block.ingot.BlockChaosPlank;
+import net.thep2wking.oedldoedlresources.content.block.ingot.BlockCloudium;
+import net.thep2wking.oedldoedlresources.content.block.ingot.BlockDrunkium;
+import net.thep2wking.oedldoedlresources.content.block.ingot.BlockElevatium;
+import net.thep2wking.oedldoedlresources.content.block.ingot.BlockMoney;
+import net.thep2wking.oedldoedlresources.content.block.ingot.BlockSadistium;
+import net.thep2wking.oedldoedlresources.content.block.ore.BlockEnderOre;
+import net.thep2wking.oedldoedlresources.content.block.ore.BlockGunpowderOre;
+import net.thep2wking.oedldoedlresources.content.block.ore.BlockNetherGemOre;
+import net.thep2wking.oedldoedlresources.content.block.ore.BlockRandomiteOre;
+import net.thep2wking.oedldoedlresources.content.block.ore.BlockSaltOre;
 
 public class ModBlocks {
 	// ores
 	public static final Block BASE_ORE = new ModBlockOreBase(OedldoedlResources.MODID, "base_ore", OedldoedlResources.TAB, 0, 0, Material.ROCK, SoundType.STONE, MapColor.STONE, 0, ModToolTypes.PICKAXE, 2f, 4f, 0);
 	public static final Block OEDLDOEDL_ORE = new ModBlockOreBase(OedldoedlResources.MODID, "oedldoedl_ore", OedldoedlResources.TAB, 0, 0, Material.ROCK, SoundType.STONE, MapColor.STONE, 3, ModToolTypes.PICKAXE, 12f, 24f, 1);
-	public static final Block RANDOMITE_ORE = new ModBlockOreBase(OedldoedlResources.MODID, "randomite_ore", OedldoedlResources.TAB, 0, 2, Material.ROCK, SoundType.STONE, MapColor.STONE, 2, ModToolTypes.PICKAXE, 3f, 6f, 0);
-	public static final Block ENDER_ORE = new ModBlockOreBase(OedldoedlResources.MODID, "ender_ore", OedldoedlResources.TAB, 2, 4, Material.ROCK, SoundType.STONE, MapColor.STONE, 1, ModToolTypes.PICKAXE, 4f, 8f, 0);
-	public static final Block GUNPOWDER_ORE = new ModBlockOreBase(OedldoedlResources.MODID, "gunpowder_ore", OedldoedlResources.TAB, 1, 3, Material.ROCK, SoundType.STONE, MapColor.STONE, 1, ModToolTypes.PICKAXE, 3f, 6f, 0);
-	public static final Block SALT_ORE = new ModBlockOreBase(OedldoedlResources.MODID, "salt_ore", OedldoedlResources.TAB, 0, 2, Material.ROCK, SoundType.STONE, MapColor.STONE, 1, ModToolTypes.PICKAXE, 3f, 3f, 0);
+	public static final Block RANDOMITE_ORE = new BlockRandomiteOre(OedldoedlResources.MODID, "randomite_ore", OedldoedlResources.TAB, 0, 2, Material.ROCK, SoundType.STONE, MapColor.STONE, 2, ModToolTypes.PICKAXE, 3f, 6f, 0);
+	public static final Block ENDER_ORE = new BlockEnderOre(OedldoedlResources.MODID, "ender_ore", OedldoedlResources.TAB, 2, 4, Material.ROCK, SoundType.STONE, MapColor.STONE, 1, ModToolTypes.PICKAXE, 4f, 8f, 0);
+	public static final Block GUNPOWDER_ORE = new BlockGunpowderOre(OedldoedlResources.MODID, "gunpowder_ore", OedldoedlResources.TAB, 1, 3, Material.ROCK, SoundType.STONE, MapColor.STONE, 1, ModToolTypes.PICKAXE, 3f, 6f, 0);
+	public static final Block SALT_ORE = new BlockSaltOre(OedldoedlResources.MODID, "salt_ore", OedldoedlResources.TAB, 0, 2, Material.ROCK, SoundType.STONE, MapColor.STONE, 1, ModToolTypes.PICKAXE, 3f, 3f, 0);
 
-	public static final Block NETHER_GREMORIUM_ORE = new ModBlockOreBase(OedldoedlResources.MODID, "nether_gremorium_ore", OedldoedlResources.TAB, 8, 20, Material.ROCK, SoundType.STONE, MapColor.NETHERRACK, 3, ModToolTypes.PICKAXE, 35f, 70f, 0);
-	public static final Block NETHER_HIMEJIMARIUM_ORE = new ModBlockOreBase(OedldoedlResources.MODID, "nether_himejimarium_ore", OedldoedlResources.TAB, 8, 20, Material.ROCK, SoundType.STONE, MapColor.NETHERRACK, 3, ModToolTypes.PICKAXE, 35f, 70f, 0);
-	public static final Block NETHER_TOUJOURIUM_ORE = new ModBlockOreBase(OedldoedlResources.MODID, "nether_toujourium_ore", OedldoedlResources.TAB, 8, 20, Material.ROCK, SoundType.STONE, MapColor.NETHERRACK, 3, ModToolTypes.PICKAXE, 35f, 70f, 0);
-	public static final Block NETHER_ARGENTORIUM_ORE = new ModBlockOreBase(OedldoedlResources.MODID, "nether_argentorium_ore", OedldoedlResources.TAB, 8, 20, Material.ROCK, SoundType.STONE, MapColor.NETHERRACK, 3, ModToolTypes.PICKAXE, 35f, 70f, 0);
-	public static final Block NETHER_QUARTARIUM_ORE = new ModBlockOreBase(OedldoedlResources.MODID, "nether_quartarium_ore", OedldoedlResources.TAB, 8, 20, Material.ROCK, SoundType.STONE, MapColor.NETHERRACK, 3, ModToolTypes.PICKAXE, 35f, 70f, 0);
-	public static final Block NETHER_NAGATORIUM_ORE = new ModBlockOreBase(OedldoedlResources.MODID, "nether_nagatorium_ore", OedldoedlResources.TAB, 8, 20, Material.ROCK, SoundType.STONE, MapColor.NETHERRACK, 3, ModToolTypes.PICKAXE, 35f, 70f, 0);
-	public static final Block NETHER_SAKURAJIMARIUM_ORE = new ModBlockOreBase(OedldoedlResources.MODID, "nether_sakurajimarium_ore", OedldoedlResources.TAB, 8, 20, Material.ROCK, SoundType.STONE, MapColor.NETHERRACK, 3, ModToolTypes.PICKAXE, 35f, 70f, 0);
+	public static final Block NETHER_GREMORIUM_ORE = new BlockNetherGemOre(OedldoedlResources.MODID, "nether_gremorium_ore", OedldoedlResources.TAB, 8, 20, Material.ROCK, SoundType.STONE, MapColor.NETHERRACK, 3, ModToolTypes.PICKAXE, 35f, 70f, 0);
+	public static final Block NETHER_HIMEJIMARIUM_ORE = new BlockNetherGemOre(OedldoedlResources.MODID, "nether_himejimarium_ore", OedldoedlResources.TAB, 8, 20, Material.ROCK, SoundType.STONE, MapColor.NETHERRACK, 3, ModToolTypes.PICKAXE, 35f, 70f, 0);
+	public static final Block NETHER_TOUJOURIUM_ORE = new BlockNetherGemOre(OedldoedlResources.MODID, "nether_toujourium_ore", OedldoedlResources.TAB, 8, 20, Material.ROCK, SoundType.STONE, MapColor.NETHERRACK, 3, ModToolTypes.PICKAXE, 35f, 70f, 0);
+	public static final Block NETHER_ARGENTORIUM_ORE = new BlockNetherGemOre(OedldoedlResources.MODID, "nether_argentorium_ore", OedldoedlResources.TAB, 8, 20, Material.ROCK, SoundType.STONE, MapColor.NETHERRACK, 3, ModToolTypes.PICKAXE, 35f, 70f, 0);
+	public static final Block NETHER_QUARTARIUM_ORE = new BlockNetherGemOre(OedldoedlResources.MODID, "nether_quartarium_ore", OedldoedlResources.TAB, 8, 20, Material.ROCK, SoundType.STONE, MapColor.NETHERRACK, 3, ModToolTypes.PICKAXE, 35f, 70f, 0);
+	public static final Block NETHER_NAGATORIUM_ORE = new BlockNetherGemOre(OedldoedlResources.MODID, "nether_nagatorium_ore", OedldoedlResources.TAB, 8, 20, Material.ROCK, SoundType.STONE, MapColor.NETHERRACK, 3, ModToolTypes.PICKAXE, 35f, 70f, 0);
+	public static final Block NETHER_SAKURAJIMARIUM_ORE = new BlockNetherGemOre(OedldoedlResources.MODID, "nether_sakurajimarium_ore", OedldoedlResources.TAB, 8, 20, Material.ROCK, SoundType.STONE, MapColor.NETHERRACK, 3, ModToolTypes.PICKAXE, 35f, 70f, 0);
 	
 	public static final Block END_ELEMENT_OD = new ModBlockOreBase(OedldoedlResources.MODID, "end_element_od", OedldoedlResources.TAB, 10, 16, Material.ROCK, SoundType.STONE, MapColor.SAND, 4, ModToolTypes.PICKAXE, 50f, 100f, 1);
 	
 	// ingots
 	public static final Block BASE = new ModBlockBase(OedldoedlResources.MODID, "base_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.IRON, 0, ModToolTypes.PICKAXE, 5f, 10f, 0).setBeaconBase();
 	public static final Block OEDLDOEDL = new ModBlockBase(OedldoedlResources.MODID, "oedldoedl_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.YELLOW, 3, ModToolTypes.PICKAXE, 20f, 40f, 1).setBeaconBase();
-	public static final Block BEDROCKIUM = new ModBlockBase(OedldoedlResources.MODID, "bedrockium_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.BLACK, 6, ModToolTypes.PICKAXE, 150f, 300f, 0).setBeaconBase();
-	public static final Block CLOUDIUM = new ModBlockBase(OedldoedlResources.MODID, "cloudium_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.SNOW, 1, ModToolTypes.PICKAXE, 5f, 10f, 0).setBeaconBase();
-	public static final Block ELEVATIUM = new ModBlockBase(OedldoedlResources.MODID, "elevatium_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.PURPLE, 1, ModToolTypes.PICKAXE, 10f, 20f, 0).setBeaconBase();
-	public static final Block SADISTIUM = new ModBlockBase(OedldoedlResources.MODID, "sadistium_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.BROWN, 2, ModToolTypes.PICKAXE, 15f, 30f, 0).setBeaconBase();
-	public static final Block DRUNKIUM = new ModBlockBase(OedldoedlResources.MODID, "drunkium_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.CYAN, 2, ModToolTypes.PICKAXE, 15f, 30f, 0).setBeaconBase();
-	public static final Block MONEY = new ModBlockBase(OedldoedlResources.MODID, "money_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.LIME, 3, ModToolTypes.PICKAXE, 25f, 50f, 0).setBeaconBase();
+	public static final Block BEDROCKIUM = new BlockBedrockium(OedldoedlResources.MODID, "bedrockium_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.BLACK, 6, ModToolTypes.PICKAXE, 150f, 300f, 0, MobEffects.SLOWNESS, MobEffects.HUNGER, true).setBeaconBase();
+	public static final Block CLOUDIUM = new BlockCloudium(OedldoedlResources.MODID, "cloudium_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.SNOW, 1, ModToolTypes.PICKAXE, 5f, 10f, 0, MobEffects.GLOWING, true).setBeaconBase();
+	public static final Block ELEVATIUM = new BlockElevatium(OedldoedlResources.MODID, "elevatium_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.PURPLE, 1, ModToolTypes.PICKAXE, 10f, 20f, 0, MobEffects.LEVITATION, true).setBeaconBase();
+	public static final Block SADISTIUM = new BlockSadistium(OedldoedlResources.MODID, "sadistium_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.BROWN, 2, ModToolTypes.PICKAXE, 15f, 30f, 0, MobEffects.MINING_FATIGUE, MobEffects.WEAKNESS, MobEffects.GLOWING, true).setBeaconBase();
+	public static final Block DRUNKIUM = new BlockDrunkium(OedldoedlResources.MODID, "drunkium_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.CYAN, 2, ModToolTypes.PICKAXE, 15f, 30f, 0, MobEffects.BLINDNESS, MobEffects.SLOWNESS, MobEffects.NAUSEA, MobEffects.WITHER, true).setBeaconBase();
+	public static final Block MONEY = new BlockMoney(OedldoedlResources.MODID, "money_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.LIME, 3, ModToolTypes.PICKAXE, 25f, 50f, 0).setBeaconBase();
 
 	public static final Block GREMORIUM = new ModBlockEffectBase(OedldoedlResources.MODID, "gremorium_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.NETHERRACK, 4, ModToolTypes.PICKAXE, 40f, 80f, 0, MobEffects.HASTE, false).setBeaconBase();
 	public static final Block HIMEJIMARIUM = new ModBlockEffectBase(OedldoedlResources.MODID, "himejimarium_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.BLUE_STAINED_HARDENED_CLAY, 4, ModToolTypes.PICKAXE, 40f, 80f, 0, MobEffects.RESISTANCE, false).setBeaconBase();

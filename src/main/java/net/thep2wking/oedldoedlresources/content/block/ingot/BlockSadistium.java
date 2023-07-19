@@ -1,4 +1,4 @@
-package net.thep2wking.oedldoedlresources.api.block;
+package net.thep2wking.oedldoedlresources.content.block.ingot;
 
 import mcjty.theoneprobe.api.IProbeHitData;
 import mcjty.theoneprobe.api.IProbeInfo;
@@ -15,24 +15,23 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.thep2wking.oedldoedlcore.api.block.ModBlockBase;
-import net.thep2wking.oedldoedlcore.integration.top.ITOPInfoProvider;
 import net.thep2wking.oedldoedlcore.util.ModToolTypes;
 import net.thep2wking.oedldoedlcore.util.ModTooltips;
 import net.thep2wking.oedldoedlcore.util.ModTopTooltips;
+import net.thep2wking.oedldoedlresources.api.block.ModBlockEffectBase;
 import net.thep2wking.oedldoedlresources.config.ResourcesConfig;
 
-public class ModBlockEffectBase extends ModBlockBase implements ITOPInfoProvider {
-	public final Potion effect;
-	public final boolean isDebuff;
+public class BlockSadistium extends ModBlockEffectBase {
+	public final Potion effect2;
+	public final Potion effect3;
 
-	public ModBlockEffectBase(String modid, String name, CreativeTabs tab, Material material, SoundType sound,
-			MapColor mapColor,
-			int harvestLevel, ModToolTypes toolType, float hardness, float resistance, float lightLevel, Potion effect,
-			boolean isDebuff) {
-		super(modid, name, tab, material, sound, mapColor, harvestLevel, toolType, hardness, resistance, lightLevel);
-		this.effect = effect;
-		this.isDebuff = isDebuff;
+	public BlockSadistium(String modid, String name, CreativeTabs tab, Material material, SoundType sound,
+			MapColor mapColor, int harvestLevel, ModToolTypes toolType, float hardness, float resistance,
+			float lightLevel, Potion effect, Potion effect2, Potion effect3, boolean isDebuff) {
+		super(modid, name, tab, material, sound, mapColor, harvestLevel, toolType, hardness, resistance, lightLevel,
+				effect, isDebuff);
+		this.effect2 = effect2;
+		this.effect3 = effect3;
 	}
 
 	@Override
@@ -41,8 +40,25 @@ public class ModBlockEffectBase extends ModBlockBase implements ITOPInfoProvider
 				&& ResourcesConfig.PROPERTIES.EFFECTS.EFFECTS_EBALED) {
 			((EntityLivingBase) entityIn).addPotionEffect(
 					new PotionEffect(effect, ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_WALKING_BASE_DURATION,
-							ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_WALKING_BASE_AMPLIFIER - 1, false, false));
+							ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_WALKING_BASE_AMPLIFIER - 1 + 2, false, false));
+			((EntityLivingBase) entityIn).addPotionEffect(
+					new PotionEffect(effect2, ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_WALKING_BASE_DURATION,
+							ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_WALKING_BASE_AMPLIFIER - 1 + 1, false, false));
+			((EntityLivingBase) entityIn).addPotionEffect(
+					new PotionEffect(effect3, 10, 0, false, false));
 		}
+	}
+
+	public int getEffect() {
+		return ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_WALKING_BASE_AMPLIFIER + 2;
+	}
+
+	public int getEffect2() {
+		return ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_WALKING_BASE_AMPLIFIER + 1;
+	}
+
+	public int getEffect3() {
+		return 1;
 	}
 
 	@Override
@@ -53,8 +69,11 @@ public class ModBlockEffectBase extends ModBlockBase implements ITOPInfoProvider
 			ModTopTooltips.addEffectHeader(mode, probeInfo, player, world, blockState, data,
 					ModTooltips.EFFECT_WALKING_ON);
 			ModTopTooltips.addPotionEffect(mode, probeInfo, player, world, blockState, data, effect.getName(),
-					isDebuff, ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_WALKING_BASE_AMPLIFIER,
-					ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_WALKING_BASE_DURATION);
+					isDebuff, getEffect(), ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_BASE_DURATION);
+			ModTopTooltips.addPotionEffect(mode, probeInfo, player, world, blockState, data, effect2.getName(),
+					isDebuff, getEffect2(), ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_BASE_DURATION);
+			ModTopTooltips.addPotionEffect(mode, probeInfo, player, world, blockState, data, effect3.getName(),
+					isDebuff, getEffect3(), 20);
 		} else if (ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_WALKING_EFFECTS
 				&& ResourcesConfig.PROPERTIES.EFFECTS.EFFECTS_EBALED) {
 			ModTopTooltips.addKey(mode, probeInfo, player, world, blockState, data, ModTopTooltips.TOP_EFFECTS);

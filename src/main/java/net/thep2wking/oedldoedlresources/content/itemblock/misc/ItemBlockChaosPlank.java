@@ -1,4 +1,4 @@
-package net.thep2wking.oedldoedlresources.content.itemblock;
+package net.thep2wking.oedldoedlresources.content.itemblock.misc;
 
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
@@ -13,19 +13,17 @@ import net.thep2wking.oedldoedlcore.api.item.ModItemBlockBase;
 import net.thep2wking.oedldoedlresources.init.ModSounds;
 
 public class ItemBlockChaosPlank extends ModItemBlockBase {
-	public ItemBlockChaosPlank(Block block, EnumRarity rarity, boolean hasEffect, int tooltipLines, int annotationLines) {
+	public ItemBlockChaosPlank(Block block, EnumRarity rarity, boolean hasEffect, int tooltipLines,
+			int annotationLines) {
 		super(block, rarity, hasEffect, tooltipLines, annotationLines);
 	}
 
-		@Override
+	@Override
 	public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
 		ItemStack itemstack = playerIn.getHeldItem(handIn);
-		if (true) {
-			if (handIn == EnumHand.MAIN_HAND) {
-				worldIn.playSound(null, playerIn.getPosition(), ModSounds.WOW, SoundCategory.BLOCKS, 1, 1);
-			}
-			return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, itemstack);
+		if (handIn == EnumHand.MAIN_HAND) {
+			worldIn.playSound(null, playerIn.getPosition(), ModSounds.WOW, SoundCategory.BLOCKS, 1f, 1f);
 		}
-		return new ActionResult<ItemStack>(EnumActionResult.PASS, itemstack);
+		return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, itemstack);
 	}
 }

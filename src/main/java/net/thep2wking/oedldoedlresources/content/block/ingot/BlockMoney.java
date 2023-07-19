@@ -1,4 +1,4 @@
-package net.thep2wking.oedldoedlresources.content.block;
+package net.thep2wking.oedldoedlresources.content.block.ingot;
 
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;
@@ -15,8 +15,8 @@ import net.thep2wking.oedldoedlcore.api.block.ModBlockBase;
 import net.thep2wking.oedldoedlcore.util.ModToolTypes;
 import net.thep2wking.oedldoedlresources.init.ModSounds;
 
-public class BlockChaosPlank extends ModBlockBase {
-	public BlockChaosPlank(String modid, String name, CreativeTabs tab, Material material, SoundType sound,
+public class BlockMoney extends ModBlockBase {
+	public BlockMoney(String modid, String name, CreativeTabs tab, Material material, SoundType sound,
 			MapColor mapColor, int harvestLevel, ModToolTypes toolType, float hardness, float resistance,
 			float lightLevel) {
 		super(modid, name, tab, material, sound, mapColor, harvestLevel, toolType, hardness, resistance, lightLevel);
@@ -25,14 +25,11 @@ public class BlockChaosPlank extends ModBlockBase {
 	@Override
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn,
 			EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
-		if (true) {
-			if (!worldIn.isRemote) {
-				if (hand == EnumHand.MAIN_HAND) {
-					worldIn.playSound(null, pos, ModSounds.WOW, SoundCategory.BLOCKS, 1f, 1f);
-				}
+		if (!worldIn.isRemote) {
+			if (hand == EnumHand.MAIN_HAND) {
+				worldIn.playSound(null, pos, ModSounds.MONEY, SoundCategory.BLOCKS, 1f, 1f);
 			}
-			return true;
 		}
-		return false;
+		return true;
 	}
 }

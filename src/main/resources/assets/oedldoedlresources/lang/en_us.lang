@@ -371,14 +371,14 @@ tile.oedldoedlresources.randomite_ore.tip2=Can be found at any y-level.
 tile.oedldoedlresources.randomite_ore.jei=Can be found in the overworld at any y-level if enabled. When broken, some random resources will be dropped.
 
 # ender
-tile.oedldoedlresources.ender_ore.name=Ender Pearl Ore
+tile.oedldoedlresources.ender_ore.name=Ender Ore
 tile.oedldoedlresources.ender_ore.tip1=Previously known as TelepOREtation.
 tile.oedldoedlresources.ender_ore.tip2=Can be found between y-level 10 and 20.
-tile.oedldoedlresources.ender_ore.jei=Can be found in the overworld between y-level 10 and 20 if enabled. When broken, some ender pearl dust will be dropped. Affected by fortune.
-item.oedldoedlresources.ender_dust.name=Ender Pearl Dust
-item.oedldoedlresources.ender_dust.annotation1=Droped by: §bEnder Pearl Ore
+tile.oedldoedlresources.ender_ore.jei=Can be found in the overworld between y-level 10 and 20 if enabled. When broken, some ender dust will be dropped. Affected by fortune.
+item.oedldoedlresources.ender_dust.name=Ender Dust
+item.oedldoedlresources.ender_dust.annotation1=Droped by: §bEnder Ore
 item.oedldoedlresources.ender_dust.tip1=Enderman hates this trick.
-item.oedldoedlresources.ender_nugget.name=Ender Pearl Nugget
+item.oedldoedlresources.ender_nugget.name=Ender Nugget
 item.oedldoedlresources.ender_nugget.tip1=Simply amazing.
 
 # gunpoder

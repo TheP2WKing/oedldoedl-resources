@@ -1,4 +1,4 @@
-package net.thep2wking.oedldoedlresources.api.item;
+package net.thep2wking.oedldoedlresources.content.itemblock.ingot;
 
 import java.util.List;
 
@@ -15,30 +15,46 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import net.thep2wking.oedldoedlcore.api.item.ModItemBlockBase;
 import net.thep2wking.oedldoedlcore.config.CoreConfig;
 import net.thep2wking.oedldoedlcore.util.ModTooltips;
+import net.thep2wking.oedldoedlresources.api.item.ModItemBlockEffectBase;
 import net.thep2wking.oedldoedlresources.config.ResourcesConfig;
 
-public class ModItemBlockEffectBase extends ModItemBlockBase {
-	public final Potion effect;
-	public final boolean isDebuff;
+public class ItemBlockBedrockium extends ModItemBlockEffectBase {
+	public final Potion effect2;
 
-	public ModItemBlockEffectBase(Block block, Potion effect, boolean isDebuff, EnumRarity rarity,
+	public ItemBlockBedrockium(Block block, Potion effect, Potion effect2, boolean isDebuff, EnumRarity rarity,
 			boolean hasEffect, int tooltipLines, int annotationLines) {
-		super(block, rarity, hasEffect, tooltipLines, annotationLines);
-		this.effect = effect;
-		this.isDebuff = isDebuff;
+		super(block, effect, isDebuff, rarity, hasEffect, tooltipLines, annotationLines);
+		this.effect2 = effect2;
 	}
 
 	@Override
 	public void onUpdate(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected) {
 		if (entityIn instanceof EntityLivingBase && ResourcesConfig.PROPERTIES.EFFECTS.EFFECTS_EBALED
 				&& ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_EFFECTS) {
+			((EntityLivingBase) entityIn).addPotionEffect(new PotionEffect(effect, 10,
+					ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_BASE_AMPLIFIER - 1 + 4, false, false));
 			((EntityLivingBase) entityIn).addPotionEffect(
-					new PotionEffect(effect, ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_BASE_DURATION,
-							ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_BASE_AMPLIFIER - 1, false, false));
+					new PotionEffect(effect2, ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_BASE_DURATION,
+							ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_BASE_AMPLIFIER - 1 + 2, false, false));
 		}
+	}
+
+	public int getEffect() {
+		return ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_BASE_AMPLIFIER + 4;
+	}
+
+	public int getEffect2() {
+		return ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_BASE_AMPLIFIER + 2;
+	}
+
+	public int getEffect3() {
+		return ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_WALKING_BASE_AMPLIFIER + 4;
+	}
+
+	public int getEffect4() {
+		return ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_WALKING_BASE_AMPLIFIER + 2;
 	}
 
 	@Override
@@ -57,12 +73,11 @@ public class ModItemBlockEffectBase extends ModItemBlockBase {
 			ModTooltips.addKey(tooltip, ModTooltips.KEY_INFO);
 		}
 
-		if (ModTooltips.showEffectTip()
-				&& ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_EFFECTS
+		if (ModTooltips.showEffectTip() && ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_EFFECTS
 				&& ResourcesConfig.PROPERTIES.EFFECTS.EFFECTS_EBALED) {
 			ModTooltips.addEffectHeader(tooltip, ModTooltips.EFFECT_GIVEN);
-			ModTooltips.addPotionEffect(tooltip, effect.getName(), isDebuff,
-					ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_BASE_AMPLIFIER,
+			ModTooltips.addPotionEffect(tooltip, effect.getName(), isDebuff, getEffect(), 20);
+			ModTooltips.addPotionEffect(tooltip, effect2.getName(), isDebuff, getEffect2(),
 					ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_BASE_DURATION);
 		} else if (ModTooltips.showEffectTipKey() && ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_EFFECTS
 				&& !ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_WALKING_EFFECTS
@@ -73,8 +88,8 @@ public class ModItemBlockEffectBase extends ModItemBlockBase {
 		if (ModTooltips.showEffectTip() && ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_WALKING_EFFECTS
 				&& ResourcesConfig.PROPERTIES.EFFECTS.EFFECTS_EBALED) {
 			ModTooltips.addEffectHeader(tooltip, ModTooltips.EFFECT_WALKING_ON);
-			ModTooltips.addPotionEffect(tooltip, effect.getName(), isDebuff,
-					ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_WALKING_BASE_AMPLIFIER,
+			ModTooltips.addPotionEffect(tooltip, effect.getName(), isDebuff, getEffect3(), 20);
+			ModTooltips.addPotionEffect(tooltip, effect2.getName(), isDebuff, getEffect4(),
 					ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_WALKING_BASE_DURATION);
 		} else if (ModTooltips.showEffectTipKey() && ResourcesConfig.PROPERTIES.EFFECTS.BLOCKS.BLOCK_WALKING_EFFECTS
 				&& ResourcesConfig.PROPERTIES.EFFECTS.EFFECTS_EBALED

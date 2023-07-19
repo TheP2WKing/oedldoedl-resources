@@ -29,6 +29,7 @@ public class ModRegistry {
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.NETHER_GREMORIUM_ORE);
 		ModRegistryHelper.registerBlock(event, ModBlocks.NETHER_HIMEJIMARIUM_ORE);
+		ModRegistryHelper.registerBlock(event, ModBlocks.NETHER_TOUJOURIUM_ORE);
 		ModRegistryHelper.registerBlock(event, ModBlocks.NETHER_ARGENTORIUM_ORE);
 		ModRegistryHelper.registerBlock(event, ModBlocks.NETHER_QUARTARIUM_ORE);
 		ModRegistryHelper.registerBlock(event, ModBlocks.NETHER_NAGATORIUM_ORE);
