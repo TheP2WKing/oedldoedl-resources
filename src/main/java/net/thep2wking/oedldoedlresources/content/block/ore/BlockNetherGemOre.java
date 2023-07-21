@@ -24,19 +24,19 @@ public class BlockNetherGemOre extends ModBlockOreBase {
 	@Override
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
 		if (this == ModBlocks.NETHER_GREMORIUM_ORE) {
-			return ModItems.BALANCED_CLAY;
+			return ModItems.GREMORIUM_SHARD;
 		} else if (this == ModBlocks.NETHER_HIMEJIMARIUM_ORE) {
-			return ModItems.BALANCED_CLAY;
+			return ModItems.HIMEJIMARIUM_SHARD;
 		} else if (this == ModBlocks.NETHER_TOUJOURIUM_ORE) {
-			return ModItems.BALANCED_CLAY;
+			return ModItems.TOUJOURIUM_SHARD;
 		} else if (this == ModBlocks.NETHER_ARGENTORIUM_ORE) {
-			return ModItems.BALANCED_CLAY;
+			return ModItems.ARGENTORIUM_SHARD;
 		} else if (this == ModBlocks.NETHER_QUARTARIUM_ORE) {
-			return ModItems.BALANCED_CLAY;
+			return ModItems.QUARTARIUM_SHARD;
 		} else if (this == ModBlocks.NETHER_NAGATORIUM_ORE) {
-			return ModItems.BALANCED_CLAY;
+			return ModItems.NAGATORIUM_SHARD;
 		} else {
-			return this == ModBlocks.NETHER_SAKURAJIMARIUM_ORE ? ModItems.BALANCED_CLAY : Item.getItemFromBlock(this);
+			return this == ModBlocks.NETHER_SAKURAJIMARIUM_ORE ? ModItems.SAKURAJIMARIUM_SHARD : Item.getItemFromBlock(this);
 		}
 	}
 

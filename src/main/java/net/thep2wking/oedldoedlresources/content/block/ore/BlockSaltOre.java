@@ -22,7 +22,7 @@ public class BlockSaltOre extends ModBlockOreBase {
 
 	@Override
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-		return ModItems.BALANCED_CLAY;
+		return ModItems.SALT_DUST;
 	}
 
 	@Override

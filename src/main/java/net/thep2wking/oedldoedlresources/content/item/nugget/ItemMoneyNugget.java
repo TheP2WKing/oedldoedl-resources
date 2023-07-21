@@ -1,4 +1,4 @@
-package net.thep2wking.oedldoedlresources.content.item.ingot;
+package net.thep2wking.oedldoedlresources.content.item.nugget;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
@@ -12,8 +12,8 @@ import net.minecraft.world.World;
 import net.thep2wking.oedldoedlcore.api.item.ModItemBase;
 import net.thep2wking.oedldoedlresources.init.ModSounds;
 
-public class ItemMoneyIngotItem extends ModItemBase {
-	public ItemMoneyIngotItem(String modid, String name, CreativeTabs tab, EnumRarity rarity, boolean hasEffect,
+public class ItemMoneyNugget extends ModItemBase {
+	public ItemMoneyNugget(String modid, String name, CreativeTabs tab, EnumRarity rarity, boolean hasEffect,
 			int tooltipLines, int annotationLines) {
 		super(modid, name, tab, rarity, hasEffect, tooltipLines, annotationLines);
 	}
@@ -22,7 +22,7 @@ public class ItemMoneyIngotItem extends ModItemBase {
 	public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
 		ItemStack itemstack = playerIn.getHeldItem(handIn);
 		if (handIn == EnumHand.MAIN_HAND) {
-			worldIn.playSound(null, playerIn.getPosition(), ModSounds.MONEY, SoundCategory.BLOCKS, 0.4f, 1f);
+			worldIn.playSound(null, playerIn.getPosition(), ModSounds.MONEY, SoundCategory.BLOCKS, 0.8f, 1f);
 		}
 		return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, itemstack);
 	}

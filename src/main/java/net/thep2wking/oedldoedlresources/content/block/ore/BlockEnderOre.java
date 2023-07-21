@@ -27,7 +27,7 @@ public class BlockEnderOre extends ModBlockOreBase {
 
 	@Override
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-		return ModItems.BALANCED_CLAY;
+		return ModItems.ENDER_DUST;
 	}
 
 	@Override

@@ -25,38 +25,39 @@ public class BlockElementOD extends ModBlockOreBase {
 	@Override
 	public ArrayList<ItemStack> getDrops(IBlockAccess world, BlockPos pos, IBlockState blockstate, int fortune) {
 		ArrayList<ItemStack> drops = new ArrayList<ItemStack>();
-		if (RANDOM.nextFloat() > 0.80f) {
-			drops.add(new ItemStack(ModItems.BALANCED_CLAY, 1));
+		float chance = 0.5f;
+		if (RANDOM.nextFloat() > chance) {
+			drops.add(new ItemStack(ModItems.TIMOFIUM_FRAGMENT, 1));
 		}
-		if (RANDOM.nextFloat() > 0.80f) {
-			drops.add(new ItemStack(ModItems.BALANCED_CLAY, 1));
+		if (RANDOM.nextFloat() > chance) {
+			drops.add(new ItemStack(ModItems.FLOFINIUM_FRAGMENT, 1));
 		}
-		if (RANDOM.nextFloat() > 0.80f) {
-			drops.add(new ItemStack(ModItems.BALANCED_CLAY, 1));
+		if (RANDOM.nextFloat() > chance) {
+			drops.add(new ItemStack(ModItems.LAARSIUM_FRAGMENT, 1));
 		}
-		if (RANDOM.nextFloat() > 0.80f) {
-			drops.add(new ItemStack(ModItems.BALANCED_CLAY, 1));
+		if (RANDOM.nextFloat() > chance) {
+			drops.add(new ItemStack(ModItems.KLAARSIUM_FRAGMENT, 1));
 		}
-		if (RANDOM.nextFloat() > 0.80f) {
-			drops.add(new ItemStack(ModItems.BALANCED_CLAY, 1));
+		if (RANDOM.nextFloat() > chance) {
+			drops.add(new ItemStack(ModItems.SHARANIUM_FRAGMENT, 1));
 		}
-		if (RANDOM.nextFloat() > 0.80f) {
-			drops.add(new ItemStack(ModItems.BALANCED_CLAY, 1));
+		if (RANDOM.nextFloat() > chance) {
+			drops.add(new ItemStack(ModItems.MAKERIUM_FRAGMENT, 1));
 		}
-		if (RANDOM.nextFloat() > 0.80f) {
-			drops.add(new ItemStack(ModItems.BALANCED_CLAY, 1));
+		if (RANDOM.nextFloat() > chance) {
+			drops.add(new ItemStack(ModItems.INDERIUM_FRAGMENT, 1));
 		}
-		if (RANDOM.nextFloat() > 0.80f) {
-			drops.add(new ItemStack(ModItems.BALANCED_CLAY, 1));
+		if (RANDOM.nextFloat() > chance) {
+			drops.add(new ItemStack(ModItems.PUMARIUM_FRAGMENT, 1));
 		}
-		if (RANDOM.nextFloat() > 0.80f) {
-			drops.add(new ItemStack(ModItems.BALANCED_CLAY, 1));
+		if (RANDOM.nextFloat() > chance) {
+			drops.add(new ItemStack(ModItems.CALLAXIUM_FRAGMENT, 1));
 		}
-		if (RANDOM.nextFloat() > 0.80f) {
-			drops.add(new ItemStack(ModItems.BALANCED_CLAY, 1));
+		if (RANDOM.nextFloat() > chance) {
+			drops.add(new ItemStack(ModItems.SKORPIUM_FRAGMENT, 1));
 		}
-		if (RANDOM.nextFloat() > 0.80f) {
-			drops.add(new ItemStack(ModItems.BALANCED_CLAY, 1));
+		if (RANDOM.nextFloat() > chance) {
+			drops.add(new ItemStack(ModItems.STUPIDIUM_FRAGMENT, 1));
 		}
 		return drops;
 	}
