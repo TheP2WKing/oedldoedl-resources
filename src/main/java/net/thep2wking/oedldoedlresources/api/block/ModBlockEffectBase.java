@@ -28,7 +28,7 @@ public class ModBlockEffectBase extends ModBlockBase implements ITOPInfoProvider
 
 	public ModBlockEffectBase(String modid, String name, CreativeTabs tab, Material material, SoundType sound,
 			MapColor mapColor,
-			int harvestLevel, ModToolTypes toolType, float hardness, float resistance, float lightLevel, Potion effect,
+			int harvestLevel, ModToolTypes toolType, float hardness, float resistance, int lightLevel, Potion effect,
 			boolean isDebuff) {
 		super(modid, name, tab, material, sound, mapColor, harvestLevel, toolType, hardness, resistance, lightLevel);
 		this.effect = effect;

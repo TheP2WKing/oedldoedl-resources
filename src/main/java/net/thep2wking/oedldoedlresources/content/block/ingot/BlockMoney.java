@@ -18,7 +18,7 @@ import net.thep2wking.oedldoedlresources.init.ModSounds;
 public class BlockMoney extends ModBlockBase {
 	public BlockMoney(String modid, String name, CreativeTabs tab, Material material, SoundType sound,
 			MapColor mapColor, int harvestLevel, ModToolTypes toolType, float hardness, float resistance,
-			float lightLevel) {
+			int lightLevel) {
 		super(modid, name, tab, material, sound, mapColor, harvestLevel, toolType, hardness, resistance, lightLevel);
 	}
 

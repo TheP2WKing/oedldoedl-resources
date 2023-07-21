@@ -15,7 +15,7 @@ import net.thep2wking.oedldoedlcore.util.ModToolTypes;
 public class BlockGunpowderOre extends ModBlockOreBase {
 	public BlockGunpowderOre(String modid, String name, CreativeTabs tab, int minXp, int maxXp, Material material,
 			SoundType sound, MapColor mapColor, int harvestLevel, ModToolTypes toolType, float hardness,
-			float resistance, float lightLevel) {
+			float resistance, int lightLevel) {
 		super(modid, name, tab, minXp, maxXp, material, sound, mapColor, harvestLevel, toolType, hardness, resistance,
 				lightLevel);
 	}

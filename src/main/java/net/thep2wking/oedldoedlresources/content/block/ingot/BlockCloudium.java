@@ -24,7 +24,7 @@ import net.thep2wking.oedldoedlresources.config.ResourcesConfig;
 public class BlockCloudium extends ModBlockEffectBase {
 	public BlockCloudium(String modid, String name, CreativeTabs tab, Material material, SoundType sound,
 			MapColor mapColor, int harvestLevel, ModToolTypes toolType, float hardness, float resistance,
-			float lightLevel, Potion effect, boolean isDebuff) {
+			int lightLevel, Potion effect, boolean isDebuff) {
 		super(modid, name, tab, material, sound, mapColor, harvestLevel, toolType, hardness, resistance, lightLevel,
 				effect, isDebuff);
 	}

@@ -26,7 +26,7 @@ public class BlockBedrockium extends ModBlockEffectBase {
 
 	public BlockBedrockium(String modid, String name, CreativeTabs tab, Material material, SoundType sound,
 			MapColor mapColor, int harvestLevel, ModToolTypes toolType, float hardness, float resistance,
-			float lightLevel, Potion effect, Potion effect2, boolean isDebuff) {
+			int lightLevel, Potion effect, Potion effect2, boolean isDebuff) {
 		super(modid, name, tab, material, sound, mapColor, harvestLevel, toolType, hardness, resistance, lightLevel,
 				effect, isDebuff);
 		this.effect2 = effect2;
