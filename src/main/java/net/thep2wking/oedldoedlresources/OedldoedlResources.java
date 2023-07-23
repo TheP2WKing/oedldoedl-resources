@@ -63,6 +63,7 @@ public class OedldoedlResources {
     public void init(FMLInitializationEvent event) {
         ModLogger.initLogger(MODID);
         ModRecipes.registerOreDict();
+        ModRecipes.registerRecipes();
         PROXY.init(event);
     }
 

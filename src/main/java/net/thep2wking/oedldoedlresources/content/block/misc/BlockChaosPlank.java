@@ -1,4 +1,4 @@
-package net.thep2wking.oedldoedlresources.content.block.ingot;
+package net.thep2wking.oedldoedlresources.content.block.misc;
 
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;
@@ -13,6 +13,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.thep2wking.oedldoedlcore.api.block.ModBlockBase;
 import net.thep2wking.oedldoedlcore.util.ModToolTypes;
+import net.thep2wking.oedldoedlresources.config.ResourcesConfig;
 import net.thep2wking.oedldoedlresources.init.ModSounds;
 
 public class BlockChaosPlank extends ModBlockBase {
@@ -25,11 +26,14 @@ public class BlockChaosPlank extends ModBlockBase {
 	@Override
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn,
 			EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
-		if (!worldIn.isRemote) {
-			if (hand == EnumHand.MAIN_HAND) {
-				worldIn.playSound(null, pos, ModSounds.WOW, SoundCategory.BLOCKS, 1f, 1f);
+		if (ResourcesConfig.CONTENT.CHAOS_PLANK_SOUND) {
+			if (!worldIn.isRemote) {
+				if (hand == EnumHand.MAIN_HAND) {
+					worldIn.playSound(null, pos, ModSounds.WOW, SoundCategory.BLOCKS, 1f, 1f);
+				}
 			}
+			return true;
 		}
-		return true;
+		return false;
 	}
 }

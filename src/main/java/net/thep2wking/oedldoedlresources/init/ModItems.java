@@ -17,6 +17,7 @@ import net.thep2wking.oedldoedlresources.content.item.ingot.ItemMoneyIngot;
 import net.thep2wking.oedldoedlresources.content.item.ingot.ItemSadistiumIngot;
 import net.thep2wking.oedldoedlresources.content.item.nugget.ItemBedrockiumNugget;
 import net.thep2wking.oedldoedlresources.content.item.nugget.ItemCloudiumNugget;
+import net.thep2wking.oedldoedlresources.content.item.nugget.ItemCoalNugget;
 import net.thep2wking.oedldoedlresources.content.item.nugget.ItemDrunkiumNugget;
 import net.thep2wking.oedldoedlresources.content.item.nugget.ItemElevatiumNugget;
 import net.thep2wking.oedldoedlresources.content.item.nugget.ItemMoneyNugget;
@@ -168,8 +169,8 @@ public class ModItems {
 	public static final Item SALT_DUST = new ModItemBase(OedldoedlResources.MODID, "salt_dust", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 1);
 
 	// nuggets 
-	public static final Item COAL_NUGGET = new ModItemBase(OedldoedlResources.MODID, "coal_nugget", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
-	public static final Item CHARCOAL_NUGGET = new ModItemBase(OedldoedlResources.MODID, "charcoal_nugget", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
+	public static final Item COAL_NUGGET = new ItemCoalNugget(OedldoedlResources.MODID, "coal_nugget", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
+	public static final Item CHARCOAL_NUGGET = new ItemCoalNugget(OedldoedlResources.MODID, "charcoal_nugget", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
 	public static final Item DIAMOND_NUGGET = new ModItemBase(OedldoedlResources.MODID, "diamond_nugget", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
 	public static final Item LAPIS_NUGGET = new ModItemBase(OedldoedlResources.MODID, "lapis_nugget", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
 	public static final Item EMERALD_NUGGET = new ModItemBase(OedldoedlResources.MODID, "emerald_nugget", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);

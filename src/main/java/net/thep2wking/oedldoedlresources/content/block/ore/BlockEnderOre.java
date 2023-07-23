@@ -15,6 +15,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.thep2wking.oedldoedlcore.api.block.ModBlockOreBase;
 import net.thep2wking.oedldoedlcore.util.ModToolTypes;
+import net.thep2wking.oedldoedlresources.config.ResourcesConfig;
 import net.thep2wking.oedldoedlresources.init.ModItems;
 
 public class BlockEnderOre extends ModBlockOreBase {
@@ -40,7 +41,9 @@ public class BlockEnderOre extends ModBlockOreBase {
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void randomDisplayTick(IBlockState stateIn, World worldIn, BlockPos pos, Random rand) {
-		this.spawnParticles(worldIn, pos);
+		if (ResourcesConfig.CONTENT.ENDER_ORE_PARTICLES) {
+			this.spawnParticles(worldIn, pos);
+		}
 	}
 
 	private void spawnParticles(World worldIn, BlockPos pos) {
