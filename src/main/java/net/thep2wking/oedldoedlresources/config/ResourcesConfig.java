@@ -10,6 +10,7 @@ import net.thep2wking.oedldoedlresources.OedldoedlResources;
 import net.thep2wking.oedldoedlresources.config.categories.Content;
 import net.thep2wking.oedldoedlresources.config.categories.Properties;
 import net.thep2wking.oedldoedlresources.config.categories.Recipes;
+import net.thep2wking.oedldoedlresources.config.categories.World;
 
 @Config(modid = OedldoedlResources.MODID, name = ModReferences.BASE_MODID + "/"
         + OedldoedlResources.MODID, category = OedldoedlResources.MODID)
@@ -22,6 +23,9 @@ public class ResourcesConfig {
 
     @Config.Name("recipes")
     public static final Recipes RECIPES = new Recipes();
+
+    @Config.Name("world")
+    public static final World WORLD = new World();
     
     @Mod.EventBusSubscriber
     public static class ConfigHolder {
