@@ -76,7 +76,6 @@ public class ModRecipes {
 			ModRecipeHelper.addOreDict("blockBaseStar", ModBlocks.BASE_STAR, 0);
 			ModRecipeHelper.addOreDict("blockNetherStar", ModBlocks.NETHER_STAR, 0);
 			ModRecipeHelper.addOreDict("blockOedldoedlStar", ModBlocks.OEDLDOEDL_STAR, 0);
-			ModRecipeHelper.addOreDict("blockInfinityStar", ModBlocks.INFINITY_STAR, 0);
 
 			ModRecipeHelper.addOreDict("balancedClay", ModBlocks.BALANCED_CLAY, 0);
 			ModRecipeHelper.addOreDict("chaosPlank", ModBlocks.CHAOS_PLANK, 0);
@@ -122,7 +121,6 @@ public class ModRecipes {
 
 			ModRecipeHelper.addOreDict("baseStar", ModItems.BASE_STAR, 0);
 			ModRecipeHelper.addOreDict("oedldoedlStar", ModItems.OEDLDOEDL_STAR, 0);
-			ModRecipeHelper.addOreDict("infinityStar", ModItems.INFINITY_STAR, 0);
 
 			ModRecipeHelper.addOreDict("elementBase", ModItems.BASE_ELEMENT, 0);
 			ModRecipeHelper.addOreDict("elementOedldoedl", ModItems.OEDLDOEDL_ELEMENT, 0);
@@ -143,6 +141,8 @@ public class ModRecipes {
 			ModRecipeHelper.addOreDict("dustEnder", ModItems.ENDER_DUST, 0);
 			ModRecipeHelper.addOreDict("dustEnderPearl", ModItems.ENDER_DUST, 0);
 			ModRecipeHelper.addOreDict("dustSalt", ModItems.SALT_DUST, 0);
+			ModRecipeHelper.addOreDict("foodSalt", ModItems.SALT_DUST, 0);
+			ModRecipeHelper.addOreDict("itemSalt", ModItems.SALT_DUST, 0);
 
 			ModRecipeHelper.addOreDict("nuggetCoal", ModItems.COAL_NUGGET, 0);
 			ModRecipeHelper.addOreDict("nuggetCharcoal", ModItems.CHARCOAL_NUGGET, 0);
@@ -180,7 +180,6 @@ public class ModRecipes {
 			ModRecipeHelper.addOreDict("shardBaseStar", ModItems.BASE_STAR_SHARD, 0);
 			ModRecipeHelper.addOreDict("shardNetherStar", ModItems.NETHER_STAR_SHARD, 0);
 			ModRecipeHelper.addOreDict("shardOedldoedlStar", ModItems.OEDLDOEDL_STAR_SHARD, 0);
-			ModRecipeHelper.addOreDict("shardInfinityStar", ModItems.INFINITY_STAR_SHARD, 0);
 
 			ModRecipeHelper.addOreDict("fragmentBase", ModItems.BASE_FRAGMENT, 0);
 			ModRecipeHelper.addOreDict("fragmentOedldoedl", ModItems.OEDLDOEDL_FRAGMENT, 0);
@@ -349,8 +348,6 @@ public class ModRecipes {
 					ModItems.NETHER_STAR_SHARD, Items.NETHER_STAR, ModBlocks.NETHER_STAR);
 			ModResourceRecipeHelper.addStarConversion(OedldoedlResources.MODID, "oedldoedlStar",
 					ModItems.OEDLDOEDL_STAR_SHARD, ModItems.OEDLDOEDL_STAR, ModBlocks.OEDLDOEDL_STAR);
-			ModResourceRecipeHelper.addStarConversion(OedldoedlResources.MODID, "infinityStar",
-					ModItems.INFINITY_STAR_SHARD, ModItems.INFINITY_STAR, ModBlocks.INFINITY_STAR);
 
 			ModResourceRecipeHelper.addElementConversion(OedldoedlResources.MODID, "base", ModItems.BASE_FRAGMENT,
 					ModItems.BASE_ELEMENT, null);

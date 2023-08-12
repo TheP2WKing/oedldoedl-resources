@@ -31,7 +31,7 @@ public class ModBlocks {
 	public static final Block RANDOMITE_ORE = new BlockRandomiteOre(OedldoedlResources.MODID, "randomite_ore", OedldoedlResources.TAB, 0, 0, Material.ROCK, SoundType.STONE, MapColor.STONE, 2, ModToolTypes.PICKAXE, 3f, 6f, 0);
 	public static final Block ENDER_ORE = new BlockEnderOre(OedldoedlResources.MODID, "ender_ore", OedldoedlResources.TAB, 2, 4, Material.ROCK, SoundType.STONE, MapColor.STONE, 1, ModToolTypes.PICKAXE, 4f, 8f, 0);
 	public static final Block GUNPOWDER_ORE = new BlockGunpowderOre(OedldoedlResources.MODID, "gunpowder_ore", OedldoedlResources.TAB, 1, 3, Material.ROCK, SoundType.STONE, MapColor.STONE, 1, ModToolTypes.PICKAXE, 3f, 6f, 0);
-	public static final Block SALT_ORE = new BlockSaltOre(OedldoedlResources.MODID, "salt_ore", OedldoedlResources.TAB, 0, 2, Material.ROCK, SoundType.STONE, MapColor.STONE, 1, ModToolTypes.PICKAXE, 3f, 3f, 0);
+	public static final Block SALT_ORE = new BlockSaltOre(OedldoedlResources.MODID, "salt_ore", OedldoedlResources.TAB, 0, 2, Material.ROCK, SoundType.STONE, MapColor.STONE, 0, ModToolTypes.PICKAXE, 3f, 3f, 0);
 
 	public static final Block NETHER_GREMORIUM_ORE = new BlockNetherGemOre(OedldoedlResources.MODID, "nether_gremorium_ore", OedldoedlResources.TAB, 8, 20, Material.ROCK, SoundType.STONE, MapColor.NETHERRACK, 3, ModToolTypes.PICKAXE, 35f, 70f, 0);
 	public static final Block NETHER_HIMEJIMARIUM_ORE = new BlockNetherGemOre(OedldoedlResources.MODID, "nether_himejimarium_ore", OedldoedlResources.TAB, 8, 20, Material.ROCK, SoundType.STONE, MapColor.NETHERRACK, 3, ModToolTypes.PICKAXE, 35f, 70f, 0);
@@ -87,9 +87,7 @@ public class ModBlocks {
 	// stars
 	public static final Block BASE_STAR = new ModBlockBase(OedldoedlResources.MODID, "base_star_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.NETHERRACK, 1, ModToolTypes.PICKAXE, 5f, 10f, 0).setBeaconBase();
 	public static final Block NETHER_STAR = new ModBlockBase(OedldoedlResources.MODID, "nether_star_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.NETHERRACK, 2, ModToolTypes.PICKAXE, 8f, 16f, 2).setBeaconBase();
-	public static final Block OEDLDOEDL_STAR = new ModBlockBase(OedldoedlResources.MODID, "oedldoedl_star_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.NETHERRACK, 3, ModToolTypes.PICKAXE, 20f, 40f, 6).setBeaconBase();
-	public static final Block INFINITY_STAR = new ModBlockBase(OedldoedlResources.MODID, "infinity_star_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.NETHERRACK, 4, ModToolTypes.PICKAXE, 50f, 100f, 8).setBeaconBase();
-	
+	public static final Block OEDLDOEDL_STAR = new ModBlockBase(OedldoedlResources.MODID, "oedldoedl_star_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.NETHERRACK, 3, ModToolTypes.PICKAXE, 20f, 40f, 6).setBeaconBase();	
 	// misc
 	public static final Block BALANCED_CLAY = new ModBlockBase(OedldoedlResources.MODID, "balanced_clay", OedldoedlResources.TAB, Material.GROUND, SoundType.GROUND, MapColor.CLAY, 3, ModToolTypes.SHOVEL, 100f, 100f, 0);
 	public static final Block CHAOS_PLANK = new BlockChaosPlank(OedldoedlResources.MODID, "chaos_plank", OedldoedlResources.TAB, Material.IRON, SoundType.ANVIL, MapColor.BLACK, 10, ModToolTypes.PICKAXE, 10000f, 10000f, 0);

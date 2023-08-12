@@ -82,7 +82,6 @@ public class ModRegistry {
 		ModRegistryHelper.registerBlock(event, ModBlocks.BASE_STAR);
 		ModRegistryHelper.registerBlock(event, ModBlocks.NETHER_STAR);
 		ModRegistryHelper.registerBlock(event, ModBlocks.OEDLDOEDL_STAR);
-		ModRegistryHelper.registerBlock(event, ModBlocks.INFINITY_STAR);
 
 		// misc
 		ModRegistryHelper.registerBlock(event, ModBlocks.BALANCED_CLAY);
@@ -156,7 +155,6 @@ public class ModRegistry {
 		ModRegistryHelper.registerItemBlock(event, ModItems.BASE_STAR_BLOCK);
 		ModRegistryHelper.registerItemBlock(event, ModItems.NETHER_STAR_BLOCK);
 		ModRegistryHelper.registerItemBlock(event, ModItems.OEDLDOEDL_STAR_BLOCK);
-		ModRegistryHelper.registerItemBlock(event, ModItems.INFINITY_STAR_BLOCK);
 
 		// misc itemblocks
 		ModRegistryHelper.registerItemBlock(event, ModItems.BALANCED_CLAY);
@@ -207,7 +205,6 @@ public class ModRegistry {
 		// stars
 		ModRegistryHelper.registerItem(event, ModItems.BASE_STAR);
 		ModRegistryHelper.registerItem(event, ModItems.OEDLDOEDL_STAR);
-		ModRegistryHelper.registerItem(event, ModItems.INFINITY_STAR);
 
 		// elements
 		ModRegistryHelper.registerItem(event, ModItems.BASE_ELEMENT);
@@ -267,7 +264,6 @@ public class ModRegistry {
 		ModRegistryHelper.registerItem(event, ModItems.BASE_STAR_SHARD);
 		ModRegistryHelper.registerItem(event, ModItems.NETHER_STAR_SHARD);
 		ModRegistryHelper.registerItem(event, ModItems.OEDLDOEDL_STAR_SHARD);
-		ModRegistryHelper.registerItem(event, ModItems.INFINITY_STAR_SHARD);
 
 		// fragments
 		ModRegistryHelper.registerItem(event, ModItems.BASE_FRAGMENT);

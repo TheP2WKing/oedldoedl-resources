@@ -94,7 +94,6 @@ public class ModItems {
 	public static final Item BASE_STAR_BLOCK = new ModItemBlockBase(ModBlocks.BASE_STAR, ModRarities.WHITE, false, 1, 0);
 	public static final Item NETHER_STAR_BLOCK = new ModItemBlockBase(ModBlocks.NETHER_STAR, ModRarities.YELLOW, true, 1, 0);
 	public static final Item OEDLDOEDL_STAR_BLOCK = new ModItemBlockBase(ModBlocks.OEDLDOEDL_STAR, ModRarities.LIGHT_PURPLE, true, 2, 0);
-	public static final Item INFINITY_STAR_BLOCK = new ModItemBlockBase(ModBlocks.INFINITY_STAR, ModRarities.RED, true, 2, 0);
 
 	// misc itemblocks
 	public static final Item BALANCED_CLAY = new ModItemBlockBase(ModBlocks.BALANCED_CLAY, ModRarities.LIGHT_PURPLE, true, 2, 1);
@@ -145,7 +144,6 @@ public class ModItems {
 	// stars
 	public static final Item BASE_STAR = new ModItemBase(OedldoedlResources.MODID, "base_star", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
 	public static final Item OEDLDOEDL_STAR = new ModItemBase(OedldoedlResources.MODID, "oedldoedl_star", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, true, 3, 0);
-	public static final Item INFINITY_STAR = new ModItemBase(OedldoedlResources.MODID, "infinity_star", OedldoedlResources.TAB, ModRarities.RED, true, 2, 0);
 
 	// elements
 	public static final Item BASE_ELEMENT = new ModItemBase(OedldoedlResources.MODID, "base_element", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
@@ -205,7 +203,6 @@ public class ModItems {
 	public static final Item BASE_STAR_SHARD = new ModItemBase(OedldoedlResources.MODID, "base_star_shard", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
 	public static final Item NETHER_STAR_SHARD = new ModItemBase(OedldoedlResources.MODID, "nether_star_shard", OedldoedlResources.TAB, ModRarities.YELLOW, true, 1, 0);
 	public static final Item OEDLDOEDL_STAR_SHARD = new ModItemBase(OedldoedlResources.MODID, "oedldoedl_star_shard", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, true, 1, 0);
-	public static final Item INFINITY_STAR_SHARD = new ModItemBase(OedldoedlResources.MODID, "infinity_star_shard", OedldoedlResources.TAB, ModRarities.RED, true, 1, 0);
 
 	// fragments
 	public static final Item BASE_FRAGMENT = new ModItemBase(OedldoedlResources.MODID, "base_fragment", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
@@ -235,8 +232,8 @@ public class ModItems {
 	public static final Item SAKURAJIMARIUM_SINGULARITY = new ModItemBase(OedldoedlResources.MODID, "sakurajimarium_singularity", OedldoedlResources.TAB, ModRarities.DARK_GRAY, false, 1, 0);
 
 	// catalysts
-	public static final Item OEDLDOEDL_CATALYST = new ModItemBase(OedldoedlResources.MODID, "oedldoedl_catalyst", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, true, 1, 0);
-	public static final Item CHAOS_CATALYST = new ModItemBase(OedldoedlResources.MODID, "chaos_catalyst", OedldoedlResources.TAB, ModRarities.BLACK, true, 3, 0);
+	public static final Item OEDLDOEDL_CATALYST = new ModItemBase(OedldoedlResources.MODID, "oedldoedl_catalyst", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, false, 1, 0);
+	public static final Item CHAOS_CATALYST = new ModItemBase(OedldoedlResources.MODID, "chaos_catalyst", OedldoedlResources.TAB, ModRarities.BLACK, false, 3, 0);
 
 	// misc
 	public static final Item BALANCED_CLAY_BALL = new ModItemBase(OedldoedlResources.MODID, "balanced_clay_ball", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, true, 2, 1);
