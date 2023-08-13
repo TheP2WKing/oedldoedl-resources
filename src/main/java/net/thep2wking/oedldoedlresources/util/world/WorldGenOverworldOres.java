@@ -18,6 +18,7 @@ public class WorldGenOverworldOres implements IWorldGenerator {
 	public WorldGenerator base_ore;
 	public WorldGenerator oedldoedl_ore;
 	public WorldGenerator randomite_ore;
+	public WorldGenerator enriched_uranium_ore;
 	public WorldGenerator ender_ore;
 	public WorldGenerator gunpowder_ore;
 	public WorldGenerator salt_ore;
@@ -29,6 +30,8 @@ public class WorldGenOverworldOres implements IWorldGenerator {
 				ResourcesConfig.WORLD.OVERWORLD.OEDLDOEDL_ORE_VEIN_SIZE, BlockMatcher.forBlock(Blocks.STONE));
 		randomite_ore = new WorldGenMinable(ModBlocks.RANDOMITE_ORE.getDefaultState(),
 				ResourcesConfig.WORLD.OVERWORLD.RANDOMITE_ORE_VEIN_SIZE, BlockMatcher.forBlock(Blocks.STONE));
+		enriched_uranium_ore = new WorldGenMinable(ModBlocks.ENRICHED_URANIUM_ORE.getDefaultState(),
+				ResourcesConfig.WORLD.OVERWORLD.ENRICHED_URANIUM_ORE_VEIN_SIZE, BlockMatcher.forBlock(Blocks.STONE));
 		ender_ore = new WorldGenMinable(ModBlocks.ENDER_ORE.getDefaultState(),
 				ResourcesConfig.WORLD.OVERWORLD.ENDER_ORE_VEIN_SIZE, BlockMatcher.forBlock(Blocks.STONE));
 		gunpowder_ore = new WorldGenMinable(ModBlocks.GUNPOWDER_ORE.getDefaultState(),
@@ -54,6 +57,10 @@ public class WorldGenOverworldOres implements IWorldGenerator {
 					if (ResourcesConfig.WORLD.OVERWORLD.RANDOMITE_ORE) {
 						runGenerator(randomite_ore, world, random, chunkX, chunkZ,
 								ResourcesConfig.WORLD.OVERWORLD.RANDOMITE_ORE_CHANCE, 1, 256);
+					}
+					if (ResourcesConfig.WORLD.OVERWORLD.ENRICHED_URANIUM_ORE) {
+						runGenerator(enriched_uranium_ore, world, random, chunkX, chunkZ,
+								ResourcesConfig.WORLD.OVERWORLD.ENRICHED_URANIUM_ORE_CHANCE, 12, 48);
 					}
 					if (ResourcesConfig.WORLD.OVERWORLD.ENDER_ORE) {
 						runGenerator(ender_ore, world, random, chunkX, chunkZ,

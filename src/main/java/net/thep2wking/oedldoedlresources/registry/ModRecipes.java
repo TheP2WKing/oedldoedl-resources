@@ -19,6 +19,7 @@ public class ModRecipes {
 			ModRecipeHelper.addOreDict("oreBase", ModBlocks.BASE_ORE, 0);
 			ModRecipeHelper.addOreDict("oreOedldoedl", ModBlocks.OEDLDOEDL_ORE, 0);
 			ModRecipeHelper.addOreDict("oreRandomite", ModBlocks.RANDOMITE_ORE, 0);
+			ModRecipeHelper.addOreDict("oreUraniumPowder", ModBlocks.ENRICHED_URANIUM_ORE, 0);
 			ModRecipeHelper.addOreDict("oreEnder", ModBlocks.ENDER_ORE, 0);
 			ModRecipeHelper.addOreDict("oreEnderPearl", ModBlocks.ENDER_ORE, 0);
 			ModRecipeHelper.addOreDict("oreGunpowder", ModBlocks.GUNPOWDER_ORE, 0);
@@ -31,6 +32,7 @@ public class ModRecipes {
 			ModRecipeHelper.addOreDict("oreQuartariumShard", ModBlocks.NETHER_QUARTARIUM_ORE, 0);
 			ModRecipeHelper.addOreDict("oreNagatoriumShard", ModBlocks.NETHER_NAGATORIUM_ORE, 0);
 			ModRecipeHelper.addOreDict("oreSakurajimariumShard", ModBlocks.NETHER_SAKURAJIMARIUM_ORE, 0);
+			ModRecipeHelper.addOreDict("oreKitagawariumShard", ModBlocks.NETHER_KITAGAWARIUM_ORE, 0);
 
 			ModRecipeHelper.addOreDict("oreElementOD", ModBlocks.END_ELEMENT_OD, 0);
 
@@ -50,6 +52,7 @@ public class ModRecipes {
 			ModRecipeHelper.addOreDict("blockQuartarium", ModBlocks.QUARTARIUM, 0);
 			ModRecipeHelper.addOreDict("blockNagatorium", ModBlocks.NAGATORIUM, 0);
 			ModRecipeHelper.addOreDict("blockSakurajimarium", ModBlocks.SAKURAJIMARIUM, 0);
+			ModRecipeHelper.addOreDict("blockKitagawarium", ModBlocks.KITAGAWARIUM, 0);
 
 			ModRecipeHelper.addOreDict("blockBaseGem", ModBlocks.BASE_GEM, 0);
 			ModRecipeHelper.addOreDict("blockOedldoedlGem", ModBlocks.OEDLDOEDL_GEM, 0);
@@ -72,6 +75,7 @@ public class ModRecipes {
 			ModRecipeHelper.addOreDict("blockQuartariumGem", ModBlocks.QUARTARIUM_GEM, 0);
 			ModRecipeHelper.addOreDict("blockNagatoriumGem", ModBlocks.NAGATORIUM_GEM, 0);
 			ModRecipeHelper.addOreDict("blockSakurajimariumGem", ModBlocks.SAKURAJIMARIUM_GEM, 0);
+			ModRecipeHelper.addOreDict("blockKitagawariumGem", ModBlocks.KITAGAWARIUM_GEM, 0);
 
 			ModRecipeHelper.addOreDict("blockBaseStar", ModBlocks.BASE_STAR, 0);
 			ModRecipeHelper.addOreDict("blockNetherStar", ModBlocks.NETHER_STAR, 0);
@@ -88,6 +92,7 @@ public class ModRecipes {
 			ModRecipeHelper.addOreDict("ingotSadistium", ModItems.SADISTIUM_INGOT, 0);
 			ModRecipeHelper.addOreDict("ingotDrunkium", ModItems.DRUNKIUM_INGOT, 0);
 			ModRecipeHelper.addOreDict("ingotMoney", ModItems.MONEY_INGOT, 0);
+			ModRecipeHelper.addOreDict("ingotChaos", ModItems.CHAOS_INGOT, 0);
 
 			ModRecipeHelper.addOreDict("ingotGremorium", ModItems.GREMORIUM_INGOT, 0);
 			ModRecipeHelper.addOreDict("ingotHimejimarium", ModItems.HIMEJIMARIUM_INGOT, 0);
@@ -96,6 +101,7 @@ public class ModRecipes {
 			ModRecipeHelper.addOreDict("ingotQuartarium", ModItems.QUARTARIUM_INGOT, 0);
 			ModRecipeHelper.addOreDict("ingotNagatorium", ModItems.NAGATORIUM_INGOT, 0);
 			ModRecipeHelper.addOreDict("ingotSakurajimarium", ModItems.SAKURAJIMARIUM_INGOT, 0);
+			ModRecipeHelper.addOreDict("ingotKitagawarium", ModItems.KITAGAWARIUM_INGOT, 0);
 
 			ModRecipeHelper.addOreDict("gemBase", ModItems.BASE_GEM, 0);
 			ModRecipeHelper.addOreDict("gemOedldoedl", ModItems.OEDLDOEDL_GEM, 0);
@@ -118,9 +124,19 @@ public class ModRecipes {
 			ModRecipeHelper.addOreDict("gemQuartarium", ModItems.QUARTARIUM_GEM, 0);
 			ModRecipeHelper.addOreDict("gemNagatorium", ModItems.NAGATORIUM_GEM, 0);
 			ModRecipeHelper.addOreDict("gemSakurajimarium", ModItems.SAKURAJIMARIUM_GEM, 0);
+			ModRecipeHelper.addOreDict("gemKitagawarium", ModItems.KITAGAWARIUM_GEM, 0);
 
 			ModRecipeHelper.addOreDict("baseStar", ModItems.BASE_STAR, 0);
 			ModRecipeHelper.addOreDict("oedldoedlStar", ModItems.OEDLDOEDL_STAR, 0);
+
+			ModRecipeHelper.addOreDict("gremoriumStar", ModItems.GREMORIUM_STAR, 0);
+			ModRecipeHelper.addOreDict("himejimariumStar", ModItems.HIMEJIMARIUM_STAR, 0);
+			ModRecipeHelper.addOreDict("toujouriumStar", ModItems.TOUJOURIUM_STAR, 0);
+			ModRecipeHelper.addOreDict("argentoriumStar", ModItems.ARGENTORIUM_STAR, 0);
+			ModRecipeHelper.addOreDict("quartariumStar", ModItems.QUARTARIUM_STAR, 0);
+			ModRecipeHelper.addOreDict("nagatoriumStar", ModItems.NAGATORIUM_STAR, 0);
+			ModRecipeHelper.addOreDict("sakurajimariumStar", ModItems.SAKURAJIMARIUM_STAR, 0);
+			ModRecipeHelper.addOreDict("kitagawariumStar", ModItems.KITAGAWARIUM_STAR, 0);
 
 			ModRecipeHelper.addOreDict("elementBase", ModItems.BASE_ELEMENT, 0);
 			ModRecipeHelper.addOreDict("elementOedldoedl", ModItems.OEDLDOEDL_ELEMENT, 0);
@@ -150,6 +166,7 @@ public class ModRecipes {
 			ModRecipeHelper.addOreDict("nuggetLapis", ModItems.LAPIS_NUGGET, 0);
 			ModRecipeHelper.addOreDict("nuggetEmerald", ModItems.EMERALD_NUGGET, 0);
 			ModRecipeHelper.addOreDict("nuggetQuartz", ModItems.QUARTZ_NUGGET, 0);
+			ModRecipeHelper.addOreDict("nuggetObsidian", ModItems.OBSIDIAN_NUGGET, 0);
 			ModRecipeHelper.addOreDict("nuggetEnder", ModItems.ENDER_NUGGET, 0);
 			ModRecipeHelper.addOreDict("nuggetEnderPearl", ModItems.ENDER_NUGGET, 0);
 			ModRecipeHelper.addOreDict("nuggetBase", ModItems.BASE_NUGGET, 0);
@@ -168,6 +185,7 @@ public class ModRecipes {
 			ModRecipeHelper.addOreDict("nuggetQuartarium", ModItems.QUARTARIUM_NUGGET, 0);
 			ModRecipeHelper.addOreDict("nuggetNagatorium", ModItems.NAGATORIUM_NUGGET, 0);
 			ModRecipeHelper.addOreDict("nuggetSakurajimarium", ModItems.SAKURAJIMARIUM_NUGGET, 0);
+			ModRecipeHelper.addOreDict("nuggetKitagawarium", ModItems.KITAGAWARIUM_NUGGET, 0);
 
 			ModRecipeHelper.addOreDict("shardGremorium", ModItems.GREMORIUM_SHARD, 0);
 			ModRecipeHelper.addOreDict("shardHimejimarium", ModItems.HIMEJIMARIUM_SHARD, 0);
@@ -176,6 +194,7 @@ public class ModRecipes {
 			ModRecipeHelper.addOreDict("shardQuartarium", ModItems.QUARTARIUM_SHARD, 0);
 			ModRecipeHelper.addOreDict("shardNagatorium", ModItems.NAGATORIUM_SHARD, 0);
 			ModRecipeHelper.addOreDict("shardSakurajimarium", ModItems.SAKURAJIMARIUM_SHARD, 0);
+			ModRecipeHelper.addOreDict("shardKitagawarium", ModItems.KITAGAWARIUM_SHARD, 0);
 
 			ModRecipeHelper.addOreDict("shardBaseStar", ModItems.BASE_STAR_SHARD, 0);
 			ModRecipeHelper.addOreDict("shardNetherStar", ModItems.NETHER_STAR_SHARD, 0);
@@ -204,10 +223,12 @@ public class ModRecipes {
 			ModRecipeHelper.addOreDict("singularityQuartarium", ModItems.QUARTARIUM_SINGULARITY, 0);
 			ModRecipeHelper.addOreDict("singularityNagatorium", ModItems.NAGATORIUM_SINGULARITY, 0);
 			ModRecipeHelper.addOreDict("singularitySakurajimarium", ModItems.SAKURAJIMARIUM_SINGULARITY, 0);
+			ModRecipeHelper.addOreDict("singularityKitagawarium", ModItems.KITAGAWARIUM_SINGULARITY, 0);
 
 			ModRecipeHelper.addOreDict("catalystOedldoedl", ModItems.OEDLDOEDL_CATALYST, 0);
 			ModRecipeHelper.addOreDict("catalystChaos", ModItems.CHAOS_CATALYST, 0);
 
+			ModRecipeHelper.addOreDict("powderUranium", ModItems.ENRICHED_URANIUM, 0);
 			ModRecipeHelper.addOreDict("balancedClayball", ModItems.BALANCED_CLAY_BALL, 0);
 		}
 
@@ -247,6 +268,7 @@ public class ModRecipes {
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.OEDLDOEDL_INGOT, 1, 0), "oreOedldoedl",
 					0.7f);
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(Blocks.STONE, 1, 0), "oreRandomite", 0.7f);
+			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.ENRICHED_URANIUM, 1, 0), "oreUraniumPowder", 0.7f);
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.ENDER_DUST, 1, 0), "oreEnder", 0.7f);
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(Items.GUNPOWDER, 1, 0), "oreGunpowder", 0.7f);
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.SALT_DUST, 1, 0), "oreSalt", 0.7f);
@@ -264,6 +286,8 @@ public class ModRecipes {
 					"oreNagatoriumShard", 0.7f);
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.SAKURAJIMARIUM_SHARD, 1, 0),
 					"oreSakurajimariumShard", 0.7f);
+			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.KITAGAWARIUM_SHARD, 1, 0),
+					"oreKitagawariumShard", 0.7f);
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(Blocks.END_STONE, 1, 0), "oreElementOD", 0.7f);
 		}
 
@@ -299,6 +323,8 @@ public class ModRecipes {
 					ModItems.NAGATORIUM_NUGGET, ModItems.NAGATORIUM_INGOT, ModBlocks.NAGATORIUM);
 			ModResourceRecipeHelper.addMetalConversion(OedldoedlResources.MODID, "sakurajimarium",
 					ModItems.SAKURAJIMARIUM_NUGGET, ModItems.SAKURAJIMARIUM_INGOT, ModBlocks.SAKURAJIMARIUM);
+			ModResourceRecipeHelper.addMetalConversion(OedldoedlResources.MODID, "kitagawarium",
+					ModItems.KITAGAWARIUM_NUGGET, ModItems.KITAGAWARIUM_INGOT, ModBlocks.KITAGAWARIUM);
 
 			ModResourceRecipeHelper.addGemConversion(OedldoedlResources.MODID, "base", null, ModItems.BASE_GEM,
 					ModBlocks.BASE_GEM);
@@ -341,6 +367,9 @@ public class ModRecipes {
 					ModItems.NAGATORIUM_GEM, ModBlocks.NAGATORIUM_GEM);
 			ModResourceRecipeHelper.addGemConversion(OedldoedlResources.MODID, "sakurajimarium",
 					ModItems.SAKURAJIMARIUM_SHARD, ModItems.SAKURAJIMARIUM_GEM, ModBlocks.SAKURAJIMARIUM_GEM);
+			ModResourceRecipeHelper.addGemConversion(OedldoedlResources.MODID, "kitagawarium",
+					ModItems.KITAGAWARIUM_SHARD,
+					ModItems.KITAGAWARIUM_GEM, ModBlocks.KITAGAWARIUM_GEM);
 
 			ModResourceRecipeHelper.addStarConversion(OedldoedlResources.MODID, "baseStar", ModItems.BASE_STAR_SHARD,
 					ModItems.BASE_STAR, ModBlocks.BASE_STAR);
@@ -388,6 +417,8 @@ public class ModRecipes {
 					new ItemStack(ModItems.EMERALD_NUGGET, 9, 0), "A", 'A', "gemEmerald");
 			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "conversion/quartz_nugget_from_gem",
 					new ItemStack(ModItems.QUARTZ_NUGGET, 9, 0), "A", 'A', "gemQuartz");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "conversion/obsidian_nugget_from_block",
+					new ItemStack(ModItems.OBSIDIAN_NUGGET, 9, 0), "A", 'A', "obsidian");
 			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "conversion/ender_nugget_from_pearl",
 					new ItemStack(ModItems.ENDER_NUGGET, 9, 0), "A", 'A', "enderpearl");
 
@@ -403,6 +434,8 @@ public class ModRecipes {
 					new ItemStack(Items.EMERALD, 1, 0), "AAA", "AAA", "AAA", 'A', "nuggetEmerald");
 			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "conversion/quartz_gem_from_nugget",
 					new ItemStack(Items.QUARTZ, 1, 0), "AAA", "AAA", "AAA", 'A', "nuggetQuartz");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "conversion/obsidian_from_nugget",
+					new ItemStack(Blocks.OBSIDIAN, 1, 0), "AAA", "AAA", "AAA", 'A', "nuggetObsidian");
 			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "conversion/pearl_from_nugget",
 					new ItemStack(Items.ENDER_PEARL, 1, 0), "AAA", "AAA", "AAA", 'A', "nuggetEnder");
 

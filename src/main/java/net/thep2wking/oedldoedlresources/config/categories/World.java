@@ -55,6 +55,17 @@ public class World {
 		@Config.RangeInt(min = 0, max = 100)
 		public int RANDOMITE_ORE_VEIN_SIZE = 5;
 
+		@Config.Name("Enriched Uranium Ore")
+		public boolean ENRICHED_URANIUM_ORE = true;
+
+		@Config.Name("Enriched Uranium Ore Chance")
+		@Config.RangeInt(min = 0, max = 100)
+		public int ENRICHED_URANIUM_ORE_CHANCE = 1;
+		
+		@Config.Name("Enriched Uranium Ore Vein Size")
+		@Config.RangeInt(min = 0, max = 100)
+		public int ENRICHED_URANIUM_ORE_VEIN_SIZE = 3;
+
 		@Config.Name("Ender Ore")
 		public boolean ENDER_ORE = true;
 

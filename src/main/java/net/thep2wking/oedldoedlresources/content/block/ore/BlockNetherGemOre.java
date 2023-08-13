@@ -35,8 +35,10 @@ public class BlockNetherGemOre extends ModBlockOreBase {
 			return ModItems.QUARTARIUM_SHARD;
 		} else if (this == ModBlocks.NETHER_NAGATORIUM_ORE) {
 			return ModItems.NAGATORIUM_SHARD;
+		} else if (this == ModBlocks.NETHER_NAGATORIUM_ORE) {
+			return ModItems.NAGATORIUM_SHARD;
 		} else {
-			return this == ModBlocks.NETHER_SAKURAJIMARIUM_ORE ? ModItems.SAKURAJIMARIUM_SHARD : Item.getItemFromBlock(this);
+			return this == ModBlocks.NETHER_KITAGAWARIUM_ORE ? ModItems.KITAGAWARIUM_SHARD : Item.getItemFromBlock(this);
 		}
 	}
 

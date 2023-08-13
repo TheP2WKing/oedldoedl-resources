@@ -23,6 +23,7 @@ public class ModRegistry {
 		ModRegistryHelper.registerBlock(event, ModBlocks.BASE_ORE);
 		ModRegistryHelper.registerBlock(event, ModBlocks.OEDLDOEDL_ORE);
 		ModRegistryHelper.registerBlock(event, ModBlocks.RANDOMITE_ORE);
+		ModRegistryHelper.registerBlock(event, ModBlocks.ENRICHED_URANIUM_ORE);
 		ModRegistryHelper.registerBlock(event, ModBlocks.ENDER_ORE);
 		ModRegistryHelper.registerBlock(event, ModBlocks.GUNPOWDER_ORE);
 		ModRegistryHelper.registerBlock(event, ModBlocks.SALT_ORE);
@@ -34,6 +35,7 @@ public class ModRegistry {
 		ModRegistryHelper.registerBlock(event, ModBlocks.NETHER_QUARTARIUM_ORE);
 		ModRegistryHelper.registerBlock(event, ModBlocks.NETHER_NAGATORIUM_ORE);
 		ModRegistryHelper.registerBlock(event, ModBlocks.NETHER_SAKURAJIMARIUM_ORE);
+		ModRegistryHelper.registerBlock(event, ModBlocks.NETHER_KITAGAWARIUM_ORE);
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.END_ELEMENT_OD);
 
@@ -54,6 +56,7 @@ public class ModRegistry {
 		ModRegistryHelper.registerBlock(event, ModBlocks.QUARTARIUM);
 		ModRegistryHelper.registerBlock(event, ModBlocks.NAGATORIUM);
 		ModRegistryHelper.registerBlock(event, ModBlocks.SAKURAJIMARIUM);
+		ModRegistryHelper.registerBlock(event, ModBlocks.KITAGAWARIUM);
 
 		// gems
 		ModRegistryHelper.registerBlock(event, ModBlocks.BASE_GEM);
@@ -77,6 +80,7 @@ public class ModRegistry {
 		ModRegistryHelper.registerBlock(event, ModBlocks.QUARTARIUM_GEM);
 		ModRegistryHelper.registerBlock(event, ModBlocks.NAGATORIUM_GEM);
 		ModRegistryHelper.registerBlock(event, ModBlocks.SAKURAJIMARIUM_GEM);
+		ModRegistryHelper.registerBlock(event, ModBlocks.KITAGAWARIUM_GEM);
 
 		// stars
 		ModRegistryHelper.registerBlock(event, ModBlocks.BASE_STAR);
@@ -96,6 +100,7 @@ public class ModRegistry {
 		ModRegistryHelper.registerItemBlock(event, ModItems.BASE_ORE);
 		ModRegistryHelper.registerItemBlock(event, ModItems.OEDLDOEDL_ORE);
 		ModRegistryHelper.registerItemBlock(event, ModItems.RANDOMITE_ORE);
+		ModRegistryHelper.registerItemBlock(event, ModItems.ENRICHED_URANIUM_ORE);
 		ModRegistryHelper.registerItemBlock(event, ModItems.ENDER_ORE);
 		ModRegistryHelper.registerItemBlock(event, ModItems.GUNPOWDER_ORE);
 		ModRegistryHelper.registerItemBlock(event, ModItems.SALT_ORE);
@@ -107,6 +112,7 @@ public class ModRegistry {
 		ModRegistryHelper.registerItemBlock(event, ModItems.NETHER_QUARTARIUM_ORE);
 		ModRegistryHelper.registerItemBlock(event, ModItems.NETHER_NAGATORIUM_ORE);
 		ModRegistryHelper.registerItemBlock(event, ModItems.NETHER_SAKURAJIMARIUM_ORE);
+		ModRegistryHelper.registerItemBlock(event, ModItems.NETHER_KITAGAWARIUM_ORE);
 
 		ModRegistryHelper.registerItemBlock(event, ModItems.END_ELEMENT_OD);
 
@@ -127,6 +133,7 @@ public class ModRegistry {
 		ModRegistryHelper.registerItemBlock(event, ModItems.QUARTARIUM_BLOCK);
 		ModRegistryHelper.registerItemBlock(event, ModItems.NAGATORIUM_BLOCK);
 		ModRegistryHelper.registerItemBlock(event, ModItems.SAKURAJIMARIUM_BLOCK);
+		ModRegistryHelper.registerItemBlock(event, ModItems.KITAGAWARIUM_BLOCK);
 
 		// gem itemblocks
 		ModRegistryHelper.registerItemBlock(event, ModItems.BASE_GEM_BLOCK);
@@ -150,6 +157,7 @@ public class ModRegistry {
 		ModRegistryHelper.registerItemBlock(event, ModItems.QUARTARIUM_GEM_BLOCK);
 		ModRegistryHelper.registerItemBlock(event, ModItems.NAGATORIUM_GEM_BLOCK);
 		ModRegistryHelper.registerItemBlock(event, ModItems.SAKURAJIMARIUM_GEM_BLOCK);
+		ModRegistryHelper.registerItemBlock(event, ModItems.KITAGAWARIUM_GEM_BLOCK);
 
 		// star itemblocks
 		ModRegistryHelper.registerItemBlock(event, ModItems.BASE_STAR_BLOCK);
@@ -178,6 +186,7 @@ public class ModRegistry {
 		ModRegistryHelper.registerItem(event, ModItems.QUARTARIUM_INGOT);
 		ModRegistryHelper.registerItem(event, ModItems.NAGATORIUM_INGOT);
 		ModRegistryHelper.registerItem(event, ModItems.SAKURAJIMARIUM_INGOT);
+		ModRegistryHelper.registerItem(event, ModItems.KITAGAWARIUM_INGOT);
 
 		// gems
 		ModRegistryHelper.registerItem(event, ModItems.BASE_GEM);
@@ -201,10 +210,20 @@ public class ModRegistry {
 		ModRegistryHelper.registerItem(event, ModItems.QUARTARIUM_GEM);
 		ModRegistryHelper.registerItem(event, ModItems.NAGATORIUM_GEM);
 		ModRegistryHelper.registerItem(event, ModItems.SAKURAJIMARIUM_GEM);
+		ModRegistryHelper.registerItem(event, ModItems.KITAGAWARIUM_GEM);
 
 		// stars
 		ModRegistryHelper.registerItem(event, ModItems.BASE_STAR);
 		ModRegistryHelper.registerItem(event, ModItems.OEDLDOEDL_STAR);
+
+		ModRegistryHelper.registerItem(event, ModItems.GREMORIUM_STAR);
+		ModRegistryHelper.registerItem(event, ModItems.HIMEJIMARIUM_STAR);
+		ModRegistryHelper.registerItem(event, ModItems.TOUJOURIUM_STAR);
+		ModRegistryHelper.registerItem(event, ModItems.ARGENTORIUM_STAR);
+		ModRegistryHelper.registerItem(event, ModItems.QUARTARIUM_STAR);
+		ModRegistryHelper.registerItem(event, ModItems.NAGATORIUM_STAR);
+		ModRegistryHelper.registerItem(event, ModItems.SAKURAJIMARIUM_STAR);
+		ModRegistryHelper.registerItem(event, ModItems.KITAGAWARIUM_STAR);
 
 		// elements
 		ModRegistryHelper.registerItem(event, ModItems.BASE_ELEMENT);
@@ -234,6 +253,7 @@ public class ModRegistry {
 		ModRegistryHelper.registerItem(event, ModItems.LAPIS_NUGGET);
 		ModRegistryHelper.registerItem(event, ModItems.EMERALD_NUGGET);
 		ModRegistryHelper.registerItem(event, ModItems.QUARTZ_NUGGET);
+		ModRegistryHelper.registerItem(event, ModItems.OBSIDIAN_NUGGET);
 		ModRegistryHelper.registerItem(event, ModItems.ENDER_NUGGET);
 		ModRegistryHelper.registerItem(event, ModItems.BASE_NUGGET);
 		ModRegistryHelper.registerItem(event, ModItems.OEDLDOEDL_NUGGET);
@@ -251,6 +271,7 @@ public class ModRegistry {
 		ModRegistryHelper.registerItem(event, ModItems.QUARTARIUM_NUGGET);
 		ModRegistryHelper.registerItem(event, ModItems.NAGATORIUM_NUGGET);
 		ModRegistryHelper.registerItem(event, ModItems.SAKURAJIMARIUM_NUGGET);
+		ModRegistryHelper.registerItem(event, ModItems.KITAGAWARIUM_NUGGET);
 
 		// shards
 		ModRegistryHelper.registerItem(event, ModItems.GREMORIUM_SHARD);
@@ -260,6 +281,7 @@ public class ModRegistry {
 		ModRegistryHelper.registerItem(event, ModItems.QUARTARIUM_SHARD);
 		ModRegistryHelper.registerItem(event, ModItems.NAGATORIUM_SHARD);
 		ModRegistryHelper.registerItem(event, ModItems.SAKURAJIMARIUM_SHARD);
+		ModRegistryHelper.registerItem(event, ModItems.KITAGAWARIUM_SHARD);
 
 		ModRegistryHelper.registerItem(event, ModItems.BASE_STAR_SHARD);
 		ModRegistryHelper.registerItem(event, ModItems.NETHER_STAR_SHARD);
@@ -290,12 +312,14 @@ public class ModRegistry {
 		ModRegistryHelper.registerItem(event, ModItems.QUARTARIUM_SINGULARITY);
 		ModRegistryHelper.registerItem(event, ModItems.NAGATORIUM_SINGULARITY);
 		ModRegistryHelper.registerItem(event, ModItems.SAKURAJIMARIUM_SINGULARITY);
+		ModRegistryHelper.registerItem(event, ModItems.KITAGAWARIUM_SINGULARITY);
 
 		// catalysts
 		ModRegistryHelper.registerItem(event, ModItems.OEDLDOEDL_CATALYST);
 		ModRegistryHelper.registerItem(event, ModItems.CHAOS_CATALYST);
 
 		// misc
+		ModRegistryHelper.registerItem(event, ModItems.ENRICHED_URANIUM);
 		ModRegistryHelper.registerItem(event, ModItems.BALANCED_CLAY_BALL);
 	}
 

@@ -35,6 +35,7 @@ public class ModItems {
 	public static final Item BASE_ORE = new ModItemBlockBase(ModBlocks.BASE_ORE, ModRarities.WHITE, false, 2, 0);
 	public static final Item OEDLDOEDL_ORE = new ModItemBlockBase(ModBlocks.OEDLDOEDL_ORE, ModRarities.LIGHT_PURPLE, false, 2, 0);
 	public static final Item RANDOMITE_ORE = new ModItemBlockBase(ModBlocks.RANDOMITE_ORE, ModRarities.YELLOW, false, 2, 0);
+	public static final Item ENRICHED_URANIUM_ORE = new ModItemBlockBase(ModBlocks.ENRICHED_URANIUM_ORE, ModRarities.YELLOW, false, 2, 0);
 	public static final Item ENDER_ORE = new ModItemBlockBase(ModBlocks.ENDER_ORE, ModRarities.YELLOW, false, 2, 0);
 	public static final Item GUNPOWDER_ORE = new ModItemBlockBase(ModBlocks.GUNPOWDER_ORE, ModRarities.WHITE, false, 2, 0);
 	public static final Item SALT_ORE = new ModItemBlockBase(ModBlocks.SALT_ORE, ModRarities.WHITE, false, 2, 0);
@@ -46,6 +47,7 @@ public class ModItems {
 	public static final Item NETHER_QUARTARIUM_ORE = new ModItemBlockBase(ModBlocks.NETHER_QUARTARIUM_ORE, ModRarities.BLUE, false, 2, 0);
 	public static final Item NETHER_NAGATORIUM_ORE = new ModItemBlockBase(ModBlocks.NETHER_NAGATORIUM_ORE, ModRarities.DARK_PURPLE, false, 2, 0);
 	public static final Item NETHER_SAKURAJIMARIUM_ORE = new ModItemBlockBase(ModBlocks.NETHER_SAKURAJIMARIUM_ORE, ModRarities.DARK_GRAY, false, 2, 0);
+	public static final Item NETHER_KITAGAWARIUM_ORE = new ModItemBlockBase(ModBlocks.NETHER_KITAGAWARIUM_ORE, ModRarities.LIGHT_PURPLE, false, 2, 0);
 
 	public static final Item END_ELEMENT_OD = new ModItemBlockBase(ModBlocks.END_ELEMENT_OD, ModRarities.LIGHT_PURPLE, false, 2, 0);
 
@@ -66,6 +68,7 @@ public class ModItems {
 	public static final Item QUARTARIUM_BLOCK = new ModItemBlockEffectBase(ModBlocks.QUARTARIUM, MobEffects.STRENGTH, false, ModRarities.BLUE, false, 1, 0);
 	public static final Item NAGATORIUM_BLOCK = new ModItemBlockEffectBase(ModBlocks.NAGATORIUM, MobEffects.UNLUCK, true, ModRarities.DARK_PURPLE, false, 1, 0);
 	public static final Item SAKURAJIMARIUM_BLOCK = new ModItemBlockEffectBase(ModBlocks.SAKURAJIMARIUM, MobEffects.JUMP_BOOST, false, ModRarities.DARK_GRAY, false, 1, 0);
+	public static final Item KITAGAWARIUM_BLOCK = new ModItemBlockEffectBase(ModBlocks.KITAGAWARIUM, MobEffects.WATER_BREATHING, false, ModRarities.LIGHT_PURPLE, false, 1, 0);
 
 	// gem itemblocks
 	public static final Item BASE_GEM_BLOCK = new ModItemBlockBase(ModBlocks.BASE_GEM, ModRarities.WHITE, false, 1, 0);
@@ -89,6 +92,7 @@ public class ModItems {
 	public static final Item QUARTARIUM_GEM_BLOCK = new ModItemBlockBase(ModBlocks.QUARTARIUM_GEM, ModRarities.BLUE, false, 2, 0);
 	public static final Item NAGATORIUM_GEM_BLOCK = new ModItemBlockBase(ModBlocks.NAGATORIUM_GEM, ModRarities.DARK_PURPLE, false, 2, 0);
 	public static final Item SAKURAJIMARIUM_GEM_BLOCK = new ModItemBlockBase(ModBlocks.SAKURAJIMARIUM_GEM, ModRarities.DARK_GRAY, false, 2, 0);
+	public static final Item KITAGAWARIUM_GEM_BLOCK = new ModItemBlockBase(ModBlocks.KITAGAWARIUM_GEM, ModRarities.LIGHT_PURPLE, false, 2, 0);
 
 	// star itemblocks
 	public static final Item BASE_STAR_BLOCK = new ModItemBlockBase(ModBlocks.BASE_STAR, ModRarities.WHITE, false, 1, 0);
@@ -117,6 +121,7 @@ public class ModItems {
 	public static final Item QUARTARIUM_INGOT = new ModItemIngotEffectBase(OedldoedlResources.MODID, "quartarium_ingot", OedldoedlResources.TAB, MobEffects.STRENGTH, false, ModRarities.BLUE, false, 3, 1).setBeaconPayment();
 	public static final Item NAGATORIUM_INGOT = new ModItemIngotEffectBase(OedldoedlResources.MODID, "nagatorium_ingot", OedldoedlResources.TAB, MobEffects.UNLUCK, true, ModRarities.DARK_PURPLE, false, 3, 1).setBeaconPayment();
 	public static final Item SAKURAJIMARIUM_INGOT = new ModItemIngotEffectBase(OedldoedlResources.MODID, "sakurajimarium_ingot", OedldoedlResources.TAB, MobEffects.JUMP_BOOST, false, ModRarities.DARK_GRAY, false, 3, 1).setBeaconPayment();
+	public static final Item KITAGAWARIUM_INGOT = new ModItemIngotEffectBase(OedldoedlResources.MODID, "kitagawarium_ingot", OedldoedlResources.TAB, MobEffects.WATER_BREATHING, false, ModRarities.LIGHT_PURPLE, false, 3, 1).setBeaconPayment();
 
 	// gems
 	public static final Item BASE_GEM = new ModItemBase(OedldoedlResources.MODID, "base_gem", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
@@ -140,10 +145,20 @@ public class ModItems {
 	public static final Item QUARTARIUM_GEM = new ModItemBase(OedldoedlResources.MODID, "quartarium_gem", OedldoedlResources.TAB, ModRarities.BLUE, false, 2, 0);
 	public static final Item NAGATORIUM_GEM = new ModItemBase(OedldoedlResources.MODID, "nagatorium_gem", OedldoedlResources.TAB, ModRarities.DARK_PURPLE, false, 2, 0);
 	public static final Item SAKURAJIMARIUM_GEM = new ModItemBase(OedldoedlResources.MODID, "sakurajimarium_gem", OedldoedlResources.TAB, ModRarities.DARK_GRAY, false, 2, 0);
+	public static final Item KITAGAWARIUM_GEM = new ModItemBase(OedldoedlResources.MODID, "kitagawarium_gem", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, false, 2, 0);
 
 	// stars
 	public static final Item BASE_STAR = new ModItemBase(OedldoedlResources.MODID, "base_star", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
 	public static final Item OEDLDOEDL_STAR = new ModItemBase(OedldoedlResources.MODID, "oedldoedl_star", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, true, 3, 0);
+
+	public static final Item GREMORIUM_STAR = new ModItemBase(OedldoedlResources.MODID, "gremorium_star", OedldoedlResources.TAB, ModRarities.DARK_RED, true, 1, 0);
+	public static final Item HIMEJIMARIUM_STAR = new ModItemBase(OedldoedlResources.MODID, "himejimarium_star", OedldoedlResources.TAB, ModRarities.DARK_BLUE, true, 1, 0);
+	public static final Item TOUJOURIUM_STAR = new ModItemBase(OedldoedlResources.MODID, "toujourium_star", OedldoedlResources.TAB, ModRarities.GRAY, true, 1, 0);
+	public static final Item ARGENTORIUM_STAR = new ModItemBase(OedldoedlResources.MODID, "argentorium_star", OedldoedlResources.TAB, ModRarities.YELLOW, true, 1, 0);
+	public static final Item QUARTARIUM_STAR = new ModItemBase(OedldoedlResources.MODID, "quartarium_star", OedldoedlResources.TAB, ModRarities.BLUE, true, 1, 0);
+	public static final Item NAGATORIUM_STAR = new ModItemBase(OedldoedlResources.MODID, "nagatorium_star", OedldoedlResources.TAB, ModRarities.DARK_PURPLE, true, 1, 0);
+	public static final Item SAKURAJIMARIUM_STAR = new ModItemBase(OedldoedlResources.MODID, "sakurajimarium_star", OedldoedlResources.TAB, ModRarities.DARK_GRAY, true, 1, 0);
+	public static final Item KITAGAWARIUM_STAR = new ModItemBase(OedldoedlResources.MODID, "kitagawarium_star", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, true, 1, 0);
 
 	// elements
 	public static final Item BASE_ELEMENT = new ModItemBase(OedldoedlResources.MODID, "base_element", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
@@ -173,6 +188,7 @@ public class ModItems {
 	public static final Item LAPIS_NUGGET = new ModItemBase(OedldoedlResources.MODID, "lapis_nugget", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
 	public static final Item EMERALD_NUGGET = new ModItemBase(OedldoedlResources.MODID, "emerald_nugget", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
 	public static final Item QUARTZ_NUGGET = new ModItemBase(OedldoedlResources.MODID, "quartz_nugget", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
+	public static final Item OBSIDIAN_NUGGET = new ModItemBase(OedldoedlResources.MODID, "obsidian_nugget", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
 	public static final Item ENDER_NUGGET = new ModItemBase(OedldoedlResources.MODID, "ender_nugget", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
 	public static final Item BASE_NUGGET = new ModItemBase(OedldoedlResources.MODID, "base_nugget", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
 	public static final Item OEDLDOEDL_NUGGET = new ModItemBase(OedldoedlResources.MODID, "oedldoedl_nugget", OedldoedlResources.TAB, ModRarities.WHITE, true, 2, 0);
@@ -190,6 +206,7 @@ public class ModItems {
 	public static final Item QUARTARIUM_NUGGET = new ModItemNuggetEffectBase(OedldoedlResources.MODID, "quartarium_nugget", OedldoedlResources.TAB, MobEffects.STRENGTH, false, ModRarities.BLUE, false, 1, 0);
 	public static final Item NAGATORIUM_NUGGET = new ModItemNuggetEffectBase(OedldoedlResources.MODID, "nagatorium_nugget", OedldoedlResources.TAB, MobEffects.UNLUCK, true, ModRarities.DARK_PURPLE, false, 1, 0);
 	public static final Item SAKURAJIMARIUM_NUGGET = new ModItemNuggetEffectBase(OedldoedlResources.MODID, "sakurajimarium_nugget", OedldoedlResources.TAB, MobEffects.JUMP_BOOST, false, ModRarities.DARK_GRAY, false, 1, 0);
+	public static final Item KITAGAWARIUM_NUGGET = new ModItemNuggetEffectBase(OedldoedlResources.MODID, "kitagawarium_nugget", OedldoedlResources.TAB, MobEffects.WATER_BREATHING, false, ModRarities.LIGHT_PURPLE, false, 1, 0);
 
 	// shards
 	public static final Item GREMORIUM_SHARD = new ModItemBase(OedldoedlResources.MODID, "gremorium_shard", OedldoedlResources.TAB, ModRarities.DARK_RED, false, 1, 1);
@@ -199,6 +216,7 @@ public class ModItems {
 	public static final Item QUARTARIUM_SHARD = new ModItemBase(OedldoedlResources.MODID, "quartarium_shard", OedldoedlResources.TAB, ModRarities.BLUE, false, 1, 1);
 	public static final Item NAGATORIUM_SHARD = new ModItemBase(OedldoedlResources.MODID, "nagatorium_shard", OedldoedlResources.TAB, ModRarities.DARK_PURPLE, false, 1, 1);
 	public static final Item SAKURAJIMARIUM_SHARD = new ModItemBase(OedldoedlResources.MODID, "sakurajimarium_shard", OedldoedlResources.TAB, ModRarities.DARK_GRAY, false, 1, 1);
+	public static final Item KITAGAWARIUM_SHARD = new ModItemBase(OedldoedlResources.MODID, "kitagawarium_shard", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, false, 1, 1);
 
 	public static final Item BASE_STAR_SHARD = new ModItemBase(OedldoedlResources.MODID, "base_star_shard", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
 	public static final Item NETHER_STAR_SHARD = new ModItemBase(OedldoedlResources.MODID, "nether_star_shard", OedldoedlResources.TAB, ModRarities.YELLOW, true, 1, 0);
@@ -230,11 +248,13 @@ public class ModItems {
 	public static final Item QUARTARIUM_SINGULARITY = new ModItemBase(OedldoedlResources.MODID, "quartarium_singularity", OedldoedlResources.TAB, ModRarities.BLUE, false, 1, 0);
 	public static final Item NAGATORIUM_SINGULARITY = new ModItemBase(OedldoedlResources.MODID, "nagatorium_singularity", OedldoedlResources.TAB, ModRarities.DARK_PURPLE, false, 1, 0);
 	public static final Item SAKURAJIMARIUM_SINGULARITY = new ModItemBase(OedldoedlResources.MODID, "sakurajimarium_singularity", OedldoedlResources.TAB, ModRarities.DARK_GRAY, false, 1, 0);
+	public static final Item KITAGAWARIUM_SINGULARITY = new ModItemBase(OedldoedlResources.MODID, "kitagawarium_singularity", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, false, 1, 0);
 
 	// catalysts
 	public static final Item OEDLDOEDL_CATALYST = new ModItemBase(OedldoedlResources.MODID, "oedldoedl_catalyst", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, false, 1, 0);
 	public static final Item CHAOS_CATALYST = new ModItemBase(OedldoedlResources.MODID, "chaos_catalyst", OedldoedlResources.TAB, ModRarities.BLACK, false, 3, 0);
 
 	// misc
+	public static final Item ENRICHED_URANIUM = new ModItemBase(OedldoedlResources.MODID, "enriched_uranium", OedldoedlResources.TAB, ModRarities.YELLOW, false, 1, 1);
 	public static final Item BALANCED_CLAY_BALL = new ModItemBase(OedldoedlResources.MODID, "balanced_clay_ball", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, true, 2, 1);
 }

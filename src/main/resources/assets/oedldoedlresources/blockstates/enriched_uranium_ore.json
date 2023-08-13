@@ -1,0 +1,9 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "oedldoedlresources:enriched_uranium_ore"
+        }
+    }
+}

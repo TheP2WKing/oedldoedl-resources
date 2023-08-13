@@ -15,7 +15,6 @@ tile.oedldoedlresources.base_block.tip2=or maybe wait a second...
 tile.oedldoedlresources.base_ore.name=Base Ore
 tile.oedldoedlresources.base_ore.tip1=Just a basic ore.
 tile.oedldoedlresources.base_ore.tip2=Can be found at any y-level.
-tile.oedldoedlresources.base_ore.jei=Can be found in the overworld at any y-level if enabled.
 item.oedldoedlresources.base_ingot.name=Base Ingot
 item.oedldoedlresources.base_ingot.tip1=It is not as useless as it seems.
 item.oedldoedlresources.base_dust.name=Base Dust
@@ -46,7 +45,6 @@ tile.oedldoedlresources.oedldoedl_block.tip2=But looks even cooler since 1.16.
 tile.oedldoedlresources.oedldoedl_ore.name=Oedldoedl Ore
 tile.oedldoedlresources.oedldoedl_ore.tip1=The beginning of the modpack.
 tile.oedldoedlresources.oedldoedl_ore.tip2=Can be found under y-level 10.
-tile.oedldoedlresources.oedldoedl_ore.jei=Can be found in the overworld under y10 if enabled.
 item.oedldoedlresources.oedldoedl_ingot.name=Oedldoedl Ingot
 item.oedldoedlresources.oedldoedl_ingot.tip1=The infinity in the weak hands of
 item.oedldoedlresources.oedldoedl_ingot.tip2=Flofino, oh god why so early?
@@ -87,7 +85,6 @@ item.oedldoedlresources.oedldoedl_star_shard.tip2=but it is not quite true.
 tile.oedldoedlresources.end_element_od.name=End Element OD
 tile.oedldoedlresources.end_element_od.tip1=This is not even the end.
 tile.oedldoedlresources.end_element_od.tip2=Can be found in the end at any y-level.
-tile.oedldoedlresources.end_element_od.jei=Can be found in the end at any y-level if enabled. When broken, some random colored fragments will be dropped. Affected by fortune.
 
 #bedrockium
 tile.oedldoedlresources.bedrockium_block.name=Block of Bedrockium
@@ -156,7 +153,6 @@ tile.oedldoedlresources.gremorium_gem_block.tip2=Made with pure love.
 tile.oedldoedlresources.nether_gremorium_ore.name=Nether Gremorium Ore
 tile.oedldoedlresources.nether_gremorium_ore.tip1=Can be found in the nether
 tile.oedldoedlresources.nether_gremorium_ore.tip2=between y-level 4 and 9.
-tile.oedldoedlresources.nether_gremorium_ore.jei=Can be found in the nether between y-level 4 and 9 if enabled. When broken, some gremorium shards will be dropped. Affected by fortune.
 item.oedldoedlresources.gremorium_ingot.name=Gremorium Ingot
 item.oedldoedlresources.gremorium_ingot.annotation1=Stats: §4B99-W58-H90
 item.oedldoedlresources.gremorium_ingot.tip1=What the F*CK...is this now?
@@ -172,6 +168,10 @@ item.oedldoedlresources.gremorium_nugget.name=Gremorium Nugget
 item.oedldoedlresources.gremorium_nugget.tip1=Little love.
 item.oedldoedlresources.gremorium_singularity.name=Gremorium Singularity
 item.oedldoedlresources.gremorium_singularity.tip1=The fun never ends...
+item.oedldoedlresources.gremorium_star.name=Gremorium Star
+item.oedldoedlresources.gremorium_star.tip1=When love is not enought.
+item.oedldoedlresources.gremorium_star_shard.name=Gremorium Star Shard
+item.oedldoedlresources.gremorium_star_shard.tip1=A shard to die for.
 
 # himejimarium
 tile.oedldoedlresources.himejimarium_block.name=Block of Himejimarium
@@ -182,7 +182,6 @@ tile.oedldoedlresources.himejimarium_gem_block.tip2=Made with masochism.
 tile.oedldoedlresources.nether_himejimarium_ore.name=Nether Himejimarium Ore
 tile.oedldoedlresources.nether_himejimarium_ore.tip1=Can be found in the nether
 tile.oedldoedlresources.nether_himejimarium_ore.tip2=between y-level 7 and 21.
-tile.oedldoedlresources.nether_himejimarium_ore.jei=Can be found in the nether between y-level 7 and 21 if enabled. When broken, some himejimarium shards will be dropped. Affected by fortune.
 item.oedldoedlresources.himejimarium_ingot.name=Himejimarium Ingot
 item.oedldoedlresources.himejimarium_ingot.annotation1=Stats: §1B102-W60-H89
 item.oedldoedlresources.himejimarium_ingot.tip1=What the F*CK...is this now?
@@ -198,6 +197,10 @@ item.oedldoedlresources.himejimarium_shard.annotation1=Dropped by: §1Nether Him
 item.oedldoedlresources.himejimarium_shard.tip1=The beginning of something masochistic.
 item.oedldoedlresources.himejimarium_singularity.name=Himejimarium Singularity
 item.oedldoedlresources.himejimarium_singularity.tip1=The fun never ends...
+item.oedldoedlresources.himejimarium_star.name=Himejimarium Star
+item.oedldoedlresources.himejimarium_star.tip1=When t*ts are not enought.
+item.oedldoedlresources.himejimarium_star_shard.name=Himejimarium Star Shard
+item.oedldoedlresources.himejimarium_star_shard.tip1=A shard to die for.
 
 # toujourium
 tile.oedldoedlresources.toujourium_block.name=Block of Toujourium
@@ -208,7 +211,6 @@ tile.oedldoedlresources.toujourium_gem_block.tip2=Made with cats.
 tile.oedldoedlresources.nether_toujourium_ore.name=Nether Toujourium Ore
 tile.oedldoedlresources.nether_toujourium_ore.tip1=Can be found in the nether
 tile.oedldoedlresources.nether_toujourium_ore.tip2=between y-level 11 and y23.
-tile.oedldoedlresources.nether_toujourium_ore.jei=Can be found in the nether between y-level 11 and 23 if enabled. When broken, some toujourium shards will be dropped. Affected by fortune.
 item.oedldoedlresources.toujourium_ingot.name=Toujourium Ingot
 item.oedldoedlresources.toujourium_ingot.annotation1=Stats: §7B67-W57-H73
 item.oedldoedlresources.toujourium_ingot.tip1=What the F*CK...is this now?
@@ -224,6 +226,10 @@ item.oedldoedlresources.toujourium_shard.annotation1=Dropped by: §7Nether Toujo
 item.oedldoedlresources.toujourium_shard.tip1=The beginning of something cat-tish.
 item.oedldoedlresources.toujourium_singularity.name=Toujourium Singularity
 item.oedldoedlresources.toujourium_singularity.tip1=The fun never ends...
+item.oedldoedlresources.toujourium_star.name=Toujourium Star
+item.oedldoedlresources.toujourium_star.tip1=When cats are not enought.
+item.oedldoedlresources.toujourium_star_shard.name=Toujourium Star Shard
+item.oedldoedlresources.toujourium_star_shard.tip1=A shard to die for.
 
 # argentorium
 tile.oedldoedlresources.argentorium_block.name=Block of Argentorium
@@ -234,7 +240,6 @@ tile.oedldoedlresources.argentorium_gem_block.tip2=Made with god.
 tile.oedldoedlresources.nether_argentorium_ore.name=Nether Argentorium Ore
 tile.oedldoedlresources.nether_argentorium_ore.tip1=Can be found in the nether
 tile.oedldoedlresources.nether_argentorium_ore.tip2=between y-level 5 and 11.
-tile.oedldoedlresources.nether_argentorium_ore.jei=Can be found in the nether between y-level 5 and 11 if enabled. When broken, some argentorium shards will be dropped. Affected by fortune.
 item.oedldoedlresources.argentorium_ingot.name=Argentorium Ingot
 item.oedldoedlresources.argentorium_ingot.annotation1=Stats: §eB83-W55-H81
 item.oedldoedlresources.argentorium_ingot.tip1=What the F*CK...is this now?
@@ -250,6 +255,10 @@ item.oedldoedlresources.argentorium_shard.annotation1=Dropped by: §eNether Arge
 item.oedldoedlresources.argentorium_shard.tip1=The beginning of something holy.
 item.oedldoedlresources.argentorium_singularity.name=Argentorium Singularity
 item.oedldoedlresources.argentorium_singularity.tip1=The fun never ends...
+item.oedldoedlresources.argentorium_star.name=Argentorium Star
+item.oedldoedlresources.argentorium_star.tip1=When healing is not enought.
+item.oedldoedlresources.argentorium_star_shard.name=Argentorium Star Shard
+item.oedldoedlresources.argentorium_star_shard.tip1=A shard to die for.
 
 # quartarium
 tile.oedldoedlresources.quartarium_block.name=Block of Quartarium
@@ -260,7 +269,6 @@ tile.oedldoedlresources.quartarium_gem_block.tip2=Made with a bit of green.
 tile.oedldoedlresources.nether_quartarium_ore.name=Nether Quartarium Ore
 tile.oedldoedlresources.nether_quartarium_ore.tip1=Can be found in the nether
 tile.oedldoedlresources.nether_quartarium_ore.tip2=between y-level 2 and 14.
-tile.oedldoedlresources.nether_quartarium_ore.jei=Can be found in the nether between y-level 2 and 14 if enabled. When broken, some quartarium shards will be dropped. Affected by fortune.
 item.oedldoedlresources.quartarium_ingot.name=Quartarium Ingot
 item.oedldoedlresources.quartarium_ingot.annotation1=Stats: §9B87-W58-H88
 item.oedldoedlresources.quartarium_ingot.tip1=What the F*CK...is this now?
@@ -276,6 +284,10 @@ item.oedldoedlresources.quartarium_shard.annotation1=Dropped by: §9Nether Quart
 item.oedldoedlresources.quartarium_shard.tip1=The beginning of something skilled.
 item.oedldoedlresources.quartarium_singularity.name=Quartarium Singularity
 item.oedldoedlresources.quartarium_singularity.tip1=The fun never ends...
+item.oedldoedlresources.quartarium_star.name=Quartarium Star
+item.oedldoedlresources.quartarium_star.tip1=When swords are not enought.
+item.oedldoedlresources.quartarium_star_shard.name=Quartarium Star Shard
+item.oedldoedlresources.quartarium_star_shard.tip1=A shard to die for.
 
 # nagatorium
 tile.oedldoedlresources.nagatorium_block.name=Block of Nagatorium
@@ -286,7 +298,6 @@ tile.oedldoedlresources.nagatorium_gem_block.tip2=Made with sadism.
 tile.oedldoedlresources.nether_nagatorium_ore.name=Nether Nagatorium Ore
 tile.oedldoedlresources.nether_nagatorium_ore.tip1=Can be found in the nether
 tile.oedldoedlresources.nether_nagatorium_ore.tip2=between y-level 1 and 4.
-tile.oedldoedlresources.nether_nagatorium_ore.jei=Can be found in the nether between y-level 1 and 4 if enabled. When broken, some nagatorium shards will be dropped. Affected by fortune.
 item.oedldoedlresources.nagatorium_ingot.name=Nagatorium Ingot
 item.oedldoedlresources.nagatorium_ingot.annotation1=Stats: §5B76-W56-H82
 item.oedldoedlresources.nagatorium_ingot.tip1=What the F*CK...is this now?
@@ -302,6 +313,10 @@ item.oedldoedlresources.nagatorium_shard.annotation1=Dropped by: §5Nether Nagat
 item.oedldoedlresources.nagatorium_shard.tip1=The beginning of something annoying.
 item.oedldoedlresources.nagatorium_singularity.name=Nagatorium Singularity
 item.oedldoedlresources.nagatorium_singularity.tip1=The fun never ends...
+item.oedldoedlresources.nagatorium_star.name=Nagatorium Star
+item.oedldoedlresources.nagatorium_star.tip1=When sadism is not enought.
+item.oedldoedlresources.nagatorium_star_shard.name=Nagatorium Star Shard
+item.oedldoedlresources.nagatorium_star_shard.tip1=A shard to die for.
 
 # sakurajimarium
 tile.oedldoedlresources.sakurajimarium_block.name=Block of Sakurajimarium
@@ -312,7 +327,6 @@ tile.oedldoedlresources.sakurajimarium_gem_block.tip2=Made with bunnies.
 tile.oedldoedlresources.nether_sakurajimarium_ore.name=Nether Sakurajimarium Ore
 tile.oedldoedlresources.nether_sakurajimarium_ore.tip1=Can be found in the nether
 tile.oedldoedlresources.nether_sakurajimarium_ore.tip2=between y-level 2 and 12.
-tile.oedldoedlresources.nether_sakurajimarium_ore.jei=Can be found in the nether between y-level 2 and 12 if enabled. When broken, some sakurajimarium shards will be dropped. Affected by fortune.
 item.oedldoedlresources.sakurajimarium_ingot.name=Sakurajimarium Ingot
 item.oedldoedlresources.sakurajimarium_ingot.annotation1=Stats: §8B80-W54-H80
 item.oedldoedlresources.sakurajimarium_ingot.tip1=What the F*CK...is this now?
@@ -328,17 +342,39 @@ item.oedldoedlresources.sakurajimarium_shard.annotation1=Dropped by: §8Nether S
 item.oedldoedlresources.sakurajimarium_shard.tip1=The beginning of something forgotten.
 item.oedldoedlresources.sakurajimarium_singularity.name=Sakurajimarium Singularity
 item.oedldoedlresources.sakurajimarium_singularity.tip1=The fun never ends...
+item.oedldoedlresources.sakurajimarium_star.name=Sakurajimarium Star
+item.oedldoedlresources.sakurajimarium_star.tip1=When bunnygirls are not enought.
+item.oedldoedlresources.sakurajimarium_star_shard.name=Sakurajimarium Star Shard
+item.oedldoedlresources.sakurajimarium_star_shard.tip1=A shard to die for.
 
-# infinity
-tile.oedldoedlresources.infinity_star_block.name=Block of Infinity Star
-tile.oedldoedlresources.infinity_star_block.tip1=Looks not so ugly, right?
-tile.oedldoedlresources.infinity_star_block.tip2=But since 1.16 it looks way better.
-item.oedldoedlresources.infinity_star.name=Infinity Star
-item.oedldoedlresources.infinity_star.tip1=Even more infinity in your weak hands, Flofino.
-item.oedldoedlresources.infinity_star.tip2=I ask you why? You really want it, right?
-item.oedldoedlresources.infinity_star_shard.name=Infinity Star Shard
-item.oedldoedlresources.infinity_star_shard.tip1=Even more infinity in the weak hands of Flofino,
-item.oedldoedlresources.infinity_star_shard.tip2=but it is quite true.
+# kitagawarium
+tile.oedldoedlresources.kitagawarium_block.name=Block of Kitagawarium
+tile.oedldoedlresources.kitagawarium_block.tip1=Compressed weebs.
+tile.oedldoedlresources.kitagawarium_gem_block.name=Block of Kitagawarium Gem
+tile.oedldoedlresources.kitagawarium_gem_block.tip1=What the F*CK...compressed?
+tile.oedldoedlresources.kitagawarium_gem_block.tip2=Made with cosplays.
+tile.oedldoedlresources.nether_kitagawarium_ore.name=Nether Kitagawarium Ore
+tile.oedldoedlresources.nether_kitagawarium_ore.tip1=Can be found in the nether
+tile.oedldoedlresources.nether_kitagawarium_ore.tip2=between y-level YX and YX.
+item.oedldoedlresources.kitagawarium_ingot.name=Kitagawarium Ingot
+item.oedldoedlresources.kitagawarium_ingot.annotation1=Stats: §dB86-W58-H84
+item.oedldoedlresources.kitagawarium_ingot.tip1=What the F*CK...is this now?
+item.oedldoedlresources.kitagawarium_ingot.tip2=More r34-ed than anything else!
+item.oedldoedlresources.kitagawarium_ingot.tip3=Actually not a Marin reference.
+item.oedldoedlresources.kitagawarium_gem.name=Kitagawarium Gem
+item.oedldoedlresources.kitagawarium_gem.tip1=What the F*CK...is this again?
+item.oedldoedlresources.kitagawarium_gem.tip2=Made with cosplays.
+item.oedldoedlresources.kitagawarium_nugget.name=Kitagawarium Nugget
+item.oedldoedlresources.kitagawarium_nugget.tip1=Little cosplay.
+item.oedldoedlresources.kitagawarium_shard.name=Kitagawarium Shard
+item.oedldoedlresources.kitagawarium_shard.annotation1=Dropped by: §dNether Kitagawarium Ore
+item.oedldoedlresources.kitagawarium_shard.tip1=The beginning of something ecchi.
+item.oedldoedlresources.kitagawarium_singularity.name=Kitagawarium Singularity
+item.oedldoedlresources.kitagawarium_singularity.tip1=The fun never ends...
+item.oedldoedlresources.kitagawarium_star.name=Kitagawarium Star
+item.oedldoedlresources.kitagawarium_star.tip1=When weebs are not enought.
+item.oedldoedlresources.kitagawarium_star_shard.name=Kitagawarium Star Shard
+item.oedldoedlresources.kitagawarium_star_shard.tip1=A shard to die for.
 
 # chaos
 tile.oedldoedlresources.chaos_plank.name=Chaos Plank
@@ -357,24 +393,23 @@ item.oedldoedlresources.chaos_catalyst.tip1=Lets get into some chaos.
 item.oedldoedlresources.chaos_catalyst.tip2=This is going to be fun I think?
 item.oedldoedlresources.chaos_catalyst.tip3=No it will not.
 
-# unstable
-item.oedldoedlresources.unstable_ingot.name=Unstable Ingot
-item.oedldoedlresources.unstable_ingot.tip1=Do no wait too long. Do no drop.
-item.oedldoedlresources.unstable_ingot.tip2=Do not close gui. Do something,
-item.oedldoedlresources.unstable_ingot.tip3=but do it as fast as possible.
-item.oedldoedlresources.unstable_ingot.annotation1=Timer (ticks left):
-
 # randomite
 tile.oedldoedlresources.randomite_ore.name=Randomite Ore
 tile.oedldoedlresources.randomite_ore.tip1=Everything is pure RNG.
 tile.oedldoedlresources.randomite_ore.tip2=Can be found at any y-level.
-tile.oedldoedlresources.randomite_ore.jei=Can be found in the overworld at any y-level if enabled. When broken, some random resources will be dropped.
+
+# enriched uranium
+tile.oedldoedlresources.enriched_uranium_ore.name=Enriched Uranium Ore
+tile.oedldoedlresources.enriched_uranium_ore.tip1=Tends to explode randomly or not?
+tile.oedldoedlresources.enriched_uranium_ore.tip2=Can be found between y-level Y12 and Y48.
+item.oedldoedlresources.enriched_uranium.name=Enriched Uranium
+item.oedldoedlresources.enriched_uranium.annotation1=Droped by: §eEnriched Uranium Ore
+item.oedldoedlresources.enriched_uranium.tip1=When is too much tnt really TooMuchTNT?
 
 # ender
 tile.oedldoedlresources.ender_ore.name=Ender Ore
 tile.oedldoedlresources.ender_ore.tip1=Previously known as TelepOREtation.
 tile.oedldoedlresources.ender_ore.tip2=Can be found between y-level 10 and 20.
-tile.oedldoedlresources.ender_ore.jei=Can be found in the overworld between y-level 10 and 20 if enabled. When broken, some ender dust will be dropped. Affected by fortune.
 item.oedldoedlresources.ender_dust.name=Ender Dust
 item.oedldoedlresources.ender_dust.annotation1=Droped by: §eEnder Ore
 item.oedldoedlresources.ender_dust.tip1=Enderman hates this trick.
@@ -385,17 +420,11 @@ item.oedldoedlresources.ender_nugget.tip1=Simply amazing.
 tile.oedldoedlresources.gunpowder_ore.name=Gunpowder Ore
 tile.oedldoedlresources.gunpowder_ore.tip1=Not intended for explosions.
 tile.oedldoedlresources.gunpowder_ore.tip2=Can be found between y-level 40 and 70.
-tile.oedldoedlresources.gunpowder_ore.jei=Can be found in the overworld between y-level 40 and 70 if enabled. When broken, some gunpowder will be dropped. Affected by fortune.
 
 # salt
-tile.oedldoedlresources.salt_block.name=Block of Salt
-tile.oedldoedlresources.salt_block.tip1=Salty compression.
 tile.oedldoedlresources.salt_ore.name=Salt Ore
 tile.oedldoedlresources.salt_ore.tip1=Tasts so salty like Flofino.
 tile.oedldoedlresources.salt_ore.tip2=Can be found at any y-level.
-tile.oedldoedlresources.salt_ore.jei=Can be found in the overworld at any y-level if enabled. When broken, some salt will be dropped. Affected by fortune.
-item.oedldoedlresources.salt=Salt
-item.oedldoedlresources.salt.tip1=Basically stone salt.
 item.oedldoedlresources.salt_dust.name=Salt Dust
 item.oedldoedlresources.salt_dust.annotation1=Droped by: §fSalt Ore
 item.oedldoedlresources.salt_dust.tip1=Flofino, do not be so salty.
@@ -421,6 +450,10 @@ item.oedldoedlresources.emerald_nugget.tip1=Simply amazing.
 # quartz
 item.oedldoedlresources.quartz_nugget.name=Nether Quartz Nugget
 item.oedldoedlresources.quartz_nugget.tip1=Simply amazing.
+
+# quartz
+item.oedldoedlresources.obsidian_nugget.name=Obsidian Nugget
+item.oedldoedlresources.obsidian_nugget.tip1=Simply amazing.
 
 # nether star
 tile.oedldoedlresources.nether_star_block.name=Block of Nether Star
