@@ -200,6 +200,15 @@ public class ModRecipes {
 			ModRecipeHelper.addOreDict("shardNetherStar", ModItems.NETHER_STAR_SHARD, 0);
 			ModRecipeHelper.addOreDict("shardOedldoedlStar", ModItems.OEDLDOEDL_STAR_SHARD, 0);
 
+			ModRecipeHelper.addOreDict("shardGremoriumStar", ModItems.GREMORIUM_STAR_SHARD, 0);
+			ModRecipeHelper.addOreDict("shardHimejimariumStar", ModItems.HIMEJIMARIUM_STAR_SHARD, 0);
+			ModRecipeHelper.addOreDict("shardToujouriumStar", ModItems.TOUJOURIUM_STAR_SHARD, 0);
+			ModRecipeHelper.addOreDict("shardArgentoriumStar", ModItems.ARGENTORIUM_STAR_SHARD, 0);
+			ModRecipeHelper.addOreDict("shardQuartariumStar", ModItems.QUARTARIUM_STAR_SHARD, 0);
+			ModRecipeHelper.addOreDict("shardNagatoriumStar", ModItems.NAGATORIUM_STAR_SHARD, 0);
+			ModRecipeHelper.addOreDict("shardSakurajimariumStar", ModItems.SAKURAJIMARIUM_STAR_SHARD, 0);
+			ModRecipeHelper.addOreDict("shardKitagawariumStar", ModItems.KITAGAWARIUM_STAR_SHARD, 0);
+
 			ModRecipeHelper.addOreDict("fragmentBase", ModItems.BASE_FRAGMENT, 0);
 			ModRecipeHelper.addOreDict("fragmentOedldoedl", ModItems.OEDLDOEDL_FRAGMENT, 0);
 			ModRecipeHelper.addOreDict("fragmentTimofium", ModItems.TIMOFIUM_FRAGMENT, 0);
@@ -268,7 +277,8 @@ public class ModRecipes {
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.OEDLDOEDL_INGOT, 1, 0), "oreOedldoedl",
 					0.7f);
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(Blocks.STONE, 1, 0), "oreRandomite", 0.7f);
-			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.ENRICHED_URANIUM, 1, 0), "oreUraniumPowder", 0.7f);
+			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.ENRICHED_URANIUM, 1, 0), "oreUraniumPowder",
+					0.7f);
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.ENDER_DUST, 1, 0), "oreEnder", 0.7f);
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(Items.GUNPOWDER, 1, 0), "oreGunpowder", 0.7f);
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.SALT_DUST, 1, 0), "oreSalt", 0.7f);
@@ -377,6 +387,23 @@ public class ModRecipes {
 					ModItems.NETHER_STAR_SHARD, Items.NETHER_STAR, ModBlocks.NETHER_STAR);
 			ModResourceRecipeHelper.addStarConversion(OedldoedlResources.MODID, "oedldoedlStar",
 					ModItems.OEDLDOEDL_STAR_SHARD, ModItems.OEDLDOEDL_STAR, ModBlocks.OEDLDOEDL_STAR);
+
+			ModResourceRecipeHelper.addStarConversion(OedldoedlResources.MODID, "gremoriumStar",
+					ModItems.GREMORIUM_STAR_SHARD, ModItems.GREMORIUM_STAR, null);
+			ModResourceRecipeHelper.addStarConversion(OedldoedlResources.MODID, "himejimariumStar",
+					ModItems.HIMEJIMARIUM_STAR_SHARD, ModItems.HIMEJIMARIUM_STAR, null);
+			ModResourceRecipeHelper.addStarConversion(OedldoedlResources.MODID, "toujouriumStar",
+					ModItems.TOUJOURIUM_STAR_SHARD, ModItems.TOUJOURIUM_STAR, null);
+			ModResourceRecipeHelper.addStarConversion(OedldoedlResources.MODID, "argentoriumStar",
+					ModItems.ARGENTORIUM_STAR_SHARD, ModItems.ARGENTORIUM_STAR, null);
+			ModResourceRecipeHelper.addStarConversion(OedldoedlResources.MODID, "quartariumStar",
+					ModItems.QUARTARIUM_STAR_SHARD, ModItems.QUARTARIUM_STAR, null);
+			ModResourceRecipeHelper.addStarConversion(OedldoedlResources.MODID, "nagatoriumStar",
+					ModItems.NAGATORIUM_STAR_SHARD, ModItems.NAGATORIUM_STAR, null);
+			ModResourceRecipeHelper.addStarConversion(OedldoedlResources.MODID, "sakurajimariumStar",
+					ModItems.SAKURAJIMARIUM_STAR_SHARD, ModItems.SAKURAJIMARIUM_STAR, null);
+			ModResourceRecipeHelper.addStarConversion(OedldoedlResources.MODID, "kitagawariumStar",
+					ModItems.KITAGAWARIUM_STAR_SHARD, ModItems.KITAGAWARIUM_STAR, null);
 
 			ModResourceRecipeHelper.addElementConversion(OedldoedlResources.MODID, "base", ModItems.BASE_FRAGMENT,
 					ModItems.BASE_ELEMENT, null);

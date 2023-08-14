@@ -222,6 +222,14 @@ public class ModItems {
 	public static final Item NETHER_STAR_SHARD = new ModItemBase(OedldoedlResources.MODID, "nether_star_shard", OedldoedlResources.TAB, ModRarities.YELLOW, true, 1, 0);
 	public static final Item OEDLDOEDL_STAR_SHARD = new ModItemBase(OedldoedlResources.MODID, "oedldoedl_star_shard", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, true, 1, 0);
 
+	public static final Item GREMORIUM_STAR_SHARD = new ModItemBase(OedldoedlResources.MODID, "gremorium_star_shard", OedldoedlResources.TAB, ModRarities.DARK_RED, true, 1, 0);
+	public static final Item HIMEJIMARIUM_STAR_SHARD = new ModItemBase(OedldoedlResources.MODID, "himejimarium_star_shard", OedldoedlResources.TAB, ModRarities.DARK_BLUE, true, 1, 0);
+	public static final Item TOUJOURIUM_STAR_SHARD = new ModItemBase(OedldoedlResources.MODID, "toujourium_star_shard", OedldoedlResources.TAB, ModRarities.GRAY, true, 1, 0);
+	public static final Item ARGENTORIUM_STAR_SHARD = new ModItemBase(OedldoedlResources.MODID, "argentorium_star_shard", OedldoedlResources.TAB, ModRarities.YELLOW, true, 1, 0);
+	public static final Item QUARTARIUM_STAR_SHARD = new ModItemBase(OedldoedlResources.MODID, "quartarium_star_shard", OedldoedlResources.TAB, ModRarities.BLUE, true, 1, 0);
+	public static final Item NAGATORIUM_STAR_SHARD = new ModItemBase(OedldoedlResources.MODID, "nagatorium_star_shard", OedldoedlResources.TAB, ModRarities.DARK_PURPLE, true, 1, 0);
+	public static final Item SAKURAJIMARIUM_STAR_SHARD = new ModItemBase(OedldoedlResources.MODID, "sakurajimarium_star_shard", OedldoedlResources.TAB, ModRarities.DARK_GRAY, true, 1, 0);
+	public static final Item KITAGAWARIUM_STAR_SHARD = new ModItemBase(OedldoedlResources.MODID, "kitagawarium_star_shard", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, true, 1, 0);
 	// fragments
 	public static final Item BASE_FRAGMENT = new ModItemBase(OedldoedlResources.MODID, "base_fragment", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
 	public static final Item OEDLDOEDL_FRAGMENT = new ModItemBase(OedldoedlResources.MODID, "oedldoedl_fragment", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, true, 1, 0);

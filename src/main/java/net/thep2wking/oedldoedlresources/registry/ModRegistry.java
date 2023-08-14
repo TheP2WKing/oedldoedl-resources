@@ -287,6 +287,15 @@ public class ModRegistry {
 		ModRegistryHelper.registerItem(event, ModItems.NETHER_STAR_SHARD);
 		ModRegistryHelper.registerItem(event, ModItems.OEDLDOEDL_STAR_SHARD);
 
+		ModRegistryHelper.registerItem(event, ModItems.GREMORIUM_STAR_SHARD);
+		ModRegistryHelper.registerItem(event, ModItems.HIMEJIMARIUM_STAR_SHARD);
+		ModRegistryHelper.registerItem(event, ModItems.TOUJOURIUM_STAR_SHARD);
+		ModRegistryHelper.registerItem(event, ModItems.ARGENTORIUM_STAR_SHARD);
+		ModRegistryHelper.registerItem(event, ModItems.QUARTARIUM_STAR_SHARD);
+		ModRegistryHelper.registerItem(event, ModItems.NAGATORIUM_STAR_SHARD);
+		ModRegistryHelper.registerItem(event, ModItems.SAKURAJIMARIUM_STAR_SHARD);
+		ModRegistryHelper.registerItem(event, ModItems.KITAGAWARIUM_STAR_SHARD);
+
 		// fragments
 		ModRegistryHelper.registerItem(event, ModItems.BASE_FRAGMENT);
 		ModRegistryHelper.registerItem(event, ModItems.OEDLDOEDL_FRAGMENT);
