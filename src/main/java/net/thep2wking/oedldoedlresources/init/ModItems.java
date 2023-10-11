@@ -35,10 +35,11 @@ public class ModItems {
 	public static final Item BASE_ORE = new ModItemBlockBase(ModBlocks.BASE_ORE, ModRarities.WHITE, false, 2, 0);
 	public static final Item OEDLDOEDL_ORE = new ModItemBlockBase(ModBlocks.OEDLDOEDL_ORE, ModRarities.LIGHT_PURPLE, false, 2, 0);
 	public static final Item RANDOMITE_ORE = new ModItemBlockBase(ModBlocks.RANDOMITE_ORE, ModRarities.YELLOW, false, 2, 0);
-	public static final Item ENRICHED_URANIUM_ORE = new ModItemBlockBase(ModBlocks.ENRICHED_URANIUM_ORE, ModRarities.YELLOW, false, 2, 0);
+	public static final Item URANIUM_POWDER_ORE = new ModItemBlockBase(ModBlocks.URANIUM_POWDER_ORE, ModRarities.YELLOW, false, 2, 0);
 	public static final Item ENDER_ORE = new ModItemBlockBase(ModBlocks.ENDER_ORE, ModRarities.YELLOW, false, 2, 0);
 	public static final Item GUNPOWDER_ORE = new ModItemBlockBase(ModBlocks.GUNPOWDER_ORE, ModRarities.WHITE, false, 2, 0);
 	public static final Item SALT_ORE = new ModItemBlockBase(ModBlocks.SALT_ORE, ModRarities.WHITE, false, 2, 0);
+	public static final Item COOKIE_ORE = new ModItemBlockBase(ModBlocks.COOKIE_ORE, ModRarities.WHITE, false, 1, 0);
 
 	public static final Item NETHER_GREMORIUM_ORE = new ModItemBlockBase(ModBlocks.NETHER_GREMORIUM_ORE, ModRarities.DARK_RED, false, 2, 0);
 	public static final Item NETHER_HIMEJIMARIUM_ORE = new ModItemBlockBase(ModBlocks.NETHER_HIMEJIMARIUM_ORE, ModRarities.DARK_BLUE, false, 2, 0);
@@ -259,10 +260,10 @@ public class ModItems {
 	public static final Item KITAGAWARIUM_SINGULARITY = new ModItemBase(OedldoedlResources.MODID, "kitagawarium_singularity", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, false, 1, 0);
 
 	// catalysts
-	public static final Item OEDLDOEDL_CATALYST = new ModItemBase(OedldoedlResources.MODID, "oedldoedl_catalyst", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, false, 1, 0);
-	public static final Item CHAOS_CATALYST = new ModItemBase(OedldoedlResources.MODID, "chaos_catalyst", OedldoedlResources.TAB, ModRarities.BLACK, false, 3, 0);
+	public static final Item OEDLDOEDL_CATALYST = new ModItemBase(OedldoedlResources.MODID, "oedldoedl_catalyst", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, true, 1, 0);
+	public static final Item CHAOS_CATALYST = new ModItemBase(OedldoedlResources.MODID, "chaos_catalyst", OedldoedlResources.TAB, ModRarities.BLACK, true, 3, 0);
 
 	// misc
-	public static final Item ENRICHED_URANIUM = new ModItemBase(OedldoedlResources.MODID, "enriched_uranium", OedldoedlResources.TAB, ModRarities.YELLOW, false, 1, 1);
+	public static final Item URANIUM_POWDER = new ModItemBase(OedldoedlResources.MODID, "uranium_powder", OedldoedlResources.TAB, ModRarities.YELLOW, false, 1, 1);
 	public static final Item BALANCED_CLAY_BALL = new ModItemBase(OedldoedlResources.MODID, "balanced_clay_ball", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, true, 2, 1);
 }

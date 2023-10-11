@@ -398,13 +398,17 @@ tile.oedldoedlresources.randomite_ore.name=Randomite Ore
 tile.oedldoedlresources.randomite_ore.tip1=Everything is pure RNG.
 tile.oedldoedlresources.randomite_ore.tip2=Can be found at any y-level.
 
-# enriched uranium
-tile.oedldoedlresources.enriched_uranium_ore.name=Enriched Uranium Ore
-tile.oedldoedlresources.enriched_uranium_ore.tip1=Tends to explode randomly or not?
-tile.oedldoedlresources.enriched_uranium_ore.tip2=Can be found between y-level Y12 and Y48.
-item.oedldoedlresources.enriched_uranium.name=Enriched Uranium
-item.oedldoedlresources.enriched_uranium.annotation1=Droped by: §eEnriched Uranium Ore
-item.oedldoedlresources.enriched_uranium.tip1=When is too much tnt really TooMuchTNT?
+# cookie
+tile.oedldoedlresources.cookie_ore.name=Cookie Ore
+tile.oedldoedlresources.cookie_ore.tip1=Sponsored by the cookie monster!
+
+# uranium
+tile.oedldoedlresources.uranium_powder_ore.name=Uranium Powder Ore
+tile.oedldoedlresources.uranium_powder_ore.tip1=Tends to explode randomly or not?
+tile.oedldoedlresources.uranium_powder_ore.tip2=Can be found between y-level Y12 and Y48.
+item.oedldoedlresources.uranium_powder.name=Uranium Powder
+item.oedldoedlresources.uranium_powder.annotation1=Droped by: §eUranium Powder Ore
+item.oedldoedlresources.uranium_powder.tip1=When is too much tnt really TooMuchTNT?
 
 # ender
 tile.oedldoedlresources.ender_ore.name=Ender Ore

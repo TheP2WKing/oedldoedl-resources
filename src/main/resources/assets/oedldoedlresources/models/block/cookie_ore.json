@@ -2,6 +2,6 @@
     "parent": "block/cube_all",
     "textures":  
     {
-        "all": "oedldoedlresources:blocks/enriched_uranium_ore"
+        "all": "oedldoedlresources:blocks/cookie_ore"
    	}
 }

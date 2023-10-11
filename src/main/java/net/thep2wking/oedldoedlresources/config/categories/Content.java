@@ -14,4 +14,7 @@ public class Content {
 
 	@Config.Name("Randomite Random Drops")
 	public boolean RANDOMITE_RANDOM_DROPS = true;
+
+	@Config.Name("Element OD Random Drops")
+	public boolean ELEMENT_OD_RANDOM_DROPS = true;
 }

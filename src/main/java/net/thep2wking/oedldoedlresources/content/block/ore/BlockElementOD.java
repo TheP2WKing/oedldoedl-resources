@@ -5,12 +5,14 @@ import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.thep2wking.oedldoedlcore.api.block.ModBlockOreBase;
 import net.thep2wking.oedldoedlcore.util.ModToolTypes;
+import net.thep2wking.oedldoedlresources.config.ResourcesConfig;
 import net.thep2wking.oedldoedlresources.init.ModItems;
 
 public class BlockElementOD extends ModBlockOreBase {
@@ -22,40 +24,45 @@ public class BlockElementOD extends ModBlockOreBase {
 	}
 
 	@Override
-	public void getDrops(NonNullList<ItemStack> drops, IBlockAccess world, BlockPos pos, IBlockState state, int fortune) {
+	public void getDrops(NonNullList<ItemStack> drops, IBlockAccess world, BlockPos pos, IBlockState state,
+			int fortune) {
 		float chance = 0.5f;
-		if (RANDOM.nextFloat() > chance) {
-			drops.add(new ItemStack(ModItems.TIMOFIUM_FRAGMENT, 1));
-		}
-		if (RANDOM.nextFloat() > chance) {
-			drops.add(new ItemStack(ModItems.FLOFINIUM_FRAGMENT, 1));
-		}
-		if (RANDOM.nextFloat() > chance) {
-			drops.add(new ItemStack(ModItems.LAARSIUM_FRAGMENT, 1));
-		}
-		if (RANDOM.nextFloat() > chance) {
-			drops.add(new ItemStack(ModItems.KLAARSIUM_FRAGMENT, 1));
-		}
-		if (RANDOM.nextFloat() > chance) {
-			drops.add(new ItemStack(ModItems.SHARANIUM_FRAGMENT, 1));
-		}
-		if (RANDOM.nextFloat() > chance) {
-			drops.add(new ItemStack(ModItems.MAKERIUM_FRAGMENT, 1));
-		}
-		if (RANDOM.nextFloat() > chance) {
-			drops.add(new ItemStack(ModItems.INDERIUM_FRAGMENT, 1));
-		}
-		if (RANDOM.nextFloat() > chance) {
-			drops.add(new ItemStack(ModItems.PUMARIUM_FRAGMENT, 1));
-		}
-		if (RANDOM.nextFloat() > chance) {
-			drops.add(new ItemStack(ModItems.CALLAXIUM_FRAGMENT, 1));
-		}
-		if (RANDOM.nextFloat() > chance) {
-			drops.add(new ItemStack(ModItems.SKORPIUM_FRAGMENT, 1));
-		}
-		if (RANDOM.nextFloat() > chance) {
-			drops.add(new ItemStack(ModItems.STUPIDIUM_FRAGMENT, 1));
+		if (ResourcesConfig.CONTENT.ELEMENT_OD_RANDOM_DROPS) {
+			if (RANDOM.nextFloat() > chance) {
+				drops.add(new ItemStack(ModItems.TIMOFIUM_FRAGMENT, 1));
+			}
+			if (RANDOM.nextFloat() > chance) {
+				drops.add(new ItemStack(ModItems.FLOFINIUM_FRAGMENT, 1));
+			}
+			if (RANDOM.nextFloat() > chance) {
+				drops.add(new ItemStack(ModItems.LAARSIUM_FRAGMENT, 1));
+			}
+			if (RANDOM.nextFloat() > chance) {
+				drops.add(new ItemStack(ModItems.KLAARSIUM_FRAGMENT, 1));
+			}
+			if (RANDOM.nextFloat() > chance) {
+				drops.add(new ItemStack(ModItems.SHARANIUM_FRAGMENT, 1));
+			}
+			if (RANDOM.nextFloat() > chance) {
+				drops.add(new ItemStack(ModItems.MAKERIUM_FRAGMENT, 1));
+			}
+			if (RANDOM.nextFloat() > chance) {
+				drops.add(new ItemStack(ModItems.INDERIUM_FRAGMENT, 1));
+			}
+			if (RANDOM.nextFloat() > chance) {
+				drops.add(new ItemStack(ModItems.PUMARIUM_FRAGMENT, 1));
+			}
+			if (RANDOM.nextFloat() > chance) {
+				drops.add(new ItemStack(ModItems.CALLAXIUM_FRAGMENT, 1));
+			}
+			if (RANDOM.nextFloat() > chance) {
+				drops.add(new ItemStack(ModItems.SKORPIUM_FRAGMENT, 1));
+			}
+			if (RANDOM.nextFloat() > chance) {
+				drops.add(new ItemStack(ModItems.STUPIDIUM_FRAGMENT, 1));
+			}
+		} else {
+			drops.add(new ItemStack(Blocks.END_STONE, 1));
 		}
 	}
 }

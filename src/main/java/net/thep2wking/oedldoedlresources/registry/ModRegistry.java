@@ -23,10 +23,11 @@ public class ModRegistry {
 		ModRegistryHelper.registerBlock(event, ModBlocks.BASE_ORE);
 		ModRegistryHelper.registerBlock(event, ModBlocks.OEDLDOEDL_ORE);
 		ModRegistryHelper.registerBlock(event, ModBlocks.RANDOMITE_ORE);
-		ModRegistryHelper.registerBlock(event, ModBlocks.ENRICHED_URANIUM_ORE);
+		ModRegistryHelper.registerBlock(event, ModBlocks.URANIUM_POWDER_ORE);
 		ModRegistryHelper.registerBlock(event, ModBlocks.ENDER_ORE);
 		ModRegistryHelper.registerBlock(event, ModBlocks.GUNPOWDER_ORE);
 		ModRegistryHelper.registerBlock(event, ModBlocks.SALT_ORE);
+		ModRegistryHelper.registerBlock(event, ModBlocks.COOKIE_ORE);
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.NETHER_GREMORIUM_ORE);
 		ModRegistryHelper.registerBlock(event, ModBlocks.NETHER_HIMEJIMARIUM_ORE);
@@ -100,10 +101,11 @@ public class ModRegistry {
 		ModRegistryHelper.registerItemBlock(event, ModItems.BASE_ORE);
 		ModRegistryHelper.registerItemBlock(event, ModItems.OEDLDOEDL_ORE);
 		ModRegistryHelper.registerItemBlock(event, ModItems.RANDOMITE_ORE);
-		ModRegistryHelper.registerItemBlock(event, ModItems.ENRICHED_URANIUM_ORE);
+		ModRegistryHelper.registerItemBlock(event, ModItems.URANIUM_POWDER_ORE);
 		ModRegistryHelper.registerItemBlock(event, ModItems.ENDER_ORE);
 		ModRegistryHelper.registerItemBlock(event, ModItems.GUNPOWDER_ORE);
 		ModRegistryHelper.registerItemBlock(event, ModItems.SALT_ORE);
+		ModRegistryHelper.registerItemBlock(event, ModItems.COOKIE_ORE);
 
 		ModRegistryHelper.registerItemBlock(event, ModItems.NETHER_GREMORIUM_ORE);
 		ModRegistryHelper.registerItemBlock(event, ModItems.NETHER_HIMEJIMARIUM_ORE);
@@ -328,7 +330,7 @@ public class ModRegistry {
 		ModRegistryHelper.registerItem(event, ModItems.CHAOS_CATALYST);
 
 		// misc
-		ModRegistryHelper.registerItem(event, ModItems.ENRICHED_URANIUM);
+		ModRegistryHelper.registerItem(event, ModItems.URANIUM_POWDER);
 		ModRegistryHelper.registerItem(event, ModItems.BALANCED_CLAY_BALL);
 	}
 

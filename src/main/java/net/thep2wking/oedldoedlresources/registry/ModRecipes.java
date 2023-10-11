@@ -19,11 +19,12 @@ public class ModRecipes {
 			ModRecipeHelper.addOreDict("oreBase", ModBlocks.BASE_ORE, 0);
 			ModRecipeHelper.addOreDict("oreOedldoedl", ModBlocks.OEDLDOEDL_ORE, 0);
 			ModRecipeHelper.addOreDict("oreRandomite", ModBlocks.RANDOMITE_ORE, 0);
-			ModRecipeHelper.addOreDict("oreUraniumPowder", ModBlocks.ENRICHED_URANIUM_ORE, 0);
+			ModRecipeHelper.addOreDict("orePowderUranium", ModBlocks.URANIUM_POWDER_ORE, 0);
 			ModRecipeHelper.addOreDict("oreEnder", ModBlocks.ENDER_ORE, 0);
 			ModRecipeHelper.addOreDict("oreEnderPearl", ModBlocks.ENDER_ORE, 0);
 			ModRecipeHelper.addOreDict("oreGunpowder", ModBlocks.GUNPOWDER_ORE, 0);
 			ModRecipeHelper.addOreDict("oreSalt", ModBlocks.SALT_ORE, 0);
+			ModRecipeHelper.addOreDict("oreCookie", ModBlocks.COOKIE_ORE, 0);
 
 			ModRecipeHelper.addOreDict("oreGremoriumShard", ModBlocks.NETHER_GREMORIUM_ORE, 0);
 			ModRecipeHelper.addOreDict("oreHimejimariumShard", ModBlocks.NETHER_HIMEJIMARIUM_ORE, 0);
@@ -81,7 +82,7 @@ public class ModRecipes {
 			ModRecipeHelper.addOreDict("blockNetherStar", ModBlocks.NETHER_STAR, 0);
 			ModRecipeHelper.addOreDict("blockOedldoedlStar", ModBlocks.OEDLDOEDL_STAR, 0);
 
-			ModRecipeHelper.addOreDict("balancedClay", ModBlocks.BALANCED_CLAY, 0);
+			ModRecipeHelper.addOreDict("blockBalancedClay", ModBlocks.BALANCED_CLAY, 0);
 			ModRecipeHelper.addOreDict("chaosPlank", ModBlocks.CHAOS_PLANK, 0);
 
 			ModRecipeHelper.addOreDict("ingotBase", ModItems.BASE_INGOT, 0);
@@ -237,8 +238,10 @@ public class ModRecipes {
 			ModRecipeHelper.addOreDict("catalystOedldoedl", ModItems.OEDLDOEDL_CATALYST, 0);
 			ModRecipeHelper.addOreDict("catalystChaos", ModItems.CHAOS_CATALYST, 0);
 
-			ModRecipeHelper.addOreDict("powderUranium", ModItems.ENRICHED_URANIUM, 0);
+			ModRecipeHelper.addOreDict("powderUranium", ModItems.URANIUM_POWDER, 0);
 			ModRecipeHelper.addOreDict("balancedClayball", ModItems.BALANCED_CLAY_BALL, 0);
+
+			ModRecipeHelper.addOreDict("gemCookie", Items.COOKIE, 0);
 		}
 
 		if (ResourcesConfig.CONTENT.RANDOMITE_RANDOM_DROPS) {
@@ -251,6 +254,7 @@ public class ModRecipes {
 			ModRecipeHelper.addOreDict("randomiteDrop", Blocks.IRON_ORE, 0);
 			ModRecipeHelper.addOreDict("randomiteDrop", Blocks.GOLD_ORE, 0);
 			ModRecipeHelper.addOreDict("randomiteDrop", Items.EGG, 0);
+			ModRecipeHelper.addOreDict("randomiteDrop", Items.COOKIE, 0);
 			ModRecipeHelper.addOreDict("randomiteDrop", Items.SLIME_BALL, 0);
 			ModRecipeHelper.addOreDict("randomiteDrop", Items.PRISMARINE_CRYSTALS, 0);
 			ModRecipeHelper.addOreDict("randomiteDrop", Items.PRISMARINE_SHARD, 0);
@@ -277,11 +281,12 @@ public class ModRecipes {
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.OEDLDOEDL_INGOT, 1, 0), "oreOedldoedl",
 					0.7f);
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(Blocks.STONE, 1, 0), "oreRandomite", 0.7f);
-			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.ENRICHED_URANIUM, 1, 0), "oreUraniumPowder",
+			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.URANIUM_POWDER, 1, 0), "orePowderUranium",
 					0.7f);
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.ENDER_DUST, 1, 0), "oreEnder", 0.7f);
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(Items.GUNPOWDER, 1, 0), "oreGunpowder", 0.7f);
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.SALT_DUST, 1, 0), "oreSalt", 0.7f);
+			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(Items.COOKIE, 1, 0), "oreCookie", 0.7f);
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.GREMORIUM_SHARD, 1, 0), "oreGremoriumShard",
 					0.7f);
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.HIMEJIMARIUM_SHARD, 1, 0),
@@ -467,7 +472,7 @@ public class ModRecipes {
 					new ItemStack(Items.ENDER_PEARL, 1, 0), "AAA", "AAA", "AAA", 'A', "nuggetEnder");
 
 			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "conversion/balanced_clayball_from_clay",
-					new ItemStack(ModItems.BALANCED_CLAY_BALL, 4, 0), "A", 'A', "balancedClay");
+					new ItemStack(ModItems.BALANCED_CLAY_BALL, 4, 0), "A", 'A', "blockBalancedClay");
 			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "conversion/balanced_clay_from_clayball",
 					new ItemStack(ModBlocks.BALANCED_CLAY, 1, 0), "AA", "AA", 'A', "balancedClayball");
 		}

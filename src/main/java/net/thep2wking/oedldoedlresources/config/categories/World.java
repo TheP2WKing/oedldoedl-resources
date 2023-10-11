@@ -55,16 +55,16 @@ public class World {
 		@Config.RangeInt(min = 0, max = 100)
 		public int RANDOMITE_ORE_VEIN_SIZE = 5;
 
-		@Config.Name("Enriched Uranium Ore")
-		public boolean ENRICHED_URANIUM_ORE = true;
+		@Config.Name("Uranium Powder Ore")
+		public boolean URANIUM_POWDER_ORE = true;
 
-		@Config.Name("Enriched Uranium Ore Chance")
+		@Config.Name("Uranium Powder Ore Chance")
 		@Config.RangeInt(min = 0, max = 100)
-		public int ENRICHED_URANIUM_ORE_CHANCE = 1;
+		public int URANIUM_POWDER_ORE_CHANCE = 1;
 		
-		@Config.Name("Enriched Uranium Ore Vein Size")
+		@Config.Name("Uranium Powder Ore Vein Size")
 		@Config.RangeInt(min = 0, max = 100)
-		public int ENRICHED_URANIUM_ORE_VEIN_SIZE = 3;
+		public int URANIUM_POWDER_ORE_VEIN_SIZE = 3;
 
 		@Config.Name("Ender Ore")
 		public boolean ENDER_ORE = true;
@@ -98,6 +98,17 @@ public class World {
 		@Config.Name("Salt Ore Vein Size")
 		@Config.RangeInt(min = 0, max = 100)
 		public int SALT_ORE_VEIN_SIZE = 14;
+
+		@Config.Name("Cookie Ore")
+		public boolean COOKIE_ORE = true;
+
+		@Config.Name("Cookie Ore Chance")
+		@Config.RangeInt(min = 0, max = 100)
+		public int COOKIE_ORE_CHANCE = 11;
+
+		@Config.Name("Cookie Ore Vein Size")
+		@Config.RangeInt(min = 0, max = 100)
+		public int COOKIE_ORE_VEIN_SIZE = 10;
 	}
 
 	public static class Nether {
