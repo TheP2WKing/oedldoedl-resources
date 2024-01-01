@@ -400,8 +400,8 @@ tile.oedldoedlresources.randomite_ore.tip2=Can be found at any y-level.
 
 # cookie
 tile.oedldoedlresources.cookie_ore.name=Cookie Ore
-tile.oedldoedlresources.cookie_ore.tip1=Can be found between y-level Y40 and Y256.
-tile.oedldoedlresources.cookie_ore.tip2=Sponsored by the cookie monster!
+tile.oedldoedlresources.cookie_ore.tip1=Sponsored by the cookie monster!
+tile.oedldoedlresources.cookie_ore.tip2=Can be found between y-level Y40 and Y256.
 # uranium
 tile.oedldoedlresources.uranium_powder_ore.name=Uranium Powder Ore
 tile.oedldoedlresources.uranium_powder_ore.tip1=Tends to explode randomly or not?
