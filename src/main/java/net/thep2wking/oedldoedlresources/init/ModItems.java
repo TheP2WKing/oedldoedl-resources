@@ -39,7 +39,7 @@ public class ModItems {
 	public static final Item ENDER_ORE = new ModItemBlockBase(ModBlocks.ENDER_ORE, ModRarities.YELLOW, false, 2, 0);
 	public static final Item GUNPOWDER_ORE = new ModItemBlockBase(ModBlocks.GUNPOWDER_ORE, ModRarities.WHITE, false, 2, 0);
 	public static final Item SALT_ORE = new ModItemBlockBase(ModBlocks.SALT_ORE, ModRarities.WHITE, false, 2, 0);
-	public static final Item COOKIE_ORE = new ModItemBlockBase(ModBlocks.COOKIE_ORE, ModRarities.WHITE, false, 1, 0);
+	public static final Item COOKIE_ORE = new ModItemBlockBase(ModBlocks.COOKIE_ORE, ModRarities.WHITE, false, 2, 0);
 
 	public static final Item NETHER_GREMORIUM_ORE = new ModItemBlockBase(ModBlocks.NETHER_GREMORIUM_ORE, ModRarities.DARK_RED, false, 2, 0);
 	public static final Item NETHER_HIMEJIMARIUM_ORE = new ModItemBlockBase(ModBlocks.NETHER_HIMEJIMARIUM_ORE, ModRarities.DARK_BLUE, false, 2, 0);

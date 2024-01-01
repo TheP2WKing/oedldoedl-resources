@@ -23,15 +23,15 @@ public class World {
 
 	public static class Overworld {
 		@Config.Name("Base Ore")
-		public boolean BASE_ORE = true;
+		public boolean BASE_ORE = false;
 
 		@Config.Name("Base Ore Chance")
 		@Config.RangeInt(min = 0, max = 100)
-		public int BASE_ORE_CHANCE = 0;
+		public int BASE_ORE_CHANCE = 7;
 
 		@Config.Name("Base Ore Vein Size")
 		@Config.RangeInt(min = 0, max = 100)
-		public int BASE_ORE_VEIN_SIZE = 5;
+		public int BASE_ORE_VEIN_SIZE = 6;
 
 		@Config.Name("Oedldoedl Ore")
 		public boolean OEDLDOEDL_ORE = true;

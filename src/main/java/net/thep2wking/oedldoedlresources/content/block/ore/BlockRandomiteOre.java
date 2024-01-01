@@ -15,6 +15,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.oredict.OreDictionary;
 import net.thep2wking.oedldoedlcore.api.block.ModBlockOreBase;
+import net.thep2wking.oedldoedlcore.util.ModRandomUtil;
 import net.thep2wking.oedldoedlcore.util.ModToolTypes;
 import net.thep2wking.oedldoedlresources.config.ResourcesConfig;
 
@@ -33,14 +34,10 @@ public class BlockRandomiteOre extends ModBlockOreBase {
 			int fortune) {
 		if (ResourcesConfig.CONTENT.RANDOMITE_RANDOM_DROPS) {
 			Random random = new Random();
-			ItemStack randomItem = selectRandom(random, DROPS);
+			ItemStack randomItem = ModRandomUtil.selectRandom(random, DROPS);
 			drops.add(randomItem);
 		} else {
 			drops.add(new ItemStack(Blocks.COBBLESTONE, 1, 0));
 		}
-	}
-
-	public static <T> T selectRandom(Random r, List<T> list) {
-		return list.get(r.nextInt(list.size()));
 	}
 }

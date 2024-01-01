@@ -41,7 +41,7 @@ item.oedldoedlresources.base_star_shard.tip1=The beginning of something.
 # oedldoedl
 tile.oedldoedlresources.oedldoedl_block.name=Block of Oedldoedl
 tile.oedldoedlresources.oedldoedl_block.tip1=Looks really cool, like TheP2WKing, right?
-tile.oedldoedlresources.oedldoedl_block.tip2=But looks even cooler since 1.16.
+tile.oedldoedlresources.oedldoedl_block.tip2=But looks even cooler since v3.
 tile.oedldoedlresources.oedldoedl_ore.name=Oedldoedl Ore
 tile.oedldoedlresources.oedldoedl_ore.tip1=The beginning of the modpack.
 tile.oedldoedlresources.oedldoedl_ore.tip2=Can be found under y-level 10.
@@ -74,7 +74,7 @@ item.oedldoedlresources.oedldoedl_fragment.name=Oedldoedl Fragment
 item.oedldoedlresources.oedldoedl_fragment.tip1=Where is the infinity, Flofino?
 tile.oedldoedlresources.oedldoedl_star_block.name=Block of Oedldoedl Star
 tile.oedldoedlresources.oedldoedl_star_block.tip1=Looks kind of ugly, like Flofino, right?
-tile.oedldoedlresources.oedldoedl_star_block.tip2=But since 1.16 it looks amazing.
+tile.oedldoedlresources.oedldoedl_star_block.tip2=But since v3 it looks amazing.
 item.oedldoedlresources.oedldoedl_star.name=Oedldoedl Star
 item.oedldoedlresources.oedldoedl_star.tip1=The infinity in the weak hands of Flofino,
 item.oedldoedlresources.oedldoedl_star.tip2=oh god please no! Calm down a little,
@@ -400,8 +400,8 @@ tile.oedldoedlresources.randomite_ore.tip2=Can be found at any y-level.
 
 # cookie
 tile.oedldoedlresources.cookie_ore.name=Cookie Ore
-tile.oedldoedlresources.cookie_ore.tip1=Sponsored by the cookie monster!
-
+tile.oedldoedlresources.cookie_ore.tip1=Can be found between y-level Y40 and Y256.
+tile.oedldoedlresources.cookie_ore.tip2=Sponsored by the cookie monster!
 # uranium
 tile.oedldoedlresources.uranium_powder_ore.name=Uranium Powder Ore
 tile.oedldoedlresources.uranium_powder_ore.tip1=Tends to explode randomly or not?

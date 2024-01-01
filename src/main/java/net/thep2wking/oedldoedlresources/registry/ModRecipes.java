@@ -265,12 +265,95 @@ public class ModRecipes {
 			ModRecipeHelper.addOreDict("randomiteDrop", ModBlocks.BASE_ORE, 0);
 			ModRecipeHelper.addOreDict("randomiteDrop", ModBlocks.OEDLDOEDL_ORE, 0);
 		}
+
+		if (ResourcesConfig.CONTENT.ELEMENT_OD_RANDOM_DROPS) {
+			ModRecipeHelper.addOreDict("fragmentDrop", ModItems.TIMOFIUM_FRAGMENT, 0);
+			ModRecipeHelper.addOreDict("fragmentDrop", ModItems.FLOFINIUM_FRAGMENT, 0);
+			ModRecipeHelper.addOreDict("fragmentDrop", ModItems.LAARSIUM_FRAGMENT, 0);
+			ModRecipeHelper.addOreDict("fragmentDrop", ModItems.KLAARSIUM_FRAGMENT, 0);
+			ModRecipeHelper.addOreDict("fragmentDrop", ModItems.SHARANIUM_FRAGMENT, 0);
+			ModRecipeHelper.addOreDict("fragmentDrop", ModItems.MAKERIUM_FRAGMENT, 0);
+			ModRecipeHelper.addOreDict("fragmentDrop", ModItems.INDERIUM_FRAGMENT, 0);
+			ModRecipeHelper.addOreDict("fragmentDrop", ModItems.PUMARIUM_FRAGMENT, 0);
+			ModRecipeHelper.addOreDict("fragmentDrop", ModItems.CALLAXIUM_FRAGMENT, 0);
+			ModRecipeHelper.addOreDict("fragmentDrop", ModItems.SKORPIUM_FRAGMENT, 0);
+			ModRecipeHelper.addOreDict("fragmentDrop", ModItems.STUPIDIUM_FRAGMENT, 0);
+		}
 	}
 
 	public static void registerRecipes() {
 		ModLogger.registeredRecipesLogger(OedldoedlResources.MODID);
 
 		if (ResourcesConfig.RECIPES.DEFAULT_RECIPES) {
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "base_ingot", new ItemStack(ModItems.BASE_INGOT, 5, 0), "ABA", "BCB", "ABA", 'A', "dyeLightGray", 'B', "ingotIron", 'C', "ingotGold");
+		
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "bedrockium_ingot", new ItemStack(ModItems.BEDROCKIUM_INGOT, 1, 0), "ABA", "BCB", "ABA", 'A', "dyeBlack", 'B', "obsidian", 'C', "ingotBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "cloudium_ingot", new ItemStack(ModItems.CLOUDIUM_INGOT, 1, 0), "ABA", "BCB", "ABA", 'A', "snowball", 'B', "blockSnow", 'C', "ingotBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "elevatium_ingot", new ItemStack(ModItems.ELEVATIUM_INGOT, 1, 0), "ABA", "BCB", "ABA", 'A', new ItemStack(Items.CHORUS_FRUIT_POPPED, 1, 0), 'B', new ItemStack(Items.SHULKER_SHELL, 1, 0), 'C', "ingotBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "sadistium_ingot", new ItemStack(ModItems.SADISTIUM_INGOT, 1, 0), "ABA", "BCB", "ABA", 'A', "dyeBrown", 'B', new ItemStack(Blocks.DEADBUSH, 1, 0), 'C', "ingotBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "drunkium_ingot", new ItemStack(ModItems.DRUNKIUM_INGOT, 1, 0), "ABA", "BCB", "ABA", 'A', "listAllsugar", 'B', "listAllwater", 'C', "ingotBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "money_ingot", new ItemStack(ModItems.MONEY_INGOT, 1, 0), "ABA", "BCB", "ABA", 'A', "dyeGreen", 'B', "blockGold", 'C', "ingotBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "chaos_ingot", new ItemStack(ModItems.CHAOS_INGOT, 1, 0), "ABA", "BCB", "ABA", 'A', "blockOedldoedl", 'B', "catalystChaos", 'C', "oedldoedlStar");
+
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "gremorium_ingot", new ItemStack(ModItems.GREMORIUM_INGOT, 1, 0), "ABA", "BCB", "ABA", 'A', "shardGremorium", 'B', "gemGremorium", 'C', "ingotBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "himejimarium_ingot", new ItemStack(ModItems.HIMEJIMARIUM_INGOT, 1, 0), "ABA", "BCB", "ABA", 'A', "shardHimejimarium", 'B', "gemHimejimarium", 'C', "ingotBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "toujourium_ingot", new ItemStack(ModItems.TOUJOURIUM_INGOT, 1, 0), "ABA", "BCB", "ABA", 'A', "shardToujourium", 'B', "gemToujourium", 'C', "ingotBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "argentorium_ingot", new ItemStack(ModItems.ARGENTORIUM_INGOT, 1, 0), "ABA", "BCB", "ABA", 'A', "shardArgentorium", 'B', "gemArgentorium", 'C', "ingotBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "quartarium_ingot", new ItemStack(ModItems.QUARTARIUM_INGOT, 1, 0), "ABA", "BCB", "ABA", 'A', "shardQuartarium", 'B', "gemQuartarium", 'C', "ingotBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "nagatorium_ingot", new ItemStack(ModItems.NAGATORIUM_INGOT, 1, 0), "ABA", "BCB", "ABA", 'A', "shardNagatorium", 'B', "gemNagatorium", 'C', "ingotBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "sakurajimarium_ingot", new ItemStack(ModItems.SAKURAJIMARIUM_INGOT, 1, 0), "ABA", "BCB", "ABA", 'A', "shardSakurajimarium", 'B', "gemSakurajimarium", 'C', "ingotBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "kitagawarium_ingot", new ItemStack(ModItems.KITAGAWARIUM_INGOT, 1, 0), "ABA", "BCB", "ABA", 'A', "shardKitagawarium", 'B', "gemKitagawarium", 'C', "ingotBase");
+
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "gremorium_star", new ItemStack(ModItems.GREMORIUM_STAR, 1, 0), "AAA", "ABA", "AAA", 'A', "ingotGremorium", 'B', "baseStar");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "himejimarium_star", new ItemStack(ModItems.HIMEJIMARIUM_STAR, 1, 0), "AAA", "ABA", "AAA", 'A', "ingotHimejimarium", 'B', "baseStar");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "toujourium_star", new ItemStack(ModItems.TOUJOURIUM_STAR, 1, 0), "AAA", "ABA", "AAA", 'A', "ingotToujourium", 'B', "baseStar");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "argentorium_star", new ItemStack(ModItems.ARGENTORIUM_STAR, 1, 0), "AAA", "ABA", "AAA", 'A', "ingotArgentorium", 'B', "baseStar");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "quartarium_star", new ItemStack(ModItems.QUARTARIUM_STAR, 1, 0), "AAA", "ABA", "AAA", 'A', "ingotQuartarium", 'B', "baseStar");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "nagatorium_star", new ItemStack(ModItems.NAGATORIUM_STAR, 1, 0), "AAA", "ABA", "AAA", 'A', "ingotNagatorium", 'B', "baseStar");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "sakurajimarium_star", new ItemStack(ModItems.SAKURAJIMARIUM_STAR, 1, 0), "AAA", "ABA", "AAA", 'A', "ingotSakurajimarium", 'B', "baseStar");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "kitagawarium_star", new ItemStack(ModItems.KITAGAWARIUM_STAR, 1, 0), "AAA", "ABA", "AAA", 'A', "ingotKitagawarium", 'B', "baseStar");
+		
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "base_gem", new ItemStack(ModItems.BASE_GEM, 1, 0), "AAA", "ABA", "AAA", 'A', "ingotBase", 'B', "gemDiamond");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "oedldoedl_gem", new ItemStack(ModItems.OEDLDOEDL_GEM, 1, 0), " A ", "ABA", " A ", 'A', "elementOedldoedl", 'B', "gemBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "timofium_gem", new ItemStack(ModItems.TIMOFIUM_GEM, 1, 0), " A ", "ABA", " A ", 'A', "elementTimofium", 'B', "gemBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "flofinium_gem", new ItemStack(ModItems.FLOFINIUM_GEM, 1, 0), " A ", "ABA", " A ", 'A', "elementFlofinium", 'B', "gemBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "laarsium_gem", new ItemStack(ModItems.LAARSIUM_GEM, 1, 0), " A ", "ABA", " A ", 'A', "elementLaarsium", 'B', "gemBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "klaarsium_gem", new ItemStack(ModItems.KLAARSIUM_GEM, 1, 0), " A ", "ABA", " A ", 'A', "elementKlaarsium", 'B', "gemBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "sharanium_gem", new ItemStack(ModItems.SHARANIUM_GEM, 1, 0), " A ", "ABA", " A ", 'A', "elementSharanium", 'B', "gemBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "makerium_gem", new ItemStack(ModItems.MAKERIUM_GEM, 1, 0), " A ", "ABA", " A ", 'A', "elementMakerium", 'B', "gemBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "inderium_gem", new ItemStack(ModItems.INDERIUM_GEM, 1, 0), " A ", "ABA", " A ", 'A', "elementInderium", 'B', "gemBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "pumarium_gem", new ItemStack(ModItems.PUMARIUM_GEM, 1, 0), " A ", "ABA", " A ", 'A', "elementPumarium", 'B', "gemBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "callaxium_gem", new ItemStack(ModItems.CALLAXIUM_GEM, 1, 0), " A ", "ABA", " A ", 'A', "elementCallaxium", 'B', "gemBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "skorpium_gem", new ItemStack(ModItems.SKORPIUM_GEM, 1, 0), " A ", "ABA", " A ", 'A', "elementSkorpium", 'B', "gemBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "stupidium_gem", new ItemStack(ModItems.STUPIDIUM_GEM, 1, 0), " A ", "ABA", " A ", 'A', "elementStupidium", 'B', "gemBase");
+
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "base_star", new ItemStack(ModItems.BASE_STAR, 1, 0), "AAA", "ABA", "AAA", 'A', "ingotBase", 'B', "netherStar");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "oedldoedl_star", new ItemStack(ModItems.OEDLDOEDL_STAR, 1, 0), "ABA", "BCB", "ABA", 'A', "ingotOedldoedl", 'B', "catalystOedldoedl", 'C', "baseStar");
+			
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "base_element", new ItemStack(ModItems.BASE_ELEMENT, 1, 0), " A ", "ABA", " A ", 'A', "gemBase", 'B', "ingotBase");
+			
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "oedldoedl_fragment", new ItemStack(ModItems.OEDLDOEDL_FRAGMENT, 1, 0), "ABC", "DEF", "GHI", 'A', "shardGremorium", 'B', "shardHimejimarium", 'C', "shardToujourium", 'D', "shardKitagawarium", 'E', "nuggetOedldoedl", 'F', "shardArgentorium", 'G', "shardSakurajimarium", 'H', "shardNagatorium", 'I', "shardQuartarium");
+
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "base_singularity", new ItemStack(ModItems.BASE_SINGULARITY, 1, 0), "AAA", "ABA", "AAA", 'A', "ingotBase", 'B', "gemBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "oedldoedl_singularity", new ItemStack(ModItems.OEDLDOEDL_SINGULARITY, 1, 0), "AAA", "ABA", "AAA", 'A', "blockOedldoedl", 'B', "singularityBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "gremorium_singularity", new ItemStack(ModItems.GREMORIUM_SINGULARITY, 1, 0), "AAA", "ABA", "AAA", 'A', "blockGremorium", 'B', "singularityBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "himejimarium_singularity", new ItemStack(ModItems.HIMEJIMARIUM_SINGULARITY, 1, 0), "AAA", "ABA", "AAA", 'A', "blockHimejimarium", 'B', "singularityBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "toujourium_singularity", new ItemStack(ModItems.TOUJOURIUM_SINGULARITY, 1, 0), "AAA", "ABA", "AAA", 'A', "blockToujourium", 'B', "singularityBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "argentorium_singularity", new ItemStack(ModItems.ARGENTORIUM_SINGULARITY, 1, 0), "AAA", "ABA", "AAA", 'A', "blockArgentorium", 'B', "singularityBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "quartarium_singularity", new ItemStack(ModItems.QUARTARIUM_SINGULARITY, 1, 0), "AAA", "ABA", "AAA", 'A', "blockQuartarium", 'B', "singularityBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "nagatorium_singularity", new ItemStack(ModItems.NAGATORIUM_SINGULARITY, 1, 0), "AAA", "ABA", "AAA", 'A', "blockNagatorium", 'B', "singularityBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "sakurajimarium_singularity", new ItemStack(ModItems.SAKURAJIMARIUM_SINGULARITY, 1, 0), "AAA", "ABA", "AAA", 'A', "blockSakurajimarium", 'B', "singularityBase");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "kitagawarium_singularity", new ItemStack(ModItems.KITAGAWARIUM_SINGULARITY, 1, 0), "AAA", "ABA", "AAA", 'A', "blockKitagawarium", 'B', "singularityBase");
+			
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "oedldoedl_catalyst", new ItemStack(ModItems.OEDLDOEDL_CATALYST, 1, 0), "ABC", "DEF", "GHI", 'A', "ingotGremorium", 'B', "ingotHimejimarium", 'C', "ingotToujourium", 'D', "ingotKitagawarium", 'E', "ingotOedldoedl", 'F', "ingotArgentorium", 'G', "ingotSakurajimarium", 'H', "ingotNagatorium", 'I', "ingotQuartarium");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "chaos_catalyst", new ItemStack(ModItems.CHAOS_CATALYST, 1, 0), "ABA", "BCB", "ABA", 'A', "ingotBedrockium", 'B', "oedldoedlStar", 'C', "catalystOedldoedl");
+			
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "balanced_clay_ball", new ItemStack(ModItems.BALANCED_CLAY_BALL, 1, 0), "AAA", "ABA", "AAA", 'A', "ingotChaos", 'B', "clayball");
+
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "chaos_plank", new ItemStack(ModBlocks.CHAOS_PLANK, 1, 0), "ABA", "BCB", "ABA", 'A', "ingotChaos", 'B', "balancedClayball", 'C', "singularityOedldoedl");
+
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "ender_pearl_from_ender_dust", new ItemStack(Items.ENDER_PEARL, 1, 0), "AA", "AA", 'A', "dustEnder");
+			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "ender_pearl_from_ender_pearl_dust", new ItemStack(Items.ENDER_PEARL, 1, 0), "AA", "AA", 'A', "dustEnderPearl");
 		}
 
 		if (ResourcesConfig.RECIPES.SMELTING_RECIPES) {
