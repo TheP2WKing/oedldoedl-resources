@@ -408,7 +408,7 @@ public class ModRecipes {
 					"catalystOedldoedl", 'C', "baseStar");
 
 			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "base_element",
-					new ItemStack(ModItems.BASE_ELEMENT, 1, 0), " A ", "ABA", " A ", 'A', "gemBase", 'B', "ingotBase");
+					new ItemStack(ModItems.BASE_ELEMENT, 1, 0), "AAA", "ABA", "AAA", 'A', "ingotBase", 'B', "gemBase");
 
 			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "oedldoedl_fragment",
 					new ItemStack(ModItems.OEDLDOEDL_FRAGMENT, 1, 0), "ABC", "DEF", "GHI", 'A', "shardGremorium", 'B',
@@ -417,7 +417,7 @@ public class ModRecipes {
 
 			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "base_singularity",
 					new ItemStack(ModItems.BASE_SINGULARITY, 1, 0), "AAA", "ABA", "AAA", 'A', "ingotBase", 'B',
-					"gemBase");
+					"blockBase");
 			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "oedldoedl_singularity",
 					new ItemStack(ModItems.OEDLDOEDL_SINGULARITY, 1, 0), "AAA", "ABA", "AAA", 'A', "blockOedldoedl",
 					'B', "singularityBase");
