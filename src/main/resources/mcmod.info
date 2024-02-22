@@ -2,10 +2,10 @@
     {
         "modid": "oedldoedlresources",
         "name": "Oedldoedl Resources",
-        "description": "An addon or module or whatever you want to call it for the oedldoedl series. This mod adds many basic different basic resources used by oedldoedl mods. Originally intended to be used with mods like CraftTweaker or KubeJS to add recipes, but the mod itself adds its own basic recipes. Recipes can be disabled and some items easily configured via a config file.",
+        "description": "A content module for the oedldoedl series that adds basic resources, storage blocks and ores. Originally intended to be used with mods like CraftTweaker to add recipes, but the mod does add its own recipes. Recipes can be disabled and some items easily configured via a config file.",
         "version": "${version}",
         "mcversion": "${mcversion}",
-        "url": "https://github.com/TheP2WKing/oedldoedl-resources",
+        "url": "https://github.com/thep2wking/oedldoedl-resources",
         "authorList": ["TheP2WKing"],
         "credits": "TheP2WKing",
         "logoFile": "assets/oedldoedlresources/textures/gui/logo/resources_logo.png",
