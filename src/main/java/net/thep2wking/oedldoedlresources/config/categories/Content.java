@@ -18,7 +18,14 @@ public class Content {
 	@Config.Name("Element OD Random Drops")
 	public boolean ELEMENT_OD_RANDOM_DROPS = true;
 
-	@Config.Name("Element OD Drop Bound")
+	@Config.Name("Element OD Max Drop")
 	@Config.RangeInt(min = 0, max = 100)
-	public int ELEMENT_OD_DROP_BOUND = 4;
+	public int ELEMENT_OD_MAX_DROP = 4;
+
+	@Config.Name("Uranium Powder Ore Explodes")
+	public boolean URANIUM_POWER_ORE_EXPLODES = true;
+
+	@Config.Name("Uranium Powder Ore Drop Chance")
+	@Config.RangeDouble(min = 0, max = 1)
+	public double URANIUM_POWER_ORE_DROP_CHANCE = 0.3;
 }

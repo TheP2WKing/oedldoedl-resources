@@ -94,6 +94,15 @@ public class ModRegistry {
 		ModRegistryHelper.registerBlock(event, ModBlocks.NETHER_STAR);
 		ModRegistryHelper.registerBlock(event, ModBlocks.OEDLDOEDL_STAR);
 
+		ModRegistryHelper.registerBlock(event, ModBlocks.GREMORIUM_STAR);
+		ModRegistryHelper.registerBlock(event, ModBlocks.HIMEJIMARIUM_STAR);
+		ModRegistryHelper.registerBlock(event, ModBlocks.TOUJOURIUM_STAR);
+		ModRegistryHelper.registerBlock(event, ModBlocks.ARGENTORIUM_STAR);
+		ModRegistryHelper.registerBlock(event, ModBlocks.QUARTARIUM_STAR);
+		ModRegistryHelper.registerBlock(event, ModBlocks.NAGATORIUM_STAR);
+		ModRegistryHelper.registerBlock(event, ModBlocks.SAKURAJIMARIUM_STAR);
+		ModRegistryHelper.registerBlock(event, ModBlocks.KITAGAWARIUM_STAR);
+
 		// misc
 		ModRegistryHelper.registerBlock(event, ModBlocks.BALANCED_CLAY);
 		ModRegistryHelper.registerBlock(event, ModBlocks.CHAOS_PLANK);
@@ -171,6 +180,15 @@ public class ModRegistry {
 		ModRegistryHelper.registerItemBlock(event, ModItems.BASE_STAR_BLOCK);
 		ModRegistryHelper.registerItemBlock(event, ModItems.NETHER_STAR_BLOCK);
 		ModRegistryHelper.registerItemBlock(event, ModItems.OEDLDOEDL_STAR_BLOCK);
+
+		ModRegistryHelper.registerItemBlock(event, ModItems.GREMORIUM_STAR_BLOCK);
+		ModRegistryHelper.registerItemBlock(event, ModItems.HIMEJIMARIUM_STAR_BLOCK);
+		ModRegistryHelper.registerItemBlock(event, ModItems.TOUJOURIUM_STAR_BLOCK);
+		ModRegistryHelper.registerItemBlock(event, ModItems.ARGENTORIUM_STAR_BLOCK);
+		ModRegistryHelper.registerItemBlock(event, ModItems.QUARTARIUM_STAR_BLOCK);
+		ModRegistryHelper.registerItemBlock(event, ModItems.NAGATORIUM_STAR_BLOCK);
+		ModRegistryHelper.registerItemBlock(event, ModItems.SAKURAJIMARIUM_STAR_BLOCK);
+		ModRegistryHelper.registerItemBlock(event, ModItems.KITAGAWARIUM_STAR_BLOCK);
 
 		// misc itemblocks
 		ModRegistryHelper.registerItemBlock(event, ModItems.BALANCED_CLAY);

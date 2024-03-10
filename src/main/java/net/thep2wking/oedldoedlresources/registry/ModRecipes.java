@@ -82,6 +82,15 @@ public class ModRecipes {
 			ModRecipeHelper.addOreDict("blockNetherStar", ModBlocks.NETHER_STAR, 0);
 			ModRecipeHelper.addOreDict("blockOedldoedlStar", ModBlocks.OEDLDOEDL_STAR, 0);
 
+			ModRecipeHelper.addOreDict("blockGremoriumStar", ModBlocks.GREMORIUM_STAR, 0);
+			ModRecipeHelper.addOreDict("blockHimejimariumStar", ModBlocks.HIMEJIMARIUM_STAR, 0);
+			ModRecipeHelper.addOreDict("blockToujouriumStar", ModBlocks.TOUJOURIUM_STAR, 0);
+			ModRecipeHelper.addOreDict("blockArgentoriumStar", ModBlocks.ARGENTORIUM_STAR, 0);
+			ModRecipeHelper.addOreDict("blockQuartariumStar", ModBlocks.QUARTARIUM_STAR, 0);
+			ModRecipeHelper.addOreDict("blockNagatoriumStar", ModBlocks.NAGATORIUM_STAR, 0);
+			ModRecipeHelper.addOreDict("blockSakurajimariumStar", ModBlocks.SAKURAJIMARIUM_STAR, 0);
+			ModRecipeHelper.addOreDict("blockKitagawariumStar", ModBlocks.KITAGAWARIUM_STAR, 0);
+
 			ModRecipeHelper.addOreDict("blockBalancedClay", ModBlocks.BALANCED_CLAY, 0);
 			ModRecipeHelper.addOreDict("chaosPlank", ModBlocks.CHAOS_PLANK, 0);
 
@@ -244,41 +253,39 @@ public class ModRecipes {
 			ModRecipeHelper.addOreDict("gemCookie", Items.COOKIE, 0);
 		}
 
-		if (ResourcesConfig.CONTENT.RANDOMITE_RANDOM_DROPS) {
-			ModRecipeHelper.addOreDict("randomiteDrop", Items.COAL, 0);
-			ModRecipeHelper.addOreDict("randomiteDrop", Items.DYE, 4);
-			ModRecipeHelper.addOreDict("randomiteDrop", Items.REDSTONE, 0);
-			ModRecipeHelper.addOreDict("randomiteDrop", Items.QUARTZ, 0);
-			ModRecipeHelper.addOreDict("randomiteDrop", Items.DIAMOND, 0);
-			ModRecipeHelper.addOreDict("randomiteDrop", Items.EMERALD, 0);
-			ModRecipeHelper.addOreDict("randomiteDrop", Blocks.IRON_ORE, 0);
-			ModRecipeHelper.addOreDict("randomiteDrop", Blocks.GOLD_ORE, 0);
-			ModRecipeHelper.addOreDict("randomiteDrop", Items.EGG, 0);
-			ModRecipeHelper.addOreDict("randomiteDrop", Items.COOKIE, 0);
-			ModRecipeHelper.addOreDict("randomiteDrop", Items.SLIME_BALL, 0);
-			ModRecipeHelper.addOreDict("randomiteDrop", Items.PRISMARINE_CRYSTALS, 0);
-			ModRecipeHelper.addOreDict("randomiteDrop", Items.PRISMARINE_SHARD, 0);
-			ModRecipeHelper.addOreDict("randomiteDrop", Items.CLAY_BALL, 0);
-			ModRecipeHelper.addOreDict("randomiteDrop", Items.GUNPOWDER, 0);
-			ModRecipeHelper.addOreDict("randomiteDrop", ModItems.ENDER_DUST, 0);
-			ModRecipeHelper.addOreDict("randomiteDrop", ModItems.SALT_DUST, 0);
-			ModRecipeHelper.addOreDict("randomiteDrop", ModBlocks.BASE_ORE, 0);
-			ModRecipeHelper.addOreDict("randomiteDrop", ModBlocks.OEDLDOEDL_ORE, 0);
-		}
+		ModRecipeHelper.addOreDict("randomiteDrop", Items.COAL, 0);
+		ModRecipeHelper.addOreDict("randomiteDrop", Items.DYE, 4);
+		ModRecipeHelper.addOreDict("randomiteDrop", Items.REDSTONE, 0);
+		ModRecipeHelper.addOreDict("randomiteDrop", Items.QUARTZ, 0);
+		ModRecipeHelper.addOreDict("randomiteDrop", Items.DIAMOND, 0);
+		ModRecipeHelper.addOreDict("randomiteDrop", Items.EMERALD, 0);
+		ModRecipeHelper.addOreDict("randomiteDrop", Blocks.IRON_ORE, 0);
+		ModRecipeHelper.addOreDict("randomiteDrop", Blocks.GOLD_ORE, 0);
+		ModRecipeHelper.addOreDict("randomiteDrop", Blocks.OBSIDIAN, 0);
+		ModRecipeHelper.addOreDict("randomiteDrop", Items.EGG, 0);
+		ModRecipeHelper.addOreDict("randomiteDrop", Items.COOKIE, 0);
+		ModRecipeHelper.addOreDict("randomiteDrop", Items.SLIME_BALL, 0);
+		ModRecipeHelper.addOreDict("randomiteDrop", Items.PRISMARINE_CRYSTALS, 0);
+		ModRecipeHelper.addOreDict("randomiteDrop", Items.PRISMARINE_SHARD, 0);
+		ModRecipeHelper.addOreDict("randomiteDrop", Items.CLAY_BALL, 0);
+		ModRecipeHelper.addOreDict("randomiteDrop", Items.GUNPOWDER, 0);
+		ModRecipeHelper.addOreDict("randomiteDrop", ModItems.ENDER_DUST, 0);
+		ModRecipeHelper.addOreDict("randomiteDrop", ModItems.SALT_DUST, 0);
+		ModRecipeHelper.addOreDict("randomiteDrop", ModBlocks.BASE_ORE, 0);
+		ModRecipeHelper.addOreDict("randomiteDrop", ModBlocks.OEDLDOEDL_ORE, 0);
+		ModRecipeHelper.addOreDict("randomiteDrop", ModBlocks.URANIUM_POWDER_ORE, 0);
 
-		if (ResourcesConfig.CONTENT.ELEMENT_OD_RANDOM_DROPS) {
-			ModRecipeHelper.addOreDict("fragmentDrop", ModItems.TIMOFIUM_FRAGMENT, 0);
-			ModRecipeHelper.addOreDict("fragmentDrop", ModItems.FLOFINIUM_FRAGMENT, 0);
-			ModRecipeHelper.addOreDict("fragmentDrop", ModItems.LAARSIUM_FRAGMENT, 0);
-			ModRecipeHelper.addOreDict("fragmentDrop", ModItems.KLAARSIUM_FRAGMENT, 0);
-			ModRecipeHelper.addOreDict("fragmentDrop", ModItems.SHARANIUM_FRAGMENT, 0);
-			ModRecipeHelper.addOreDict("fragmentDrop", ModItems.MAKERIUM_FRAGMENT, 0);
-			ModRecipeHelper.addOreDict("fragmentDrop", ModItems.INDERIUM_FRAGMENT, 0);
-			ModRecipeHelper.addOreDict("fragmentDrop", ModItems.PUMARIUM_FRAGMENT, 0);
-			ModRecipeHelper.addOreDict("fragmentDrop", ModItems.CALLAXIUM_FRAGMENT, 0);
-			ModRecipeHelper.addOreDict("fragmentDrop", ModItems.SKORPIUM_FRAGMENT, 0);
-			ModRecipeHelper.addOreDict("fragmentDrop", ModItems.STUPIDIUM_FRAGMENT, 0);
-		}
+		ModRecipeHelper.addOreDict("fragmentDrop", ModItems.TIMOFIUM_FRAGMENT, 0);
+		ModRecipeHelper.addOreDict("fragmentDrop", ModItems.FLOFINIUM_FRAGMENT, 0);
+		ModRecipeHelper.addOreDict("fragmentDrop", ModItems.LAARSIUM_FRAGMENT, 0);
+		ModRecipeHelper.addOreDict("fragmentDrop", ModItems.KLAARSIUM_FRAGMENT, 0);
+		ModRecipeHelper.addOreDict("fragmentDrop", ModItems.SHARANIUM_FRAGMENT, 0);
+		ModRecipeHelper.addOreDict("fragmentDrop", ModItems.MAKERIUM_FRAGMENT, 0);
+		ModRecipeHelper.addOreDict("fragmentDrop", ModItems.INDERIUM_FRAGMENT, 0);
+		ModRecipeHelper.addOreDict("fragmentDrop", ModItems.PUMARIUM_FRAGMENT, 0);
+		ModRecipeHelper.addOreDict("fragmentDrop", ModItems.CALLAXIUM_FRAGMENT, 0);
+		ModRecipeHelper.addOreDict("fragmentDrop", ModItems.SKORPIUM_FRAGMENT, 0);
+		ModRecipeHelper.addOreDict("fragmentDrop", ModItems.STUPIDIUM_FRAGMENT, 0);
 	}
 
 	public static void registerRecipes() {
@@ -476,7 +483,7 @@ public class ModRecipes {
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.OEDLDOEDL_INGOT, 1, 0), "oreOedldoedl",
 					0.7f);
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(Blocks.STONE, 1, 0), "oreRandomite", 0.7f);
-			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.URANIUM_POWDER, 1, 0), "orePowderUranium",
+			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(Blocks.STONE, 1, 0), "orePowderUranium",
 					0.7f);
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.ENDER_DUST, 1, 0), "oreEnder", 0.7f);
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(Items.GUNPOWDER, 1, 0), "oreGunpowder", 0.7f);
@@ -589,21 +596,21 @@ public class ModRecipes {
 					ModItems.OEDLDOEDL_STAR_SHARD, ModItems.OEDLDOEDL_STAR, ModBlocks.OEDLDOEDL_STAR);
 
 			ModResourceRecipeHelper.addStarConversion(OedldoedlResources.MODID, "gremoriumStar",
-					ModItems.GREMORIUM_STAR_SHARD, ModItems.GREMORIUM_STAR, null);
+					ModItems.GREMORIUM_STAR_SHARD, ModItems.GREMORIUM_STAR, ModBlocks.GREMORIUM_STAR);
 			ModResourceRecipeHelper.addStarConversion(OedldoedlResources.MODID, "himejimariumStar",
-					ModItems.HIMEJIMARIUM_STAR_SHARD, ModItems.HIMEJIMARIUM_STAR, null);
+					ModItems.HIMEJIMARIUM_STAR_SHARD, ModItems.HIMEJIMARIUM_STAR, ModBlocks.HIMEJIMARIUM_STAR);
 			ModResourceRecipeHelper.addStarConversion(OedldoedlResources.MODID, "toujouriumStar",
-					ModItems.TOUJOURIUM_STAR_SHARD, ModItems.TOUJOURIUM_STAR, null);
+					ModItems.TOUJOURIUM_STAR_SHARD, ModItems.TOUJOURIUM_STAR, ModBlocks.TOUJOURIUM_STAR);
 			ModResourceRecipeHelper.addStarConversion(OedldoedlResources.MODID, "argentoriumStar",
-					ModItems.ARGENTORIUM_STAR_SHARD, ModItems.ARGENTORIUM_STAR, null);
+					ModItems.ARGENTORIUM_STAR_SHARD, ModItems.ARGENTORIUM_STAR, ModBlocks.ARGENTORIUM_STAR);
 			ModResourceRecipeHelper.addStarConversion(OedldoedlResources.MODID, "quartariumStar",
-					ModItems.QUARTARIUM_STAR_SHARD, ModItems.QUARTARIUM_STAR, null);
+					ModItems.QUARTARIUM_STAR_SHARD, ModItems.QUARTARIUM_STAR, ModBlocks.QUARTARIUM_STAR);
 			ModResourceRecipeHelper.addStarConversion(OedldoedlResources.MODID, "nagatoriumStar",
-					ModItems.NAGATORIUM_STAR_SHARD, ModItems.NAGATORIUM_STAR, null);
+					ModItems.NAGATORIUM_STAR_SHARD, ModItems.NAGATORIUM_STAR, ModBlocks.NAGATORIUM_STAR);
 			ModResourceRecipeHelper.addStarConversion(OedldoedlResources.MODID, "sakurajimariumStar",
-					ModItems.SAKURAJIMARIUM_STAR_SHARD, ModItems.SAKURAJIMARIUM_STAR, null);
+					ModItems.SAKURAJIMARIUM_STAR_SHARD, ModItems.SAKURAJIMARIUM_STAR, ModBlocks.SAKURAJIMARIUM_STAR);
 			ModResourceRecipeHelper.addStarConversion(OedldoedlResources.MODID, "kitagawariumStar",
-					ModItems.KITAGAWARIUM_STAR_SHARD, ModItems.KITAGAWARIUM_STAR, null);
+					ModItems.KITAGAWARIUM_STAR_SHARD, ModItems.KITAGAWARIUM_STAR, ModBlocks.KITAGAWARIUM_STAR);
 
 			ModResourceRecipeHelper.addElementConversion(OedldoedlResources.MODID, "base", ModItems.BASE_FRAGMENT,
 					ModItems.BASE_ELEMENT, null);

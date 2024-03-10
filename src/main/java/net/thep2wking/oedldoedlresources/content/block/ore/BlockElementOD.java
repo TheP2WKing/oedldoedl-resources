@@ -35,7 +35,7 @@ public class BlockElementOD extends ModBlockOreBase {
 		if (ResourcesConfig.CONTENT.ELEMENT_OD_RANDOM_DROPS) {
 			Random random = new Random();
 			ItemStack randomItem = ModRandomUtil.selectRandom(random, DROPS);
-			randomItem.setCount(random.nextInt(ResourcesConfig.CONTENT.ELEMENT_OD_DROP_BOUND) + 1);
+			randomItem.setCount(random.nextInt(ResourcesConfig.CONTENT.ELEMENT_OD_MAX_DROP) + 1);
 			drops.add(randomItem);
 		} else {
 			drops.add(new ItemStack(Blocks.END_STONE, 1, 0));

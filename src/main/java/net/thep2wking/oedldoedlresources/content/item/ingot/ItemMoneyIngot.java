@@ -23,11 +23,9 @@ public class ItemMoneyIngot extends ModItemBase {
 	public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
 		ItemStack itemstack = playerIn.getHeldItem(handIn);
 		if (ResourcesConfig.CONTENT.MONEY_SOUND) {
-			if (handIn == EnumHand.MAIN_HAND) {
-				worldIn.playSound(null, playerIn.getPosition(), ModSounds.MONEY, SoundCategory.BLOCKS, 0.8f, 1f);
-			}
-			return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, itemstack);
+			worldIn.playSound(null, playerIn.getPosition(), ModSounds.MONEY, SoundCategory.BLOCKS, 0.75f, 1f);
+			playerIn.swingArm(handIn);
 		}
-		return new ActionResult<ItemStack>(EnumActionResult.FAIL, itemstack);
+		return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, itemstack);
 	}
 }

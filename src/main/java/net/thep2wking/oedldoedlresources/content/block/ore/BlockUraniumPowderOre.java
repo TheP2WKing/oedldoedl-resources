@@ -16,6 +16,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.thep2wking.oedldoedlcore.api.block.ModBlockOreBase;
 import net.thep2wking.oedldoedlcore.util.ModToolTypes;
+import net.thep2wking.oedldoedlresources.config.ResourcesConfig;
 import net.thep2wking.oedldoedlresources.init.ModItems;
 
 public class BlockUraniumPowderOre extends ModBlockOreBase {
@@ -29,9 +30,12 @@ public class BlockUraniumPowderOre extends ModBlockOreBase {
 	@Override
 	public void getDrops(NonNullList<ItemStack> drops, IBlockAccess world, BlockPos pos, IBlockState state,
 			int fortune) {
-		Random random = new Random();
-		if (random.nextInt(3) == 0) {
-			drops.add(new ItemStack(ModItems.URANIUM_POWDER, 1, 0));
+		int random = new Random().nextInt(100);
+		int chance = (int) (ResourcesConfig.CONTENT.URANIUM_POWER_ORE_DROP_CHANCE * 100);
+		if (ResourcesConfig.CONTENT.URANIUM_POWER_ORE_DROP_CHANCE > 0) {
+			if (random <= chance) {
+				drops.add(new ItemStack(ModItems.URANIUM_POWDER, 1, 0));
+			}
 		}
 	}
 
@@ -42,19 +46,27 @@ public class BlockUraniumPowderOre extends ModBlockOreBase {
 
 	@Override
 	public void onBlockDestroyedByExplosion(World worldIn, BlockPos pos, Explosion explosionIn) {
-		if (!worldIn.isRemote) {
-			worldIn.newExplosion(null, (double) ((float) pos.getX() + 0.5F), (double) pos.getY(),
-					(double) ((float) pos.getZ() + 0.5F), 10.0f, true, true);
+		if (ResourcesConfig.CONTENT.URANIUM_POWER_ORE_EXPLODES) {
+			if (!worldIn.isRemote) {
+				worldIn.newExplosion(null, (double) ((float) pos.getX() + 0.5F), (double) pos.getY(),
+						(double) ((float) pos.getZ() + 0.5F), 10.0f, true, true);
+			}
+		} else {
+			super.onBlockDestroyedByExplosion(worldIn, pos, explosionIn);
 		}
 	}
 
 	@Override
 	public void onBlockHarvested(World worldIn, BlockPos pos, IBlockState state, EntityPlayer player) {
-		Random random = new Random();
-		int explodeChance = random.nextInt(2);
-		if (explodeChance == 0 && !worldIn.isRemote && !player.capabilities.isCreativeMode) {
-			worldIn.newExplosion(null, (double) ((float) pos.getX() + 0.5F), (double) pos.getY(),
-					(double) ((float) pos.getZ() + 0.5F), 10.0f, true, true);
+		if (ResourcesConfig.CONTENT.URANIUM_POWER_ORE_EXPLODES) {
+			Random random = new Random();
+			int explodeChance = random.nextInt(2);
+			if (explodeChance == 0 && !worldIn.isRemote && !player.capabilities.isCreativeMode) {
+				worldIn.newExplosion(null, (double) ((float) pos.getX() + 0.5F), (double) pos.getY(),
+						(double) ((float) pos.getZ() + 0.5F), 10.0f, true, true);
+			}
+		} else {
+			super.onBlockHarvested(worldIn, pos, state, player);
 		}
 	}
 }

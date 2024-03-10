@@ -2,11 +2,17 @@
 itemGroup.oedldoedlresources.name=§dOedldoedl Resources
 
 # icons
-item.oedldoedlcore.resources_icon.annotation3=Version: §e1.12.2-4.0.0
+item.oedldoedlcore.resources_icon.annotation3=Version: §e1.12.2-4.1.0
 
 # sounds
 sound.oedldoedlresources.money=Cash rings
 sound.oedldoedlresources.wow=Amazed wow
+
+# jei
+jei.oedldoedlresources.randomite_drops.category=Randomite Drops
+jei.oedldoedlresources.randomite_drops.tip1=Has a random chance of being dropped when mining.
+jei.oedldoedlresources.randomite_drops.tip2=The more drops are possible, the smaller the chance.
+jei.oedldoedlresources.randomite_drops.tip3=Chance:
 
 # base
 tile.oedldoedlresources.base_block.name=Block of Base
@@ -150,6 +156,8 @@ tile.oedldoedlresources.gremorium_block.tip1=Compressed pure love.
 tile.oedldoedlresources.gremorium_gem_block.name=Block of Gremorium Gem
 tile.oedldoedlresources.gremorium_gem_block.tip1=What the F*CK...compressed?
 tile.oedldoedlresources.gremorium_gem_block.tip2=Made with pure love.
+tile.oedldoedlresources.gremorium_star_block.name=Block of Gremorium Star
+tile.oedldoedlresources.gremorium_star_block.tip1=The ultimate pure love!
 tile.oedldoedlresources.nether_gremorium_ore.name=Nether Gremorium Ore
 tile.oedldoedlresources.nether_gremorium_ore.tip1=Can be found in the nether
 tile.oedldoedlresources.nether_gremorium_ore.tip2=between y-level 4 and 9.
@@ -179,6 +187,8 @@ tile.oedldoedlresources.himejimarium_block.tip1=Compressed t*ts.
 tile.oedldoedlresources.himejimarium_gem_block.name=Block of Himejimarium Gem
 tile.oedldoedlresources.himejimarium_gem_block.tip1=What the F*CK...compressed?
 tile.oedldoedlresources.himejimarium_gem_block.tip2=Made with masochism.
+tile.oedldoedlresources.himejimarium_star_block.name=Block of Himejimarium Star
+tile.oedldoedlresources.himejimarium_star_block.tip1=The ultimate masochism!
 tile.oedldoedlresources.nether_himejimarium_ore.name=Nether Himejimarium Ore
 tile.oedldoedlresources.nether_himejimarium_ore.tip1=Can be found in the nether
 tile.oedldoedlresources.nether_himejimarium_ore.tip2=between y-level 7 and 21.
@@ -208,6 +218,8 @@ tile.oedldoedlresources.toujourium_block.tip1=Compressed cats.
 tile.oedldoedlresources.toujourium_gem_block.name=Block of Toujourium Gem
 tile.oedldoedlresources.toujourium_gem_block.tip1=What the F*CK...compressed?
 tile.oedldoedlresources.toujourium_gem_block.tip2=Made with cats.
+tile.oedldoedlresources.toujourium_star_block.name=Block of Toujourium Star
+tile.oedldoedlresources.toujourium_star_block.tip1=The ultimate cat!
 tile.oedldoedlresources.nether_toujourium_ore.name=Nether Toujourium Ore
 tile.oedldoedlresources.nether_toujourium_ore.tip1=Can be found in the nether
 tile.oedldoedlresources.nether_toujourium_ore.tip2=between y-level 11 and y23.
@@ -237,6 +249,8 @@ tile.oedldoedlresources.argentorium_block.tip1=Compressed healing.
 tile.oedldoedlresources.argentorium_gem_block.name=Block of Argentorium Gem
 tile.oedldoedlresources.argentorium_gem_block.tip1=What the F*CK...compressed?
 tile.oedldoedlresources.argentorium_gem_block.tip2=Made with god.
+tile.oedldoedlresources.argentorium_star_block.name=Block of Argentorium Star
+tile.oedldoedlresources.argentorium_star_block.tip1=The ultimate god!
 tile.oedldoedlresources.nether_argentorium_ore.name=Nether Argentorium Ore
 tile.oedldoedlresources.nether_argentorium_ore.tip1=Can be found in the nether
 tile.oedldoedlresources.nether_argentorium_ore.tip2=between y-level 5 and 11.
@@ -266,6 +280,8 @@ tile.oedldoedlresources.quartarium_block.tip1=Compressed swords skills.
 tile.oedldoedlresources.quartarium_gem_block.name=Block of Quartarium Gem
 tile.oedldoedlresources.quartarium_gem_block.tip1=What the F*CK...compressed?
 tile.oedldoedlresources.quartarium_gem_block.tip2=Made with a bit of green.
+tile.oedldoedlresources.quartarium_star_block.name=Block of Quartarium Star
+tile.oedldoedlresources.quartarium_star_block.tip1=The ultimate bit of green!
 tile.oedldoedlresources.nether_quartarium_ore.name=Nether Quartarium Ore
 tile.oedldoedlresources.nether_quartarium_ore.tip1=Can be found in the nether
 tile.oedldoedlresources.nether_quartarium_ore.tip2=between y-level 2 and 14.
@@ -295,6 +311,8 @@ tile.oedldoedlresources.nagatorium_block.tip1=Compressed sadism.
 tile.oedldoedlresources.nagatorium_gem_block.name=Block of Nagatorium Gem
 tile.oedldoedlresources.nagatorium_gem_block.tip1=What the F*CK...compressed?
 tile.oedldoedlresources.nagatorium_gem_block.tip2=Made with sadism.
+tile.oedldoedlresources.nagatorium_star_block.name=Block of Nagatorium Star
+tile.oedldoedlresources.nagatorium_star_block.tip1=The ultimate sadism!
 tile.oedldoedlresources.nether_nagatorium_ore.name=Nether Nagatorium Ore
 tile.oedldoedlresources.nether_nagatorium_ore.tip1=Can be found in the nether
 tile.oedldoedlresources.nether_nagatorium_ore.tip2=between y-level 1 and 4.
@@ -324,6 +342,8 @@ tile.oedldoedlresources.sakurajimarium_block.tip1=Compressed bunnygirls.
 tile.oedldoedlresources.sakurajimarium_gem_block.name=Block of Sakurajimarium Gem
 tile.oedldoedlresources.sakurajimarium_gem_block.tip1=What the F*CK...compressed?
 tile.oedldoedlresources.sakurajimarium_gem_block.tip2=Made with bunnies.
+tile.oedldoedlresources.sakurajimarium_star_block.name=Block of Sakurajimarium Star
+tile.oedldoedlresources.sakurajimarium_star_block.tip1=The ultimate bunny!
 tile.oedldoedlresources.nether_sakurajimarium_ore.name=Nether Sakurajimarium Ore
 tile.oedldoedlresources.nether_sakurajimarium_ore.tip1=Can be found in the nether
 tile.oedldoedlresources.nether_sakurajimarium_ore.tip2=between y-level 2 and 12.
@@ -353,6 +373,8 @@ tile.oedldoedlresources.kitagawarium_block.tip1=Compressed weebs.
 tile.oedldoedlresources.kitagawarium_gem_block.name=Block of Kitagawarium Gem
 tile.oedldoedlresources.kitagawarium_gem_block.tip1=What the F*CK...compressed?
 tile.oedldoedlresources.kitagawarium_gem_block.tip2=Made with cosplays.
+tile.oedldoedlresources.kitagawarium_star_block.name=Block of Kitagawarium Star
+tile.oedldoedlresources.kitagawarium_star_block.tip1=The ultimate cosplay!
 tile.oedldoedlresources.nether_kitagawarium_ore.name=Nether Kitagawarium Ore
 tile.oedldoedlresources.nether_kitagawarium_ore.tip1=Can be found in the nether
 tile.oedldoedlresources.nether_kitagawarium_ore.tip2=between y-level YX and YX.

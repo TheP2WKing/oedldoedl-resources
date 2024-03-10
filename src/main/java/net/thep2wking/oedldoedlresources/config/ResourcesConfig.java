@@ -8,6 +8,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.thep2wking.oedldoedlcore.util.ModReferences;
 import net.thep2wking.oedldoedlresources.OedldoedlResources;
 import net.thep2wking.oedldoedlresources.config.categories.Content;
+import net.thep2wking.oedldoedlresources.config.categories.Integration;
 import net.thep2wking.oedldoedlresources.config.categories.Properties;
 import net.thep2wking.oedldoedlresources.config.categories.Recipes;
 import net.thep2wking.oedldoedlresources.config.categories.World;
@@ -26,6 +27,9 @@ public class ResourcesConfig {
 
     @Config.Name("world")
     public static final World WORLD = new World();
+
+    @Config.Name("integration")
+    public static final Integration INTEGRATION = new Integration();
     
     @Mod.EventBusSubscriber
     public static class ConfigHolder {

@@ -29,8 +29,8 @@ public class OedldoedlResources {
     public static final String PREFIX = MODID + ":";
     public static final String MC_VERSION = "1.12.2";
     public static final String NAME = "Oedldoedl Resources";
-    public static final String VERSION = MC_VERSION + "-" + "4.0.0";
-    public static final String DEPENDENCIES = "required-after:forge@[14.23.5.2847,);required-after:oedldoedlcore@[1.12.2-4.0.0,);";
+    public static final String VERSION = MC_VERSION + "-" + "4.1.0";
+    public static final String DEPENDENCIES = "required-after:forge@[14.23.5.2847,);required-after:oedldoedlcore@[1.12.2-4.1.0,);";
     public static final String CLIENT_PROXY_CLASS = "net.thep2wking.oedldoedlresources.util.proxy.ClientProxy";
     public static final String SERVER_PROXY_CLASS = "net.thep2wking.oedldoedlresources.util.proxy.ServerProxy";
 

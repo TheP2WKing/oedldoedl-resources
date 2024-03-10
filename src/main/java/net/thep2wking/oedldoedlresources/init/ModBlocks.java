@@ -7,6 +7,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.init.MobEffects;
 import net.thep2wking.oedldoedlcore.api.block.ModBlockBase;
 import net.thep2wking.oedldoedlcore.api.block.ModBlockOreBase;
+import net.thep2wking.oedldoedlcore.init.ModPotions;
 import net.thep2wking.oedldoedlcore.util.ModToolTypes;
 import net.thep2wking.oedldoedlresources.OedldoedlResources;
 import net.thep2wking.oedldoedlresources.api.block.ModBlockEffectBase;
@@ -52,7 +53,7 @@ public class ModBlocks {
 	public static final Block BASE = new ModBlockBase(OedldoedlResources.MODID, "base_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.IRON, 0, ModToolTypes.PICKAXE, 5f, 10f, 0).setBeaconBase();
 	public static final Block OEDLDOEDL = new ModBlockBase(OedldoedlResources.MODID, "oedldoedl_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.YELLOW, 3, ModToolTypes.PICKAXE, 20f, 40f, 6).setBeaconBase();
 	public static final Block BEDROCKIUM = new BlockBedrockium(OedldoedlResources.MODID, "bedrockium_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.BLACK, 6, ModToolTypes.PICKAXE, 150f, 300f, 0, MobEffects.SLOWNESS, MobEffects.HUNGER, true).setBeaconBase();
-	public static final Block CLOUDIUM = new BlockCloudium(OedldoedlResources.MODID, "cloudium_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.SNOW, 1, ModToolTypes.PICKAXE, 5f, 10f, 0, MobEffects.GLOWING, true).setBeaconBase();
+	public static final Block CLOUDIUM = new BlockCloudium(OedldoedlResources.MODID, "cloudium_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.SNOW, 1, ModToolTypes.PICKAXE, 5f, 10f, 0, ModPotions.SLOW_FALLING, false).setBeaconBase();
 	public static final Block ELEVATIUM = new BlockElevatium(OedldoedlResources.MODID, "elevatium_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.PURPLE, 1, ModToolTypes.PICKAXE, 10f, 20f, 0, MobEffects.LEVITATION, true).setBeaconBase();
 	public static final Block SADISTIUM = new BlockSadistium(OedldoedlResources.MODID, "sadistium_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.BROWN, 2, ModToolTypes.PICKAXE, 15f, 30f, 0, MobEffects.MINING_FATIGUE, MobEffects.WEAKNESS, MobEffects.GLOWING, true).setBeaconBase();
 	public static final Block DRUNKIUM = new BlockDrunkium(OedldoedlResources.MODID, "drunkium_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.CYAN, 2, ModToolTypes.PICKAXE, 15f, 30f, 0, MobEffects.BLINDNESS, MobEffects.SLOWNESS, MobEffects.NAUSEA, MobEffects.WITHER, true).setBeaconBase();
@@ -65,7 +66,7 @@ public class ModBlocks {
 	public static final Block QUARTARIUM = new ModBlockEffectBase(OedldoedlResources.MODID, "quartarium_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.BLUE, 4, ModToolTypes.PICKAXE, 40f, 80f, 0, MobEffects.STRENGTH, false).setBeaconBase();
 	public static final Block NAGATORIUM = new ModBlockEffectBase(OedldoedlResources.MODID, "nagatorium_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.PURPLE, 4, ModToolTypes.PICKAXE, 40f, 80f, 0, MobEffects.UNLUCK, true).setBeaconBase();
 	public static final Block SAKURAJIMARIUM = new ModBlockEffectBase(OedldoedlResources.MODID, "sakurajimarium_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.GRAY, 4, ModToolTypes.PICKAXE, 40f, 80f, 0, MobEffects.JUMP_BOOST, false).setBeaconBase();
-	public static final Block KITAGAWARIUM = new ModBlockEffectBase(OedldoedlResources.MODID, "kitagawarium_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.PINK, 4, ModToolTypes.PICKAXE, 40f, 80f, 0, MobEffects.WATER_BREATHING, false).setBeaconBase();
+	public static final Block KITAGAWARIUM = new ModBlockEffectBase(OedldoedlResources.MODID, "kitagawarium_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.PINK, 4, ModToolTypes.PICKAXE, 40f, 80f, 0, ModPotions.DOLPHIN_GRACE, false).setBeaconBase();
 
 	// gems
 	public static final Block BASE_GEM = new ModBlockBase(OedldoedlResources.MODID, "base_gem_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.IRON, 1, ModToolTypes.PICKAXE, 5f, 10f, 0).setBeaconBase();
@@ -93,8 +94,17 @@ public class ModBlocks {
 
 	// stars
 	public static final Block BASE_STAR = new ModBlockBase(OedldoedlResources.MODID, "base_star_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.NETHERRACK, 1, ModToolTypes.PICKAXE, 5f, 10f, 0).setBeaconBase();
-	public static final Block NETHER_STAR = new ModBlockBase(OedldoedlResources.MODID, "nether_star_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.NETHERRACK, 2, ModToolTypes.PICKAXE, 8f, 16f, 2).setBeaconBase();
+	public static final Block NETHER_STAR = new ModBlockBase(OedldoedlResources.MODID, "nether_star_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.NETHERRACK, 2, ModToolTypes.PICKAXE, 8f, 16f, 3).setBeaconBase();
 	public static final Block OEDLDOEDL_STAR = new ModBlockBase(OedldoedlResources.MODID, "oedldoedl_star_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.NETHERRACK, 3, ModToolTypes.PICKAXE, 20f, 40f, 6).setBeaconBase();	
+	
+	public static final Block GREMORIUM_STAR = new ModBlockBase(OedldoedlResources.MODID, "gremorium_star_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.NETHERRACK, 4, ModToolTypes.PICKAXE, 30f, 60f, 9).setBeaconBase();
+	public static final Block HIMEJIMARIUM_STAR = new ModBlockBase(OedldoedlResources.MODID, "himejimarium_star_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.BLUE_STAINED_HARDENED_CLAY, 4, ModToolTypes.PICKAXE, 30f, 60f, 9).setBeaconBase();
+	public static final Block TOUJOURIUM_STAR= new ModBlockBase(OedldoedlResources.MODID, "toujourium_star_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.SNOW, 4, ModToolTypes.PICKAXE, 30f, 60f, 9).setBeaconBase();
+	public static final Block ARGENTORIUM_STAR = new ModBlockBase(OedldoedlResources.MODID, "argentorium_star_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.YELLOW, 4, ModToolTypes.PICKAXE, 30f, 60f, 9).setBeaconBase();
+	public static final Block QUARTARIUM_STAR = new ModBlockBase(OedldoedlResources.MODID, "quartarium_star_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.BLUE, 4, ModToolTypes.PICKAXE, 30f, 60f, 9).setBeaconBase();
+	public static final Block NAGATORIUM_STAR = new ModBlockBase(OedldoedlResources.MODID, "nagatorium_star_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.PURPLE, 4, ModToolTypes.PICKAXE, 30f, 60f, 9).setBeaconBase();
+	public static final Block SAKURAJIMARIUM_STAR = new ModBlockBase(OedldoedlResources.MODID, "sakurajimarium_star_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.GRAY, 4, ModToolTypes.PICKAXE, 30f, 60f, 9).setBeaconBase();
+	public static final Block KITAGAWARIUM_STAR = new ModBlockBase(OedldoedlResources.MODID, "kitagawarium_star_block", OedldoedlResources.TAB, Material.IRON, SoundType.METAL, MapColor.PINK, 4, ModToolTypes.PICKAXE, 30f, 60f, 9).setBeaconBase();
 	// misc
 	public static final Block BALANCED_CLAY = new ModBlockBase(OedldoedlResources.MODID, "balanced_clay", OedldoedlResources.TAB, Material.GROUND, SoundType.GROUND, MapColor.CLAY, 3, ModToolTypes.SHOVEL, 100f, 100f, 0);
 	public static final Block CHAOS_PLANK = new BlockChaosPlank(OedldoedlResources.MODID, "chaos_plank", OedldoedlResources.TAB, Material.IRON, SoundType.ANVIL, MapColor.BLACK, 5, ModToolTypes.PICKAXE, 1000f, 1000f, 0);
