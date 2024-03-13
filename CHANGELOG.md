@@ -24,7 +24,7 @@ This version is not compatible with older versions and will not work. Back up yo
 - added gunpowder and cookie ore
 - added randomite ore and oredict entry for easily adding more drops
 - added nuggets and shards for vanilla materials
-- added strorage block for nether stars
+- added storage block for nether stars
 - added ender ore particles
 - added chaos plank sound effect
 - added tooltips for item that are dropped by ores
@@ -37,7 +37,7 @@ This version is not compatible with older versions and will not work. Back up yo
 - updated curseforge and github page
 - updated logo
 - updated dependencies
-- storage blocks of ingots now give the corrisponding potion effect
+- storage blocks of ingots now give the corresponding potion effect
 - updated all textures to fit the programmer art look
 - reworked nether and end drops
 - reworked word gen of ores and rebalanced generation
@@ -47,7 +47,7 @@ This version is not compatible with older versions and will not work. Back up yo
 
 ### Removed
 
-- removed avaritia dependency and holo item rendering
+- removed avaritia dependency and halo item rendering
 - removed element blocks
 - removed saltpeter and sulfur dusts and ores
 - removed infinity stars and storage blocks
