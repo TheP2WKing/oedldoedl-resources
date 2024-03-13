@@ -42,7 +42,7 @@ This version is not compatible with older versions and will not work. Back up yo
 - reworked nether and end drops
 - reworked word gen of ores and rebalanced generation
 - adjusted rarity colors
-- changed harvest levels to be more like vailla
+- changed harvest levels to be more like vanilla
 - changed nearly all recipes
 
 ### Removed
