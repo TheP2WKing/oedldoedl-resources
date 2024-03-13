@@ -53,3 +53,4 @@ This version is not compatible with older versions and will not work. Back up yo
 - removed infinity stars and storage blocks
 - removed overworld, nether and end ingot
 - removed jei descriptions for ores
+- removed now deprecated config options
