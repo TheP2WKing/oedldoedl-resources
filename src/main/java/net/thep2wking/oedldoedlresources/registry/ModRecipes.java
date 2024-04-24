@@ -304,8 +304,7 @@ public class ModRecipes {
 					"blockSnow", 'C', "ingotBase");
 			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "elevatium_ingot",
 					new ItemStack(ModItems.ELEVATIUM_INGOT, 1, 0), "ABA", "BCB", "ABA", 'A',
-					new ItemStack(Items.CHORUS_FRUIT_POPPED, 1, 0), 'B', new ItemStack(Items.SHULKER_SHELL, 1, 0), 'C',
-					"ingotBase");
+					new ItemStack(Items.CHORUS_FRUIT_POPPED, 1, 0), 'B', "shulkerShell", 'C', "ingotBase");
 			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "sadistium_ingot",
 					new ItemStack(ModItems.SADISTIUM_INGOT, 1, 0), "ABA", "BCB", "ABA", 'A', "dyeBrown", 'B',
 					new ItemStack(Blocks.DEADBUSH, 1, 0), 'C', "ingotBase");
@@ -673,8 +672,8 @@ public class ModRecipes {
 			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "conversion/pearl_from_nugget",
 					new ItemStack(Items.ENDER_PEARL, 1, 0), "AAA", "AAA", "AAA", 'A', "nuggetEnder");
 
-			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "conversion/balanced_clayball_from_clay",
-					new ItemStack(ModItems.BALANCED_CLAY_BALL, 4, 0), "A", 'A', "blockBalancedClay");
+			ModRecipeHelper.addShapelessRecipe(OedldoedlResources.MODID, "conversion/balanced_clayball_from_clay",
+					new ItemStack(ModItems.BALANCED_CLAY_BALL, 4, 0), "blockBalancedClay");
 			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "conversion/balanced_clay_from_clayball",
 					new ItemStack(ModBlocks.BALANCED_CLAY, 1, 0), "AA", "AA", 'A', "balancedClayball");
 		}
