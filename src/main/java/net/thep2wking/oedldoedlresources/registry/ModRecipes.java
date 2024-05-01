@@ -638,27 +638,29 @@ public class ModRecipes {
 			ModResourceRecipeHelper.addElementConversion(OedldoedlResources.MODID, "stupidium",
 					ModItems.STUPIDIUM_FRAGMENT, ModItems.STUPIDIUM_ELEMENT, null);
 
-			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "conversion/coal_nugget_from_gem",
-					new ItemStack(ModItems.COAL_NUGGET, 8, 0), "A", 'A', "gemCoal");
-			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "conversion/charcoal_nugget_from_gem",
-					new ItemStack(ModItems.CHARCOAL_NUGGET, 8, 0), "A", 'A', "gemCharcoal");
-			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "conversion/diamond_nugget_from_gem",
-					new ItemStack(ModItems.DIAMOND_NUGGET, 9, 0), "A", 'A', "gemDiamond");
-			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "conversion/lapis_nugget_from_gem",
-					new ItemStack(ModItems.LAPIS_NUGGET, 9, 0), "A", 'A', "gemLapis");
-			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "conversion/emerald_nugget_from_gem",
-					new ItemStack(ModItems.EMERALD_NUGGET, 9, 0), "A", 'A', "gemEmerald");
-			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "conversion/quartz_nugget_from_gem",
-					new ItemStack(ModItems.QUARTZ_NUGGET, 9, 0), "A", 'A', "gemQuartz");
-			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "conversion/obsidian_nugget_from_block",
-					new ItemStack(ModItems.OBSIDIAN_NUGGET, 9, 0), "A", 'A', "obsidian");
-			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "conversion/ender_nugget_from_pearl",
-					new ItemStack(ModItems.ENDER_NUGGET, 9, 0), "A", 'A', "enderpearl");
+			ModRecipeHelper.addShapelessRecipe(OedldoedlResources.MODID, "conversion/coal_nugget_from_gem",
+					new ItemStack(ModItems.COAL_NUGGET, 8, 0), "gemCoal");
+			ModRecipeHelper.addShapelessRecipe(OedldoedlResources.MODID, "conversion/charcoal_nugget_from_gem",
+					new ItemStack(ModItems.CHARCOAL_NUGGET, 8, 0), "gemCharcoal");
+			ModRecipeHelper.addShapelessRecipe(OedldoedlResources.MODID, "conversion/diamond_nugget_from_gem",
+					new ItemStack(ModItems.DIAMOND_NUGGET, 9, 0), "gemDiamond");
+			ModRecipeHelper.addShapelessRecipe(OedldoedlResources.MODID, "conversion/lapis_nugget_from_gem",
+					new ItemStack(ModItems.LAPIS_NUGGET, 9, 0), "gemLapis");
+			ModRecipeHelper.addShapelessRecipe(OedldoedlResources.MODID, "conversion/emerald_nugget_from_gem",
+					new ItemStack(ModItems.EMERALD_NUGGET, 9, 0), "gemEmerald");
+			ModRecipeHelper.addShapelessRecipe(OedldoedlResources.MODID, "conversion/quartz_nugget_from_gem",
+					new ItemStack(ModItems.QUARTZ_NUGGET, 9, 0), "gemQuartz");
+			ModRecipeHelper.addShapelessRecipe(OedldoedlResources.MODID, "conversion/obsidian_nugget_from_block",
+					new ItemStack(ModItems.OBSIDIAN_NUGGET, 9, 0), "obsidian");
+			ModRecipeHelper.addShapelessRecipe(OedldoedlResources.MODID, "conversion/ender_nugget_from_pearl",
+					new ItemStack(ModItems.ENDER_NUGGET, 9, 0), "enderpearl");
 
-			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "conversion/coal_gem_from_nugget",
-					new ItemStack(Items.COAL, 1, 0), "AAA", "AAA", "AA ", 'A', "nuggetCoal");
-			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "conversion/charcoal_gem_from_nugget",
-					new ItemStack(Items.COAL, 1, 1), "AAA", "AAA", "AA ", 'A', "nuggetCharcoal");
+			ModRecipeHelper.addShapelessRecipe(OedldoedlResources.MODID, "conversion/coal_gem_from_nugget",
+					new ItemStack(Items.COAL, 1, 0), "nuggetCoal", "nuggetCoal", "nuggetCoal", "nuggetCoal",
+					"nuggetCoal", "nuggetCoal", "nuggetCoal", "nuggetCoal");
+			ModRecipeHelper.addShapelessRecipe(OedldoedlResources.MODID, "conversion/charcoal_gem_from_nugget",
+					new ItemStack(Items.COAL, 1, 1), "nuggetCharcoal", "nuggetCharcoal", "nuggetCharcoal",
+					"nuggetCharcoal", "nuggetCharcoal", "nuggetCharcoal", "nuggetCharcoal", "nuggetCharcoal");
 			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "conversion/diamond_gem_from_nugget",
 					new ItemStack(Items.DIAMOND, 1, 0), "AAA", "AAA", "AAA", 'A', "nuggetDiamond");
 			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "conversion/lapis_gem_from_nugget",
