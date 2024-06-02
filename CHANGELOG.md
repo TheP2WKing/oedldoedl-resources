@@ -1,5 +1,26 @@
 # Changelog
 
+## [4.1.0] - 2024-06-02
+
+### Added
+
+- added JEI integration for randomite drops
+- added config options for various ore drop chances
+- added star storage blocks
+
+### Changed
+
+- shapeless recipes are now truly shapeless and use oredict
+- fixed uranium powder dropping logic
+- fixed all items that rely on right click function to properly show hand animations
+- Kitagawarium is now using dolphin grace potion effect instead of water breathing
+- Cloudium now gives slow falling effect instead of glowing
+- all gems are now possible as beacon payment
+
+### Removed
+
+- removed some remnants from blocks and items that were present in 1.16+ versions
+
 ## [4.0.0] - 2024-03-03
 
 ### 1.12.2 isn't dead, it just took some time
