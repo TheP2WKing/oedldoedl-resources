@@ -35,11 +35,14 @@ public class ModItems {
 	// ore itemblocks
 	public static final Item BASE_ORE = new ModItemBlockBase(ModBlocks.BASE_ORE, ModRarities.WHITE, false, 2, 0);
 	public static final Item OEDLDOEDL_ORE = new ModItemBlockBase(ModBlocks.OEDLDOEDL_ORE, ModRarities.LIGHT_PURPLE, false, 2, 0);
+	public static final Item CATERIUM_ORE = new ModItemBlockBase(ModBlocks.CATERIUM_ORE, ModRarities.YELLOW, false, 2, 0);
 	public static final Item RANDOMITE_ORE = new ModItemBlockBase(ModBlocks.RANDOMITE_ORE, ModRarities.YELLOW, false, 2, 0);
 	public static final Item URANIUM_POWDER_ORE = new ModItemBlockBase(ModBlocks.URANIUM_POWDER_ORE, ModRarities.YELLOW, false, 2, 0);
 	public static final Item ENDER_ORE = new ModItemBlockBase(ModBlocks.ENDER_ORE, ModRarities.YELLOW, false, 2, 0);
 	public static final Item GUNPOWDER_ORE = new ModItemBlockBase(ModBlocks.GUNPOWDER_ORE, ModRarities.WHITE, false, 2, 0);
 	public static final Item SALT_ORE = new ModItemBlockBase(ModBlocks.SALT_ORE, ModRarities.WHITE, false, 2, 0);
+	public static final Item SULFUR_ORE = new ModItemBlockBase(ModBlocks.SULFUR_ORE, ModRarities.WHITE, false, 2, 0);
+	public static final Item NITER_ORE = new ModItemBlockBase(ModBlocks.NITER_ORE, ModRarities.WHITE, false, 2, 0);
 	public static final Item COOKIE_ORE = new ModItemBlockBase(ModBlocks.COOKIE_ORE, ModRarities.WHITE, false, 2, 0);
 
 	public static final Item NETHER_GREMORIUM_ORE = new ModItemBlockBase(ModBlocks.NETHER_GREMORIUM_ORE, ModRarities.DARK_RED, false, 2, 0);
@@ -56,6 +59,7 @@ public class ModItems {
 	// ingot itemblocks
 	public static final Item BASE_BLOCK = new ModItemBlockBase(ModBlocks.BASE, ModRarities.WHITE, false, 2, 0);
 	public static final Item OEDLDOEDL_BLOCK = new ModItemBlockBase(ModBlocks.OEDLDOEDL, ModRarities.LIGHT_PURPLE, true, 2, 0);
+	public static final Item CATERIUM_BLOCK = new ModItemBlockBase(ModBlocks.CATERIUM, ModRarities.YELLOW, false, 1, 0);
 	public static final Item BEDROCKIUM_BLOCK = new ItemBlockBedrockium(ModBlocks.BEDROCKIUM, MobEffects.SLOWNESS, MobEffects.HUNGER, true, ModRarities.LIGHT_PURPLE, false, 1, 0);
 	public static final Item CLOUDIUM_BLOCK = new ItemBlockCloudium(ModBlocks.CLOUDIUM, ModPotions.SLOW_FALLING, false, ModRarities.LIGHT_PURPLE, false, 1, 0);
 	public static final Item ELEVATIUM_BLOCK = new ItemBlockElevatium(ModBlocks.ELEVATIUM, MobEffects.LEVITATION, true, ModRarities.LIGHT_PURPLE, false, 1, 0);
@@ -113,17 +117,19 @@ public class ModItems {
 	// misc itemblocks
 	public static final Item BALANCED_CLAY = new ModItemBlockBase(ModBlocks.BALANCED_CLAY, ModRarities.LIGHT_PURPLE, true, 2, 1);
 	public static final Item CHAOS_PLANK = new ItemBlockChaosPlank(ModBlocks.CHAOS_PLANK, ModRarities.BLACK, false, 4, 0);
+	public static final Item BACON_AGARIC = new ModItemBlockBase(ModBlocks.BACON_AGARIC, ModRarities.LIGHT_PURPLE, false, 3, 0);
 
 	// ingots
 	public static final Item BASE_INGOT = new ModItemBase(OedldoedlResources.MODID, "base_ingot", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0).setBeaconPayment();
 	public static final Item OEDLDOEDL_INGOT = new ModItemBase(OedldoedlResources.MODID, "oedldoedl_ingot", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, true, 3, 0).setBeaconPayment();
+	public static final Item CATERIUM_INGOT = new ModItemBase(OedldoedlResources.MODID, "caterium_ingot", OedldoedlResources.TAB, ModRarities.YELLOW, false, 2, 0).setBeaconPayment();
 	public static final Item BEDROCKIUM_INGOT = new ItemBedrockiumIngot(OedldoedlResources.MODID, "bedrockium_ingot", OedldoedlResources.TAB, MobEffects.SLOWNESS, MobEffects.HUNGER, true, ModRarities.LIGHT_PURPLE, false, 1, 0).setBeaconPayment();
 	public static final Item CLOUDIUM_INGOT = new ItemCloudiumIngot(OedldoedlResources.MODID, "cloudium_ingot", OedldoedlResources.TAB, ModPotions.SLOW_FALLING, false, ModRarities.LIGHT_PURPLE, false, 1, 0).setBeaconPayment();
 	public static final Item ELEVATIUM_INGOT = new ItemElevatiumIngot(OedldoedlResources.MODID, "elevatium_ingot", OedldoedlResources.TAB, MobEffects.LEVITATION, true, ModRarities.LIGHT_PURPLE, false, 1, 0).setBeaconPayment();
 	public static final Item SADISTIUM_INGOT = new ItemSadistiumIngot(OedldoedlResources.MODID, "sadistium_ingot", OedldoedlResources.TAB, MobEffects.MINING_FATIGUE, MobEffects.WEAKNESS, MobEffects.GLOWING, true, ModRarities.LIGHT_PURPLE, false, 1, 0).setBeaconPayment();
 	public static final Item DRUNKIUM_INGOT = new ItemDrunkiumIngot(OedldoedlResources.MODID, "drunkium_ingot", OedldoedlResources.TAB, MobEffects.BLINDNESS, MobEffects.SLOWNESS,  MobEffects.NAUSEA, MobEffects.WITHER, true, ModRarities.LIGHT_PURPLE, false, 2, 0).setBeaconPayment();
 	public static final Item MONEY_INGOT = new ItemMoneyIngot(OedldoedlResources.MODID, "money_ingot", OedldoedlResources.TAB, ModRarities.DARK_GREEN, false, 4, 0).setBeaconPayment();
-	public static final Item CHAOS_INGOT = new ModItemBase(OedldoedlResources.MODID, "chaos_ingot", OedldoedlResources.TAB, ModRarities.BLACK, true, 5, 0).setBeaconPayment();
+	public static final Item CHAOS_INGOT = new ModItemBase(OedldoedlResources.MODID, "chaos_ingot", OedldoedlResources.TAB, ModRarities.BLACK, false, 5, 0).setBeaconPayment();
 
 	public static final Item GREMORIUM_INGOT = new ModItemIngotEffectBase(OedldoedlResources.MODID, "gremorium_ingot", OedldoedlResources.TAB, MobEffects.HASTE, false, ModRarities.DARK_RED, false, 3, 1).setBeaconPayment();
 	public static final Item HIMEJIMARIUM_INGOT = new ModItemIngotEffectBase(OedldoedlResources.MODID, "himejimarium_ingot", OedldoedlResources.TAB, MobEffects.RESISTANCE, false, ModRarities.DARK_BLUE, false, 3, 1).setBeaconPayment();
@@ -189,8 +195,11 @@ public class ModItems {
 	// dusts
 	public static final Item BASE_DUST = new ModItemBase(OedldoedlResources.MODID, "base_dust", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
 	public static final Item OEDLDOEDL_DUST = new ModItemBase(OedldoedlResources.MODID, "oedldoedl_dust", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, true, 3, 0);
+	public static final Item CATERIUM_DUST = new ModItemBase(OedldoedlResources.MODID, "caterium_dust", OedldoedlResources.TAB, ModRarities.YELLOW, false, 2, 0);
 	public static final Item ENDER_DUST = new ModItemBase(OedldoedlResources.MODID, "ender_dust", OedldoedlResources.TAB, ModRarities.YELLOW, false, 1, 1);
 	public static final Item SALT_DUST = new ModItemBase(OedldoedlResources.MODID, "salt_dust", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 1);
+	public static final Item SULFUR_DUST = new ModItemBase(OedldoedlResources.MODID, "sulfur_dust", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 1);
+	public static final Item NITER_DUST = new ModItemBase(OedldoedlResources.MODID, "niter_dust", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 1);
 
 	// nuggets 
 	public static final Item COAL_NUGGET = new ItemCoalNugget(OedldoedlResources.MODID, "coal_nugget", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
@@ -201,8 +210,10 @@ public class ModItems {
 	public static final Item QUARTZ_NUGGET = new ModItemBase(OedldoedlResources.MODID, "quartz_nugget", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
 	public static final Item OBSIDIAN_NUGGET = new ModItemBase(OedldoedlResources.MODID, "obsidian_nugget", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
 	public static final Item ENDER_NUGGET = new ModItemBase(OedldoedlResources.MODID, "ender_nugget", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
+
 	public static final Item BASE_NUGGET = new ModItemBase(OedldoedlResources.MODID, "base_nugget", OedldoedlResources.TAB, ModRarities.WHITE, false, 1, 0);
-	public static final Item OEDLDOEDL_NUGGET = new ModItemBase(OedldoedlResources.MODID, "oedldoedl_nugget", OedldoedlResources.TAB, ModRarities.WHITE, true, 2, 0);
+	public static final Item OEDLDOEDL_NUGGET = new ModItemBase(OedldoedlResources.MODID, "oedldoedl_nugget", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, true, 2, 0);
+	public static final Item CATERIUM_NUGGET = new ModItemBase(OedldoedlResources.MODID, "caterium_nugget", OedldoedlResources.TAB, ModRarities.YELLOW, false, 1, 0);
 	public static final Item BEDROCKIUM_NUGGET = new ItemBedrockiumNugget(OedldoedlResources.MODID, "bedrockium_nugget", OedldoedlResources.TAB, MobEffects.SLOWNESS, MobEffects.HUNGER, true, ModRarities.LIGHT_PURPLE, false, 1, 0);
 	public static final Item CLOUDIUM_NUGGET = new ItemCloudiumNugget(OedldoedlResources.MODID, "cloudium_nugget", OedldoedlResources.TAB, ModPotions.SLOW_FALLING, false, ModRarities.LIGHT_PURPLE, false, 1, 0);
 	public static final Item ELEVATIUM_NUGGET = new ItemElevatiumNugget(OedldoedlResources.MODID, "elevatium_nugget", OedldoedlResources.TAB, MobEffects.LEVITATION, true, ModRarities.LIGHT_PURPLE, false, 1, 0);
@@ -271,8 +282,8 @@ public class ModItems {
 	public static final Item KITAGAWARIUM_SINGULARITY = new ModItemBase(OedldoedlResources.MODID, "kitagawarium_singularity", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, false, 1, 0);
 
 	// catalysts
-	public static final Item OEDLDOEDL_CATALYST = new ModItemBase(OedldoedlResources.MODID, "oedldoedl_catalyst", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, true, 1, 0);
-	public static final Item CHAOS_CATALYST = new ModItemBase(OedldoedlResources.MODID, "chaos_catalyst", OedldoedlResources.TAB, ModRarities.BLACK, true, 3, 0);
+	public static final Item OEDLDOEDL_CATALYST = new ModItemBase(OedldoedlResources.MODID, "oedldoedl_catalyst", OedldoedlResources.TAB, ModRarities.LIGHT_PURPLE, false, 1, 0);
+	public static final Item CHAOS_CATALYST = new ModItemBase(OedldoedlResources.MODID, "chaos_catalyst", OedldoedlResources.TAB, ModRarities.BLACK, false, 3, 0);
 
 	// misc
 	public static final Item URANIUM_POWDER = new ModItemBase(OedldoedlResources.MODID, "uranium_powder", OedldoedlResources.TAB, ModRarities.YELLOW, false, 1, 1);

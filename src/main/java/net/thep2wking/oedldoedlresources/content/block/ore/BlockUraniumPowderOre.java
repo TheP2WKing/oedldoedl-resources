@@ -33,10 +33,20 @@ public class BlockUraniumPowderOre extends ModBlockOreBase {
 		int random = new Random().nextInt(100);
 		int chance = (int) (ResourcesConfig.CONTENT.URANIUM_POWER_ORE_DROP_CHANCE * 100);
 		if (ResourcesConfig.CONTENT.URANIUM_POWER_ORE_DROP_CHANCE > 0) {
-			if (random <= chance) {
+			if (random < chance) {
 				drops.add(new ItemStack(ModItems.URANIUM_POWDER, 1, 0));
 			}
 		}
+	}
+
+	@Override
+	public int quantityDroppedWithBonus(int fortune, Random random) {
+		return 1;
+	}
+
+	@Override
+	public int quantityDropped(Random random) {
+		return 1;
 	}
 
 	@Override

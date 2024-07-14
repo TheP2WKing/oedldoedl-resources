@@ -28,11 +28,14 @@ public class ModRegistry {
 		// ore itemblocks
 		ModRegistryHelper.registerBlock(event, ModBlocks.BASE_ORE);
 		ModRegistryHelper.registerBlock(event, ModBlocks.OEDLDOEDL_ORE);
+		ModRegistryHelper.registerBlock(event, ModBlocks.CATERIUM_ORE);
 		ModRegistryHelper.registerBlock(event, ModBlocks.RANDOMITE_ORE);
 		ModRegistryHelper.registerBlock(event, ModBlocks.URANIUM_POWDER_ORE);
 		ModRegistryHelper.registerBlock(event, ModBlocks.ENDER_ORE);
 		ModRegistryHelper.registerBlock(event, ModBlocks.GUNPOWDER_ORE);
 		ModRegistryHelper.registerBlock(event, ModBlocks.SALT_ORE);
+		ModRegistryHelper.registerBlock(event, ModBlocks.SULFUR_ORE);
+		ModRegistryHelper.registerBlock(event, ModBlocks.NITER_ORE);
 		ModRegistryHelper.registerBlock(event, ModBlocks.COOKIE_ORE);
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.NETHER_GREMORIUM_ORE);
@@ -49,6 +52,7 @@ public class ModRegistry {
 		// ingots
 		ModRegistryHelper.registerBlock(event, ModBlocks.BASE);
 		ModRegistryHelper.registerBlock(event, ModBlocks.OEDLDOEDL);
+		ModRegistryHelper.registerBlock(event, ModBlocks.CATERIUM);
 		ModRegistryHelper.registerBlock(event, ModBlocks.BEDROCKIUM);
 		ModRegistryHelper.registerBlock(event, ModBlocks.CLOUDIUM);
 		ModRegistryHelper.registerBlock(event, ModBlocks.ELEVATIUM);
@@ -117,11 +121,14 @@ public class ModRegistry {
 		// ore itemblocks
 		ModRegistryHelper.registerItemBlock(event, ModItems.BASE_ORE);
 		ModRegistryHelper.registerItemBlock(event, ModItems.OEDLDOEDL_ORE);
+		ModRegistryHelper.registerItemBlock(event, ModItems.CATERIUM_ORE);
 		ModRegistryHelper.registerItemBlock(event, ModItems.RANDOMITE_ORE);
 		ModRegistryHelper.registerItemBlock(event, ModItems.URANIUM_POWDER_ORE);
 		ModRegistryHelper.registerItemBlock(event, ModItems.ENDER_ORE);
 		ModRegistryHelper.registerItemBlock(event, ModItems.GUNPOWDER_ORE);
 		ModRegistryHelper.registerItemBlock(event, ModItems.SALT_ORE);
+		ModRegistryHelper.registerItemBlock(event, ModItems.SULFUR_ORE);
+		ModRegistryHelper.registerItemBlock(event, ModItems.NITER_ORE);
 		ModRegistryHelper.registerItemBlock(event, ModItems.COOKIE_ORE);
 
 		ModRegistryHelper.registerItemBlock(event, ModItems.NETHER_GREMORIUM_ORE);
@@ -138,6 +145,7 @@ public class ModRegistry {
 		// ingot itemblocks
 		ModRegistryHelper.registerItemBlock(event, ModItems.BASE_BLOCK);
 		ModRegistryHelper.registerItemBlock(event, ModItems.OEDLDOEDL_BLOCK);
+		ModRegistryHelper.registerItemBlock(event, ModItems.CATERIUM_BLOCK);
 		ModRegistryHelper.registerItemBlock(event, ModItems.BEDROCKIUM_BLOCK);
 		ModRegistryHelper.registerItemBlock(event, ModItems.CLOUDIUM_BLOCK);
 		ModRegistryHelper.registerItemBlock(event, ModItems.ELEVATIUM_BLOCK);
@@ -200,6 +208,7 @@ public class ModRegistry {
 		// ingots
 		ModRegistryHelper.registerItem(event, ModItems.BASE_INGOT);
 		ModRegistryHelper.registerItem(event, ModItems.OEDLDOEDL_INGOT);
+		ModRegistryHelper.registerItem(event, ModItems.CATERIUM_INGOT);
 		ModRegistryHelper.registerItem(event, ModItems.BEDROCKIUM_INGOT);
 		ModRegistryHelper.registerItem(event, ModItems.CLOUDIUM_INGOT);
 		ModRegistryHelper.registerItem(event, ModItems.ELEVATIUM_INGOT);
@@ -207,7 +216,7 @@ public class ModRegistry {
 		ModRegistryHelper.registerItem(event, ModItems.DRUNKIUM_INGOT);
 		ModRegistryHelper.registerItem(event, ModItems.MONEY_INGOT);
 		ModRegistryHelper.registerItem(event, ModItems.CHAOS_INGOT);
-		
+
 		ModRegistryHelper.registerItem(event, ModItems.GREMORIUM_INGOT);
 		ModRegistryHelper.registerItem(event, ModItems.HIMEJIMARIUM_INGOT);
 		ModRegistryHelper.registerItem(event, ModItems.TOUJOURIUM_INGOT);
@@ -272,8 +281,11 @@ public class ModRegistry {
 		// dusts
 		ModRegistryHelper.registerItem(event, ModItems.BASE_DUST);
 		ModRegistryHelper.registerItem(event, ModItems.OEDLDOEDL_DUST);
+		ModRegistryHelper.registerItem(event, ModItems.CATERIUM_DUST);
 		ModRegistryHelper.registerItem(event, ModItems.ENDER_DUST);
 		ModRegistryHelper.registerItem(event, ModItems.SALT_DUST);
+		ModRegistryHelper.registerItem(event, ModItems.SULFUR_DUST);
+		ModRegistryHelper.registerItem(event, ModItems.NITER_DUST);
 
 		// nuggets
 		ModRegistryHelper.registerItem(event, ModItems.COAL_NUGGET);
@@ -284,8 +296,10 @@ public class ModRegistry {
 		ModRegistryHelper.registerItem(event, ModItems.QUARTZ_NUGGET);
 		ModRegistryHelper.registerItem(event, ModItems.OBSIDIAN_NUGGET);
 		ModRegistryHelper.registerItem(event, ModItems.ENDER_NUGGET);
+
 		ModRegistryHelper.registerItem(event, ModItems.BASE_NUGGET);
 		ModRegistryHelper.registerItem(event, ModItems.OEDLDOEDL_NUGGET);
+		ModRegistryHelper.registerItem(event, ModItems.CATERIUM_NUGGET);
 		ModRegistryHelper.registerItem(event, ModItems.BEDROCKIUM_NUGGET);
 		ModRegistryHelper.registerItem(event, ModItems.CLOUDIUM_NUGGET);
 		ModRegistryHelper.registerItem(event, ModItems.ELEVATIUM_NUGGET);

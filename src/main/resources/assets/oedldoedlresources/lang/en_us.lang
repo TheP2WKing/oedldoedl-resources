@@ -92,10 +92,25 @@ tile.oedldoedlresources.end_element_od.name=End Element OD
 tile.oedldoedlresources.end_element_od.tip1=This is not even the end.
 tile.oedldoedlresources.end_element_od.tip2=Can be found in the end at any y-level.
 
+# caterium
+tile.oedldoedlresources.caterium_block.name=Block of Caterium
+tile.oedldoedlresources.caterium_block.tip1=Seems to be early acess, right?
+tile.oedldoedlresources.caterium_ore.name=Caterium Ore
+tile.oedldoedlresources.caterium_ore.tip1=That seems different than in the game...
+tile.oedldoedlresources.caterium_ore.tip2=Can be found between y-level 8 and 32.
+item.oedldoedlresources.caterium_ingot.name=Caterium Ingot
+item.oedldoedlresources.caterium_ingot.tip1=Mostly used for advanced electronics.
+item.oedldoedlresources.caterium_ingot.tip2=Definitely not a Satisfactory reference.
+item.oedldoedlresources.caterium_dust.name=Caterium Dust
+item.oedldoedlresources.caterium_dust.tip1=Looks like sulfur, smells like sulfur
+item.oedldoedlresources.caterium_dust.tip2=and tasts like sulfur but it is not sulfur.
+item.oedldoedlresources.caterium_nugget.name=Caterium Nugget
+item.oedldoedlresources.caterium_nugget.tip1=Made for tiny electronics. Like your brain chip.
+
 #bedrockium
 tile.oedldoedlresources.bedrockium_block.name=Block of Bedrockium
 tile.oedldoedlresources.bedrockium_block.tip1=I would not try to place that...
-tile.oedldoedlresources.bedrockium_block.tip2=Seriously DO NOT DO THAT.
+tile.oedldoedlresources.bedrockium_block.tip2=Seriously, DO NOT DO THAT.
 item.oedldoedlresources.bedrockium_ingot.name=Bedrockium Ingot
 item.oedldoedlresources.bedrockium_ingot.tip1=Be careful, this is heavier than Flofino.
 item.oedldoedlresources.bedrockium_nugget.name=Bedrockium Nugget
@@ -377,7 +392,7 @@ tile.oedldoedlresources.kitagawarium_star_block.name=Block of Kitagawarium Star
 tile.oedldoedlresources.kitagawarium_star_block.tip1=The ultimate cosplay!
 tile.oedldoedlresources.nether_kitagawarium_ore.name=Nether Kitagawarium Ore
 tile.oedldoedlresources.nether_kitagawarium_ore.tip1=Can be found in the nether
-tile.oedldoedlresources.nether_kitagawarium_ore.tip2=between y-level YX and YX.
+tile.oedldoedlresources.nether_kitagawarium_ore.tip2=between y-level 3 and 5.
 item.oedldoedlresources.kitagawarium_ingot.name=Kitagawarium Ingot
 item.oedldoedlresources.kitagawarium_ingot.annotation1=Stats: §dB86-W58-H84
 item.oedldoedlresources.kitagawarium_ingot.tip1=What the F*CK...is this now?
@@ -454,6 +469,22 @@ tile.oedldoedlresources.salt_ore.tip2=Can be found at any y-level.
 item.oedldoedlresources.salt_dust.name=Salt Dust
 item.oedldoedlresources.salt_dust.annotation1=Droped by: §fSalt Ore
 item.oedldoedlresources.salt_dust.tip1=Flofino, do not be so salty.
+
+# sulfur
+tile.oedldoedlresources.sulfur_ore.name=Sulfur Ore
+tile.oedldoedlresources.sulfur_ore.tip1=It is actually the yellow of the egg.
+tile.oedldoedlresources.sulfur_ore.tip2=Can be found at any y-level.
+item.oedldoedlresources.sulfur_dust.name=Sulfur Dust
+item.oedldoedlresources.sulfur_dust.annotation1=Droped by: §fSulfur Ore
+item.oedldoedlresources.sulfur_dust.tip1=Looks like beeswax.
+
+# niter
+tile.oedldoedlresources.niter_ore.name=Niter Ore
+tile.oedldoedlresources.niter_ore.tip1=Potassium nitrate.
+tile.oedldoedlresources.niter_ore.tip2=Can be found at any y-level.
+item.oedldoedlresources.niter_dust.name=Niter Dust
+item.oedldoedlresources.niter_dust.annotation1=Droped by: §fNiter Ore
+item.oedldoedlresources.niter_dust.tip1=Also known as saltpeter.
 
 # coal
 item.oedldoedlresources.coal_nugget.name=Coal Nugget

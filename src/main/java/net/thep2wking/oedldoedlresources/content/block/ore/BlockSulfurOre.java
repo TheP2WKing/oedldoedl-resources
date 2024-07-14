@@ -7,13 +7,13 @@ import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.thep2wking.oedldoedlcore.api.block.ModBlockOreBase;
 import net.thep2wking.oedldoedlcore.util.ModToolTypes;
+import net.thep2wking.oedldoedlresources.init.ModItems;
 
-public class BlockCookieOre extends ModBlockOreBase {
-	public BlockCookieOre(String modid, String name, CreativeTabs tab, int minXp, int maxXp, Material material,
+public class BlockSulfurOre extends ModBlockOreBase {
+	public BlockSulfurOre(String modid, String name, CreativeTabs tab, int minXp, int maxXp, Material material,
 			SoundType sound, MapColor mapColor, int harvestLevel, ModToolTypes toolType, float hardness,
 			float resistance, int lightLevel) {
 		super(modid, name, tab, minXp, maxXp, material, sound, mapColor, harvestLevel, toolType, hardness, resistance,
@@ -22,13 +22,13 @@ public class BlockCookieOre extends ModBlockOreBase {
 
 	@Override
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-		return Items.COOKIE;
+		return ModItems.SULFUR_DUST;
 	}
 
 	@Override
 	public int quantityDropped(Random rand) {
 		int min = 1;
-		int max = 5;
+		int max = 2;
 		return rand.nextInt(max) + min;
 	}
 }

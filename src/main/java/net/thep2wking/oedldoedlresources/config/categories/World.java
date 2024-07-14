@@ -112,6 +112,46 @@ public class World {
 		@Config.Name("Cookie Ore Vein Size")
 		@Config.RangeInt(min = 0, max = 100)
 		public int COOKIE_ORE_VEIN_SIZE = 10;
+
+		@Config.Name("Caterium Ore")
+		public boolean CATERIUM_ORE = true;
+
+		@Config.Name("Caterium Ore Chance")
+		@Config.RangeInt(min = 0, max = 100)
+		public int CATERIUM_ORE_CHANCE = 6;
+
+		@Config.Name("Caterium Ore Vein Size")
+		@Config.RangeInt(min = 0, max = 100)
+		public int CATERIUM_ORE_VEIN_SIZE = 8;
+
+		@Config.Name("Sulfur Ore")
+		public boolean SULFUR_ORE = true;
+
+		@Config.Name("Sulfur Ore Chance")
+		@Config.RangeInt(min = 0, max = 100)
+		public int SULFUR_ORE_CHANCE = 11;
+
+		@Config.Name("Sulfur Ore Vein Size")
+		@Config.RangeInt(min = 0, max = 100)
+		public int SULFUR_ORE_VEIN_SIZE = 8;
+
+		@Config.Name("Niter Ore")
+		public boolean NITER_ORE = false;
+
+		@Config.Name("Niter Ore Chance")
+		@Config.RangeInt(min = 0, max = 100)
+		public int NITER_ORE_CHANCE = 9;
+
+		@Config.Name("Niter Ore Vein Size")
+		@Config.RangeInt(min = 0, max = 100)
+		public int NITER_ORE_VEIN_SIZE = 8;
+
+		@Config.Name("Bacon Agaric Flower")
+		public boolean BACON_AGARIC_FLOWER = true;
+
+		@Config.Name("Bacon Agaric Flower Chance")
+		@Config.RangeDouble(min = 0, max = 1)
+		public double BACON_AGARIC_FLOWER_CHANCE = 0.1;
 	}
 
 	public static class Nether {
@@ -120,7 +160,7 @@ public class World {
 
 		@Config.Name("Gremorium Ore Chance")
 		@Config.RangeInt(min = 0, max = 100)
-		public int GREMORIUM_ORE_CHANCE = 3;
+		public int GREMORIUM_ORE_CHANCE = 4;
 
 		@Config.Name("Gremorium Ore Vein Size")
 		@Config.RangeInt(min = 0, max = 100)
@@ -131,7 +171,7 @@ public class World {
 
 		@Config.Name("Himejimarium Ore Chance")
 		@Config.RangeInt(min = 0, max = 100)
-		public int HIMEJIMARIUM_ORE_CHANCE = 3;
+		public int HIMEJIMARIUM_ORE_CHANCE = 4;
 
 		@Config.Name("Himejimarium Ore Vein Size")
 		@Config.RangeInt(min = 0, max = 100)
@@ -142,7 +182,7 @@ public class World {
 
 		@Config.Name("Toujourium Ore Chance")
 		@Config.RangeInt(min = 0, max = 100)
-		public int TOUJOURIUM_ORE_CHANCE = 3;
+		public int TOUJOURIUM_ORE_CHANCE = 4;
 
 		@Config.Name("Toujourium Ore Vein Size")
 		@Config.RangeInt(min = 0, max = 100)
@@ -153,7 +193,7 @@ public class World {
 
 		@Config.Name("Argentorium Ore Chance")
 		@Config.RangeInt(min = 0, max = 100)
-		public int ARGENTORIUM_ORE_CHANCE = 3;
+		public int ARGENTORIUM_ORE_CHANCE = 4;
 
 		@Config.Name("Argentorium Ore Vein Size")
 		@Config.RangeInt(min = 0, max = 100)
@@ -164,7 +204,7 @@ public class World {
 
 		@Config.Name("Quartarium Ore Chance")
 		@Config.RangeInt(min = 0, max = 100)
-		public int QUARTARIUM_ORE_CHANCE = 3;
+		public int QUARTARIUM_ORE_CHANCE = 4;
 
 		@Config.Name("Quartarium Ore Vein Size")
 		@Config.RangeInt(min = 0, max = 100)
@@ -175,7 +215,7 @@ public class World {
 
 		@Config.Name("Nagatorium Ore Chance")
 		@Config.RangeInt(min = 0, max = 100)
-		public int NAGATORIUM_ORE_CHANCE = 3;
+		public int NAGATORIUM_ORE_CHANCE = 6;
 
 		@Config.Name("Nagatorium Ore Vein Size")
 		@Config.RangeInt(min = 0, max = 100)
@@ -186,11 +226,22 @@ public class World {
 
 		@Config.Name("Sakurajimarium Ore Chance")
 		@Config.RangeInt(min = 0, max = 100)
-		public int SAKURAJIMARIUM_ORE_CHANCE = 3;
+		public int SAKURAJIMARIUM_ORE_CHANCE = 4;
 
 		@Config.Name("Sakurajimarium Ore Vein Size")
 		@Config.RangeInt(min = 0, max = 100)
 		public int SAKURAJIMARIUM_ORE_VEIN_SIZE = 3;
+
+		@Config.Name("Kitagawarium Ore")
+		public boolean KITAGAWARIUM_ORE = true;
+
+		@Config.Name("Kitagawarium Ore Chance")
+		@Config.RangeInt(min = 0, max = 100)
+		public int KITAGAWARIUM_ORE_CHANCE = 5;
+
+		@Config.Name("Kitagawarium Ore Vein Size")
+		@Config.RangeInt(min = 0, max = 100)
+		public int KITAGAWARIUM_ORE_VEIN_SIZE = 3;
 	}
 
 	public static class End {
@@ -199,7 +250,7 @@ public class World {
 
 		@Config.Name("Element OD Chance")
 		@Config.RangeInt(min = 0, max = 100)
-		public int ELEMENT_OD_CHANCE = 6;
+		public int ELEMENT_OD_CHANCE = 7;
 
 		@Config.Name("Element OD Vein Size")
 		@Config.RangeInt(min = 0, max = 100)

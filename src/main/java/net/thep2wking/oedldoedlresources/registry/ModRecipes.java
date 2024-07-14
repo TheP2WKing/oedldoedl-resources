@@ -18,12 +18,15 @@ public class ModRecipes {
 		if (ResourcesConfig.RECIPES.DEFAULT_OREDICT) {
 			ModRecipeHelper.addOreDict("oreBase", ModBlocks.BASE_ORE, 0);
 			ModRecipeHelper.addOreDict("oreOedldoedl", ModBlocks.OEDLDOEDL_ORE, 0);
+			ModRecipeHelper.addOreDict("oreCaterium", ModBlocks.CATERIUM_ORE, 0);
 			ModRecipeHelper.addOreDict("oreRandomite", ModBlocks.RANDOMITE_ORE, 0);
 			ModRecipeHelper.addOreDict("orePowderUranium", ModBlocks.URANIUM_POWDER_ORE, 0);
 			ModRecipeHelper.addOreDict("oreEnder", ModBlocks.ENDER_ORE, 0);
 			ModRecipeHelper.addOreDict("oreEnderPearl", ModBlocks.ENDER_ORE, 0);
 			ModRecipeHelper.addOreDict("oreGunpowder", ModBlocks.GUNPOWDER_ORE, 0);
 			ModRecipeHelper.addOreDict("oreSalt", ModBlocks.SALT_ORE, 0);
+			ModRecipeHelper.addOreDict("oreSulfur", ModBlocks.SULFUR_ORE, 0);
+			ModRecipeHelper.addOreDict("oreNiter", ModBlocks.NITER_ORE, 0);
 			ModRecipeHelper.addOreDict("oreCookie", ModBlocks.COOKIE_ORE, 0);
 
 			ModRecipeHelper.addOreDict("oreGremoriumShard", ModBlocks.NETHER_GREMORIUM_ORE, 0);
@@ -39,6 +42,7 @@ public class ModRecipes {
 
 			ModRecipeHelper.addOreDict("blockBase", ModBlocks.BASE, 0);
 			ModRecipeHelper.addOreDict("blockOedldoedl", ModBlocks.OEDLDOEDL, 0);
+			ModRecipeHelper.addOreDict("blockCaterium", ModBlocks.CATERIUM, 0);
 			ModRecipeHelper.addOreDict("blockBedrockium", ModBlocks.BEDROCKIUM, 0);
 			ModRecipeHelper.addOreDict("blockCloudium", ModBlocks.CLOUDIUM, 0);
 			ModRecipeHelper.addOreDict("blockElevatium", ModBlocks.ELEVATIUM, 0);
@@ -93,9 +97,12 @@ public class ModRecipes {
 
 			ModRecipeHelper.addOreDict("blockBalancedClay", ModBlocks.BALANCED_CLAY, 0);
 			ModRecipeHelper.addOreDict("chaosPlank", ModBlocks.CHAOS_PLANK, 0);
+			ModRecipeHelper.addOreDict("flower", ModBlocks.BACON_AGARIC, 0);
+			ModRecipeHelper.addOreDict("flowerBaconAgaric", ModBlocks.BACON_AGARIC, 0);
 
 			ModRecipeHelper.addOreDict("ingotBase", ModItems.BASE_INGOT, 0);
 			ModRecipeHelper.addOreDict("ingotOedldoedl", ModItems.OEDLDOEDL_INGOT, 0);
+			ModRecipeHelper.addOreDict("ingotCaterium", ModItems.CATERIUM_INGOT, 0);
 			ModRecipeHelper.addOreDict("ingotBedrockium", ModItems.BEDROCKIUM_INGOT, 0);
 			ModRecipeHelper.addOreDict("ingotCloudium", ModItems.CLOUDIUM_INGOT, 0);
 			ModRecipeHelper.addOreDict("ingotElevatium", ModItems.ELEVATIUM_INGOT, 0);
@@ -164,11 +171,17 @@ public class ModRecipes {
 
 			ModRecipeHelper.addOreDict("dustBase", ModItems.BASE_DUST, 0);
 			ModRecipeHelper.addOreDict("dustOedldoedl", ModItems.OEDLDOEDL_DUST, 0);
+			ModRecipeHelper.addOreDict("dustCaterium", ModItems.CATERIUM_DUST, 0);
 			ModRecipeHelper.addOreDict("dustEnder", ModItems.ENDER_DUST, 0);
 			ModRecipeHelper.addOreDict("dustEnderPearl", ModItems.ENDER_DUST, 0);
 			ModRecipeHelper.addOreDict("dustSalt", ModItems.SALT_DUST, 0);
 			ModRecipeHelper.addOreDict("foodSalt", ModItems.SALT_DUST, 0);
 			ModRecipeHelper.addOreDict("itemSalt", ModItems.SALT_DUST, 0);
+			ModRecipeHelper.addOreDict("dustSulfur", ModItems.SULFUR_DUST, 0);
+			ModRecipeHelper.addOreDict("dustSulphur", ModItems.SULFUR_DUST, 0);
+			ModRecipeHelper.addOreDict("dyeYellow", ModItems.SULFUR_DUST, 0);
+			ModRecipeHelper.addOreDict("dustSaltpeter", ModItems.NITER_DUST, 0);
+			ModRecipeHelper.addOreDict("dustNiter", ModItems.NITER_DUST, 0);
 
 			ModRecipeHelper.addOreDict("nuggetCoal", ModItems.COAL_NUGGET, 0);
 			ModRecipeHelper.addOreDict("nuggetCharcoal", ModItems.CHARCOAL_NUGGET, 0);
@@ -179,8 +192,10 @@ public class ModRecipes {
 			ModRecipeHelper.addOreDict("nuggetObsidian", ModItems.OBSIDIAN_NUGGET, 0);
 			ModRecipeHelper.addOreDict("nuggetEnder", ModItems.ENDER_NUGGET, 0);
 			ModRecipeHelper.addOreDict("nuggetEnderPearl", ModItems.ENDER_NUGGET, 0);
+
 			ModRecipeHelper.addOreDict("nuggetBase", ModItems.BASE_NUGGET, 0);
 			ModRecipeHelper.addOreDict("nuggetOedldoedl", ModItems.OEDLDOEDL_NUGGET, 0);
+			ModRecipeHelper.addOreDict("nuggetCaterium", ModItems.CATERIUM_NUGGET, 0);
 			ModRecipeHelper.addOreDict("nuggetBedrockium", ModItems.BEDROCKIUM_NUGGET, 0);
 			ModRecipeHelper.addOreDict("nuggetCloudium", ModItems.CLOUDIUM_NUGGET, 0);
 			ModRecipeHelper.addOreDict("nuggetElevatium", ModItems.ELEVATIUM_NUGGET, 0);
@@ -271,8 +286,11 @@ public class ModRecipes {
 		ModRecipeHelper.addOreDict("randomiteDrop", Items.GUNPOWDER, 0);
 		ModRecipeHelper.addOreDict("randomiteDrop", ModItems.ENDER_DUST, 0);
 		ModRecipeHelper.addOreDict("randomiteDrop", ModItems.SALT_DUST, 0);
+		ModRecipeHelper.addOreDict("randomiteDrop", ModItems.SULFUR_DUST, 0);
+		ModRecipeHelper.addOreDict("randomiteDrop", ModItems.NITER_DUST, 0);
 		ModRecipeHelper.addOreDict("randomiteDrop", ModBlocks.BASE_ORE, 0);
 		ModRecipeHelper.addOreDict("randomiteDrop", ModBlocks.OEDLDOEDL_ORE, 0);
+		ModRecipeHelper.addOreDict("randomiteDrop", ModBlocks.CATERIUM_ORE, 0);
 		ModRecipeHelper.addOreDict("randomiteDrop", ModBlocks.URANIUM_POWDER_ORE, 0);
 
 		ModRecipeHelper.addOreDict("fragmentDrop", ModItems.TIMOFIUM_FRAGMENT, 0);
@@ -472,21 +490,29 @@ public class ModRecipes {
 					new ItemStack(Items.ENDER_PEARL, 1, 0), "AA", "AA", 'A', "dustEnder");
 			ModRecipeHelper.addShapedRecipe(OedldoedlResources.MODID, "ender_pearl_from_ender_pearl_dust",
 					new ItemStack(Items.ENDER_PEARL, 1, 0), "AA", "AA", 'A', "dustEnderPearl");
+
+			ModRecipeHelper.addShapelessRecipe(OedldoedlResources.MODID, "conversion/raw_porkchop_from_bacon_agaric",
+					new ItemStack(Items.PORKCHOP, 1, 0), "flowerBaconAgaric");
 		}
 
 		if (ResourcesConfig.RECIPES.SMELTING_RECIPES) {
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.BASE_INGOT, 1, 0), "dustBase", 0.7f);
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.OEDLDOEDL_INGOT, 1, 0), "dustOedldoedl",
 					0.7f);
+			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.CATERIUM_INGOT, 1, 0), "dustCaterium",
+					0.7f);
+
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.BASE_INGOT, 1, 0), "oreBase", 0.7f);
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.OEDLDOEDL_INGOT, 1, 0), "oreOedldoedl",
 					0.7f);
+			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.CATERIUM_INGOT, 1, 0), "oreCaterium", 0.7f);
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(Blocks.STONE, 1, 0), "oreRandomite", 0.7f);
-			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(Blocks.STONE, 1, 0), "orePowderUranium",
-					0.7f);
+			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(Blocks.STONE, 1, 0), "orePowderUranium", 0.7f);
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.ENDER_DUST, 1, 0), "oreEnder", 0.7f);
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(Items.GUNPOWDER, 1, 0), "oreGunpowder", 0.7f);
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.SALT_DUST, 1, 0), "oreSalt", 0.7f);
+			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.SULFUR_DUST, 1, 0), "oreSulfur", 0.7f);
+			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.NITER_DUST, 1, 0), "oreNiter", 0.7f);
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(Items.COOKIE, 1, 0), "oreCookie", 0.7f);
 			ModRecipeHelper.addOreDictSmeltingRecipe(new ItemStack(ModItems.GREMORIUM_SHARD, 1, 0), "oreGremoriumShard",
 					0.7f);
@@ -512,6 +538,8 @@ public class ModRecipes {
 					ModItems.BASE_INGOT, ModBlocks.BASE);
 			ModResourceRecipeHelper.addMetalConversion(OedldoedlResources.MODID, "oedldoedl", ModItems.OEDLDOEDL_NUGGET,
 					ModItems.OEDLDOEDL_INGOT, ModBlocks.OEDLDOEDL);
+			ModResourceRecipeHelper.addMetalConversion(OedldoedlResources.MODID, "caterium", ModItems.CATERIUM_NUGGET,
+					ModItems.CATERIUM_INGOT, ModBlocks.CATERIUM);
 			ModResourceRecipeHelper.addMetalConversion(OedldoedlResources.MODID, "bedrockium",
 					ModItems.BEDROCKIUM_NUGGET, ModItems.BEDROCKIUM_INGOT, ModBlocks.BEDROCKIUM);
 			ModResourceRecipeHelper.addMetalConversion(OedldoedlResources.MODID, "cloudium", ModItems.CLOUDIUM_NUGGET,
