@@ -11,6 +11,8 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedInEvent;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 import net.thep2wking.oedldoedlcore.api.tab.ModOedldoedlTabBase;
 import net.thep2wking.oedldoedlcore.init.ModItems;
 import net.thep2wking.oedldoedlcore.util.ModLogInUtil;
@@ -38,6 +40,8 @@ public class OedldoedlResources {
     public static CommonProxy PROXY;
 
     public static final CreativeTabs TAB = new ModOedldoedlTabBase(MODID) {
+        @Override
+        @SideOnly(Side.CLIENT)
         public ItemStack getTabIconItem() {
             return new ItemStack(ModItems.RESOURCES_ICON);
         };
