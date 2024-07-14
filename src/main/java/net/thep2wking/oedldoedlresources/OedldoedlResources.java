@@ -16,8 +16,9 @@ import net.thep2wking.oedldoedlcore.init.ModItems;
 import net.thep2wking.oedldoedlcore.util.ModLogInUtil;
 import net.thep2wking.oedldoedlcore.util.ModLogger;
 import net.thep2wking.oedldoedlresources.registry.ModRecipes;
-import net.thep2wking.oedldoedlresources.util.ModWorldGen;
 import net.thep2wking.oedldoedlresources.util.proxy.CommonProxy;
+import net.thep2wking.oedldoedlresources.util.world.ModFlowerGen;
+import net.thep2wking.oedldoedlresources.util.world.ModOreGen;
 
 @Mod(modid = OedldoedlResources.MODID, name = OedldoedlResources.NAME, version = OedldoedlResources.VERSION, dependencies = OedldoedlResources.DEPENDENCIES)
 public class OedldoedlResources {
@@ -37,15 +38,14 @@ public class OedldoedlResources {
     public static CommonProxy PROXY;
 
     public static final CreativeTabs TAB = new ModOedldoedlTabBase(MODID) {
-		public ItemStack getTabIconItem() {
+        public ItemStack getTabIconItem() {
             return new ItemStack(ModItems.RESOURCES_ICON);
         };
-	};
-    
+    };
+
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         ModLogger.preInitLogger(MODID);
-        ModWorldGen.registerModWorldGen();
         PROXY.preInit(event);
     }
 
@@ -54,6 +54,8 @@ public class OedldoedlResources {
         ModLogger.initLogger(MODID);
         ModRecipes.registerOreDict();
         ModRecipes.registerRecipes();
+        ModOreGen.registerModOredGen();
+        ModFlowerGen.registerModFlowerdGen();
         PROXY.init(event);
     }
 

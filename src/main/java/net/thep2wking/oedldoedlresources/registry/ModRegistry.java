@@ -106,6 +106,8 @@ public class ModRegistry {
 		// misc
 		ModRegistryHelper.registerBlock(event, ModBlocks.BALANCED_CLAY);
 		ModRegistryHelper.registerBlock(event, ModBlocks.CHAOS_PLANK);
+		ModRegistryHelper.registerBlock(event, ModBlocks.BACON_AGARIC);
+
 	}
 
 	@SubscribeEvent
@@ -193,6 +195,7 @@ public class ModRegistry {
 		// misc itemblocks
 		ModRegistryHelper.registerItemBlock(event, ModItems.BALANCED_CLAY);
 		ModRegistryHelper.registerItemBlock(event, ModItems.CHAOS_PLANK);
+		ModRegistryHelper.registerItemBlock(event, ModItems.BACON_AGARIC);
 
 		// ingots
 		ModRegistryHelper.registerItem(event, ModItems.BASE_INGOT);

@@ -619,3 +619,9 @@ item.oedldoedlresources.balanced_clay_ball.name=Balanced Clay Ball
 item.oedldoedlresources.balanced_clay_ball.annotation1=Balance: §dLXIX
 item.oedldoedlresources.balanced_clay_ball.tip1=Clay is way too unbalanced.
 item.oedldoedlresources.balanced_clay_ball.tip2=Now it is balanced.
+
+# bacon agaric
+tile.oedldoedlresources.bacon_agaric.name=Bacon Agaric
+tile.oedldoedlresources.bacon_agaric.tip1=Can be found in the overworld.
+tile.oedldoedlresources.bacon_agaric.tip2=Yes, this plant actually exists.
+tile.oedldoedlresources.bacon_agaric.tip3=Look up Marasmius Tageticolor.
