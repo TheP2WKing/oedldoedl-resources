@@ -3,14 +3,17 @@ package net.thep2wking.oedldoedlresources.config.categories;
 import net.minecraftforge.common.config.Config;
 
 public class World {
-	@Config.Name("Enable Overworld World Gen")
-	public boolean OVERWORLD_WORLD_GEN = true;
+	@Config.Name("Enable Overworld Ore Gen")
+	public boolean OVERWORLD_ORE_GEN = true;
 
-	@Config.Name("Enable Nether World Gen")
-	public boolean NETHER_WORLD_GEN = true;
+	@Config.Name("Enable Nether Ore Gen")
+	public boolean NETHER_ORE_GEN = true;
 
-	@Config.Name("Enable End World Gen")
-	public boolean END_WORLD_GEN = true;
+	@Config.Name("Enable End Ore Gen")
+	public boolean END_ORE_GEN = true;
+
+	@Config.Name("Enable Overworld Flower Gen")
+	public boolean OVERWORLD_FLOWER_GEN = true;
 
 	@Config.Name("overworld")
 	public final Overworld OVERWORLD = new Overworld();
