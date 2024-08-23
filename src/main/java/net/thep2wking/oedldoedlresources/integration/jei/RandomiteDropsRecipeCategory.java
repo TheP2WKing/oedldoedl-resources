@@ -1,4 +1,4 @@
-package net.thep2wking.oedldoedlresources.integration;
+package net.thep2wking.oedldoedlresources.integration.jei;
 
 import mezz.jei.api.IGuiHelper;
 import mezz.jei.api.gui.IDrawable;

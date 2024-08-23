@@ -20,7 +20,7 @@ tile.oedldoedlresources.base_block.tip1=It is so useless as it seems
 tile.oedldoedlresources.base_block.tip2=or maybe wait a second...
 tile.oedldoedlresources.base_ore.name=Base Ore
 tile.oedldoedlresources.base_ore.tip1=Just a basic ore.
-tile.oedldoedlresources.base_ore.tip2=Can be found at any y-level.
+tile.oedldoedlresources.base_ore.tip2=Can be found up to y-level 128.
 item.oedldoedlresources.base_ingot.name=Base Ingot
 item.oedldoedlresources.base_ingot.tip1=It is not as useless as it seems.
 item.oedldoedlresources.base_dust.name=Base Dust
@@ -50,7 +50,7 @@ tile.oedldoedlresources.oedldoedl_block.tip1=Looks really cool, like TheP2WKing,
 tile.oedldoedlresources.oedldoedl_block.tip2=But looks even cooler since v3.
 tile.oedldoedlresources.oedldoedl_ore.name=Oedldoedl Ore
 tile.oedldoedlresources.oedldoedl_ore.tip1=The beginning of the modpack.
-tile.oedldoedlresources.oedldoedl_ore.tip2=Can be found under y-level 10.
+tile.oedldoedlresources.oedldoedl_ore.tip2=Can be found up to y-level 10.
 item.oedldoedlresources.oedldoedl_ingot.name=Oedldoedl Ingot
 item.oedldoedlresources.oedldoedl_ingot.tip1=The infinity in the weak hands of
 item.oedldoedlresources.oedldoedl_ingot.tip2=Flofino, oh god why so early?
@@ -90,7 +90,7 @@ item.oedldoedlresources.oedldoedl_star_shard.tip1=The infinity in the weak hands
 item.oedldoedlresources.oedldoedl_star_shard.tip2=but it is not quite true.
 tile.oedldoedlresources.end_element_od.name=End Element OD
 tile.oedldoedlresources.end_element_od.tip1=This is not even the end.
-tile.oedldoedlresources.end_element_od.tip2=Can be found in the end at any y-level.
+tile.oedldoedlresources.end_element_od.tip2=Can be found in the end up to y-level 128.
 
 # caterium
 tile.oedldoedlresources.caterium_block.name=Block of Caterium
@@ -237,7 +237,7 @@ tile.oedldoedlresources.toujourium_star_block.name=Block of Toujourium Star
 tile.oedldoedlresources.toujourium_star_block.tip1=The ultimate cat!
 tile.oedldoedlresources.nether_toujourium_ore.name=Nether Toujourium Ore
 tile.oedldoedlresources.nether_toujourium_ore.tip1=Can be found in the nether
-tile.oedldoedlresources.nether_toujourium_ore.tip2=between y-level 11 and y23.
+tile.oedldoedlresources.nether_toujourium_ore.tip2=between y-level 11 and 23.
 item.oedldoedlresources.toujourium_ingot.name=Toujourium Ingot
 item.oedldoedlresources.toujourium_ingot.annotation1=Stats: §7B67-W57-H73
 item.oedldoedlresources.toujourium_ingot.tip1=What the F*CK...is this now?
@@ -433,16 +433,16 @@ item.oedldoedlresources.chaos_catalyst.tip3=No it will not.
 # randomite
 tile.oedldoedlresources.randomite_ore.name=Randomite Ore
 tile.oedldoedlresources.randomite_ore.tip1=Everything is pure RNG.
-tile.oedldoedlresources.randomite_ore.tip2=Can be found at any y-level.
+tile.oedldoedlresources.randomite_ore.tip2=Can be found up to y-level 128.
 
 # cookie
 tile.oedldoedlresources.cookie_ore.name=Cookie Ore
 tile.oedldoedlresources.cookie_ore.tip1=Sponsored by the cookie monster!
-tile.oedldoedlresources.cookie_ore.tip2=Can be found between y-level Y40 and Y256.
+tile.oedldoedlresources.cookie_ore.tip2=Can be found between y-level 40 and 256.
 # uranium
 tile.oedldoedlresources.uranium_powder_ore.name=Uranium Powder Ore
 tile.oedldoedlresources.uranium_powder_ore.tip1=Tends to explode randomly or not?
-tile.oedldoedlresources.uranium_powder_ore.tip2=Can be found between y-level Y12 and Y48.
+tile.oedldoedlresources.uranium_powder_ore.tip2=Can be found between y-level 12 and 48.
 item.oedldoedlresources.uranium_powder.name=Uranium Powder
 item.oedldoedlresources.uranium_powder.annotation1=Droped by: §eUranium Powder Ore
 item.oedldoedlresources.uranium_powder.tip1=When is too much tnt really TooMuchTNT?
@@ -465,7 +465,7 @@ tile.oedldoedlresources.gunpowder_ore.tip2=Can be found between y-level 40 and 7
 # salt
 tile.oedldoedlresources.salt_ore.name=Salt Ore
 tile.oedldoedlresources.salt_ore.tip1=Tasts so salty like Flofino.
-tile.oedldoedlresources.salt_ore.tip2=Can be found at any y-level.
+tile.oedldoedlresources.salt_ore.tip2=Can be found up to y-level 128.
 item.oedldoedlresources.salt_dust.name=Salt Dust
 item.oedldoedlresources.salt_dust.annotation1=Droped by: §fSalt Ore
 item.oedldoedlresources.salt_dust.tip1=Flofino, do not be so salty.
@@ -473,7 +473,7 @@ item.oedldoedlresources.salt_dust.tip1=Flofino, do not be so salty.
 # sulfur
 tile.oedldoedlresources.sulfur_ore.name=Sulfur Ore
 tile.oedldoedlresources.sulfur_ore.tip1=It is actually the yellow of the egg.
-tile.oedldoedlresources.sulfur_ore.tip2=Can be found at any y-level.
+tile.oedldoedlresources.sulfur_ore.tip2=Can be found up to y-level 128.
 item.oedldoedlresources.sulfur_dust.name=Sulfur Dust
 item.oedldoedlresources.sulfur_dust.annotation1=Droped by: §fSulfur Ore
 item.oedldoedlresources.sulfur_dust.tip1=Looks like beeswax.
@@ -481,7 +481,7 @@ item.oedldoedlresources.sulfur_dust.tip1=Looks like beeswax.
 # niter
 tile.oedldoedlresources.niter_ore.name=Niter Ore
 tile.oedldoedlresources.niter_ore.tip1=Potassium nitrate.
-tile.oedldoedlresources.niter_ore.tip2=Can be found at any y-level.
+tile.oedldoedlresources.niter_ore.tip2=Can be found up to y-level 128.
 item.oedldoedlresources.niter_dust.name=Niter Dust
 item.oedldoedlresources.niter_dust.annotation1=Droped by: §fNiter Ore
 item.oedldoedlresources.niter_dust.tip1=Also known as saltpeter.

@@ -13,10 +13,12 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedInEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import net.thep2wking.oedldoedlcore.api.integration.ModJERPluginBase;
 import net.thep2wking.oedldoedlcore.api.tab.ModOedldoedlTabBase;
 import net.thep2wking.oedldoedlcore.init.ModItems;
 import net.thep2wking.oedldoedlcore.util.ModLogInUtil;
 import net.thep2wking.oedldoedlcore.util.ModLogger;
+import net.thep2wking.oedldoedlresources.integration.jer.OedldoedlResourcesJERPlugin;
 import net.thep2wking.oedldoedlresources.registry.ModRecipes;
 import net.thep2wking.oedldoedlresources.util.proxy.CommonProxy;
 import net.thep2wking.oedldoedlresources.util.world.ModFlowerGen;
@@ -59,7 +61,8 @@ public class OedldoedlResources {
         ModRecipes.registerOreDict();
         ModRecipes.registerRecipes();
         ModOreGen.registerModOredGen();
-        ModFlowerGen.registerModFlowerdGen();
+        ModFlowerGen.registerModFlowerGen();
+        ModJERPluginBase.registerPlugin(new OedldoedlResourcesJERPlugin());
         PROXY.init(event);
     }
 
@@ -78,7 +81,7 @@ public class OedldoedlResources {
     public static class ModJoinMessage {
         @SubscribeEvent
         public static void addJoinMessage(PlayerLoggedInEvent event) {
-            ModLogInUtil.addJoinMessage(event, NAME, MODID, VERSION);
+            ModLogInUtil.addJoinMessage(event, NAME, MODID, VERSION, true);
         }
     }
 }

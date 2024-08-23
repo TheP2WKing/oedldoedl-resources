@@ -16,7 +16,7 @@ public class ModFlowerGen {
 		}
 	}
 
-	public static void registerModFlowerdGen() {
+	public static void registerModFlowerGen() {
 		ModLogger.registeredWorldGenLogger(OedldoedlResources.MODID);
 
 		ModPlantGenHelper.registerFlowerGen(new ModFlowerGen());

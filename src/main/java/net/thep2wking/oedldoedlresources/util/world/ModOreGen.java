@@ -16,17 +16,17 @@ public class ModOreGen implements IWorldGenerator {
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
 		if (ResourcesConfig.WORLD.OVERWORLD_ORE_GEN) {
-			ModOreGenHelper.addOreGenOverworld(world, random, chunkX, chunkZ, ModBlocks.BASE_ORE, ResourcesConfig.WORLD.OVERWORLD.BASE_ORE_VEIN_SIZE, ResourcesConfig.WORLD.OVERWORLD.BASE_ORE_CHANCE, 1, 256, ResourcesConfig.WORLD.OVERWORLD.BASE_ORE);
+			ModOreGenHelper.addOreGenOverworld(world, random, chunkX, chunkZ, ModBlocks.BASE_ORE, ResourcesConfig.WORLD.OVERWORLD.BASE_ORE_VEIN_SIZE, ResourcesConfig.WORLD.OVERWORLD.BASE_ORE_CHANCE, 1, 128, ResourcesConfig.WORLD.OVERWORLD.BASE_ORE);
 			ModOreGenHelper.addOreGenOverworld(world, random, chunkX, chunkZ, ModBlocks.OEDLDOEDL_ORE, ResourcesConfig.WORLD.OVERWORLD.OEDLDOEDL_ORE_VEIN_SIZE, ResourcesConfig.WORLD.OVERWORLD.OEDLDOEDL_ORE_CHANCE, 1, 10, ResourcesConfig.WORLD.OVERWORLD.OEDLDOEDL_ORE);
 			ModOreGenHelper.addOreGenOverworld(world, random, chunkX, chunkZ, ModBlocks.CATERIUM_ORE, ResourcesConfig.WORLD.OVERWORLD.CATERIUM_ORE_VEIN_SIZE, ResourcesConfig.WORLD.OVERWORLD.CATERIUM_ORE_CHANCE, 8, 32, ResourcesConfig.WORLD.OVERWORLD.CATERIUM_ORE);
-			ModOreGenHelper.addOreGenOverworld(world, random, chunkX, chunkZ, ModBlocks.RANDOMITE_ORE, ResourcesConfig.WORLD.OVERWORLD.RANDOMITE_ORE_VEIN_SIZE, ResourcesConfig.WORLD.OVERWORLD.RANDOMITE_ORE_CHANCE, 1, 256, ResourcesConfig.WORLD.OVERWORLD.RANDOMITE_ORE);
+			ModOreGenHelper.addOreGenOverworld(world, random, chunkX, chunkZ, ModBlocks.RANDOMITE_ORE, ResourcesConfig.WORLD.OVERWORLD.RANDOMITE_ORE_VEIN_SIZE, ResourcesConfig.WORLD.OVERWORLD.RANDOMITE_ORE_CHANCE, 1, 128, ResourcesConfig.WORLD.OVERWORLD.RANDOMITE_ORE);
 			ModOreGenHelper.addOreGenOverworld(world, random, chunkX, chunkZ, ModBlocks.URANIUM_POWDER_ORE, ResourcesConfig.WORLD.OVERWORLD.URANIUM_POWDER_ORE_VEIN_SIZE, ResourcesConfig.WORLD.OVERWORLD.URANIUM_POWDER_ORE_CHANCE, 12, 48, ResourcesConfig.WORLD.OVERWORLD.URANIUM_POWDER_ORE);
 			ModOreGenHelper.addOreGenOverworld(world, random, chunkX, chunkZ, ModBlocks.ENDER_ORE, ResourcesConfig.WORLD.OVERWORLD.ENDER_ORE_VEIN_SIZE, ResourcesConfig.WORLD.OVERWORLD.ENDER_ORE_CHANCE, 10, 20, ResourcesConfig.WORLD.OVERWORLD.ENDER_ORE);
 			ModOreGenHelper.addOreGenOverworld(world, random, chunkX, chunkZ, ModBlocks.GUNPOWDER_ORE, ResourcesConfig.WORLD.OVERWORLD.GUNPOWDER_ORE_VEIN_SIZE, ResourcesConfig.WORLD.OVERWORLD.GUNPOWDER_ORE_CHANCE, 40, 70, ResourcesConfig.WORLD.OVERWORLD.GUNPOWDER_ORE);
-			ModOreGenHelper.addOreGenOverworld(world, random, chunkX, chunkZ, ModBlocks.SALT_ORE, ResourcesConfig.WORLD.OVERWORLD.SALT_ORE_VEIN_SIZE, ResourcesConfig.WORLD.OVERWORLD.SALT_ORE_CHANCE, 1, 256, ResourcesConfig.WORLD.OVERWORLD.SALT_ORE);
-			ModOreGenHelper.addOreGenOverworld(world, random, chunkX, chunkZ, ModBlocks.SULFUR_ORE, ResourcesConfig.WORLD.OVERWORLD.SULFUR_ORE_VEIN_SIZE, ResourcesConfig.WORLD.OVERWORLD.SULFUR_ORE_CHANCE, 1, 256, ResourcesConfig.WORLD.OVERWORLD.SULFUR_ORE);
-			ModOreGenHelper.addOreGenOverworld(world, random, chunkX, chunkZ, ModBlocks.NITER_ORE, ResourcesConfig.WORLD.OVERWORLD.NITER_ORE_VEIN_SIZE, ResourcesConfig.WORLD.OVERWORLD.NITER_ORE_CHANCE, 1, 256, ResourcesConfig.WORLD.OVERWORLD.NITER_ORE);
-			ModOreGenHelper.addOreGenOverworld(world, random, chunkX, chunkZ, ModBlocks.COOKIE_ORE, ResourcesConfig.WORLD.OVERWORLD.COOKIE_ORE_VEIN_SIZE, ResourcesConfig.WORLD.OVERWORLD.COOKIE_ORE_CHANCE, 40, 256, ResourcesConfig.WORLD.OVERWORLD.COOKIE_ORE);
+			ModOreGenHelper.addOreGenOverworld(world, random, chunkX, chunkZ, ModBlocks.SALT_ORE, ResourcesConfig.WORLD.OVERWORLD.SALT_ORE_VEIN_SIZE, ResourcesConfig.WORLD.OVERWORLD.SALT_ORE_CHANCE, 1, 128, ResourcesConfig.WORLD.OVERWORLD.SALT_ORE);
+			ModOreGenHelper.addOreGenOverworld(world, random, chunkX, chunkZ, ModBlocks.SULFUR_ORE, ResourcesConfig.WORLD.OVERWORLD.SULFUR_ORE_VEIN_SIZE, ResourcesConfig.WORLD.OVERWORLD.SULFUR_ORE_CHANCE, 1, 128, ResourcesConfig.WORLD.OVERWORLD.SULFUR_ORE);
+			ModOreGenHelper.addOreGenOverworld(world, random, chunkX, chunkZ, ModBlocks.NITER_ORE, ResourcesConfig.WORLD.OVERWORLD.NITER_ORE_VEIN_SIZE, ResourcesConfig.WORLD.OVERWORLD.NITER_ORE_CHANCE, 1, 128, ResourcesConfig.WORLD.OVERWORLD.NITER_ORE);
+			ModOreGenHelper.addOreGenOverworld(world, random, chunkX, chunkZ, ModBlocks.COOKIE_ORE, ResourcesConfig.WORLD.OVERWORLD.COOKIE_ORE_VEIN_SIZE, ResourcesConfig.WORLD.OVERWORLD.COOKIE_ORE_CHANCE, 40, 128, ResourcesConfig.WORLD.OVERWORLD.COOKIE_ORE);
 		}
 		
 		if (ResourcesConfig.WORLD.NETHER_ORE_GEN) {
@@ -41,7 +41,7 @@ public class ModOreGen implements IWorldGenerator {
 		}
 
 		if (ResourcesConfig.WORLD.END_ORE_GEN) {
-			ModOreGenHelper.addOreGenEnd(world, random, chunkX, chunkZ, ModBlocks.END_ELEMENT_OD, ResourcesConfig.WORLD.END.ELEMENT_OD_ORE_VEIN_SIZE, ResourcesConfig.WORLD.END.ELEMENT_OD_CHANCE, 1, 256, ResourcesConfig.WORLD.END.ELEMENT_OD);
+			ModOreGenHelper.addOreGenEnd(world, random, chunkX, chunkZ, ModBlocks.END_ELEMENT_OD, ResourcesConfig.WORLD.END.ELEMENT_OD_ORE_VEIN_SIZE, ResourcesConfig.WORLD.END.ELEMENT_OD_CHANCE, 1, 128, ResourcesConfig.WORLD.END.ELEMENT_OD);
 		}
 	}
 

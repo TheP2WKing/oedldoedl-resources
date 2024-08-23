@@ -1,5 +1,6 @@
-package net.thep2wking.oedldoedlresources.integration;
+package net.thep2wking.oedldoedlresources.integration.jei;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -9,6 +10,7 @@ import mezz.jei.api.recipe.IRecipeWrapper;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
 import net.thep2wking.oedldoedlresources.OedldoedlResources;
 import net.thep2wking.oedldoedlresources.init.ModBlocks;
 
@@ -38,4 +40,12 @@ public class RandomiteDropsRecipeWrapper implements IRecipeWrapper {
 		}
 		return IRecipeWrapper.super.getTooltipStrings(mouseX, mouseY);
 	}
+
+	public static List<RandomiteDropsRecipeWrapper> getDrops() {
+        List<RandomiteDropsRecipeWrapper> randomiteDropRecipes = new ArrayList<>();
+        for (ItemStack output : OreDictionary.getOres("randomiteDrop")) {
+            randomiteDropRecipes.add(new RandomiteDropsRecipeWrapper(output));
+        }
+        return randomiteDropRecipes;
+    }
 }
