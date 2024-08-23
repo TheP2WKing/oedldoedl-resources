@@ -4,6 +4,9 @@ itemGroup.oedldoedlresources.name=§dOedldoedl Resources
 # icons
 item.oedldoedlcore.resources_icon.annotation3=Version: §e1.12.2-4.2.0
 
+# join message
+join.oedldoedlresources.message=Ores as far as the eye can see!
+
 # sounds
 sound.oedldoedlresources.money=Cash rings
 sound.oedldoedlresources.wow=Amazed wow
