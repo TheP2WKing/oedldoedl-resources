@@ -6,11 +6,13 @@ import jeresources.api.restrictions.Restriction;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.thep2wking.oedldoedlcore.api.integration.ModJERPluginBase;
+import net.thep2wking.oedldoedlcore.api.integration.JERPlugin;
 import net.thep2wking.oedldoedlresources.OedldoedlResources;
 import net.thep2wking.oedldoedlresources.config.ResourcesConfig;
 import net.thep2wking.oedldoedlresources.init.ModBlocks;
 import net.thep2wking.oedldoedlresources.init.ModItems;
 
+@JERPlugin
 public class OedldoedlResourcesJERPlugin extends ModJERPluginBase {
 	@Override
 	public String getModId() {
