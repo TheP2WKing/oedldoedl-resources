@@ -1,5 +1,33 @@
 # Changelog
 
+## [4.2.0] - 2024-11-27
+
+### Added
+
+- added bacon agaric from satisfactory (also generating in world)
+- added caterium block, ore, ingot, nugget and dust from satisfactory
+- added cookie ore
+- added jer support
+
+### Changed
+
+- updated creative tab implementation
+- reworded ore world gen configs to distinguish between other generator features
+- reworked word gen implementation
+- increased default weighs of nether ores generating
+- uranium powder ore is now limited to drop only one uranium powder
+
+### Fixed
+
+- fixed some nether ores not even generating 
+- fixed some nether ore not dropping anything
+- fixed oedldoedl nugget not having enchanted effect
+- fixed missing hight level tooltips
+
+### Removed
+
+- removed chaos ingot and catalyst enchanted effect
+
 ## [4.1.0] - 2024-06-09
 
 ### Added
@@ -7,6 +35,7 @@
 - added JEI integration for randomite drops
 - added config options for various ore drop chances
 - added star storage blocks
+- added back previously removed sulfur and niter ore as wells their dusts
 
 ### Changed
 
